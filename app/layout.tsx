@@ -21,13 +21,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body className="min-h-screen flex flex-col">
         <header className="bg-chrome text-chrome-foreground border-b border-chrome-border">
           <div className="mx-auto max-w-7xl px-4 h-14 flex items-center justify-between">
             <Link href="/" className="flex items-center">
               <img
-                src="/escolatlas-brand-assets/logo/escolatlas-horizontal-color.svg"
+                src="/escolatlas-brand-assets/logo/escolatlas-horizontal-white.svg"
                 alt="Escolatlas"
                 className="h-8 w-auto"
               />

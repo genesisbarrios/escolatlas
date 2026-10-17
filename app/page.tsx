@@ -15,7 +15,7 @@ export default function Home() {
   const pins = located.slice(0, 90).map((s) => ({ id: s.id, ...toXY(s.lat!, s.lng!) }));
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col bg-[var(--ink)] text-[#f4f8fc]">
       {/* ── Hero — matches the original landing: copy, prompt box, CTA, photo card ── */}
       <section className="px-6 py-16">
         <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 md:grid-cols-2">
@@ -23,17 +23,17 @@ export default function Home() {
             <h1 className="font-heading text-4xl font-medium leading-[1.08] tracking-tight text-foreground md:text-6xl">
               Find your path to the right Miami-Dade school
             </h1>
-            <p className="max-w-prose text-base leading-relaxed text-foreground/85">
+            <p className="max-w-prose text-base leading-relaxed text-[#f4f8fc]/85">
               Describe the school you want in your own words. Escolatlas turns
               it into visible filters on a map and shows where each fact comes
               from.
             </p>
             <Link
               href="/schools?mode=match"
-              className="flex w-full max-w-prose items-center gap-3 rounded-xl border border-input bg-card p-4 text-left focus-visible:ring-2 focus-visible:ring-ring"
+              className="flex w-full max-w-prose items-center gap-3 rounded-xl border border-[var(--ink-soft)] bg-[var(--ink-soft)] p-4 text-left focus-visible:ring-2 focus-visible:ring-ring"
             >
               <MapPin className="size-5 shrink-0 text-muted-foreground" />
-              <span className="min-w-0 text-sm text-muted-foreground">
+              <span className="min-w-0 text-sm text-[#f4f8fc]/60">
                 Try: K-5 near Coral Gables with dual language
               </span>
             </Link>
@@ -51,7 +51,7 @@ export default function Home() {
               alt="School courtyard in Coral Gables"
               className="w-full rounded-xl object-cover max-md:max-h-[55svh]"
             />
-            <figcaption className="flex flex-wrap items-center gap-2 text-xs font-medium text-muted-foreground">
+            <figcaption className="flex flex-wrap items-center gap-2 text-xs font-medium text-[#f4f8fc]/60">
               <span>
                 Sample view · Source: Miami-Dade County GIS
               </span>
@@ -64,24 +64,24 @@ export default function Home() {
       {/* ── "See your words become filters on the map" ── */}
       <section className="px-6 py-12">
         <div className="mx-auto flex max-w-6xl flex-col gap-6">
-          <h2 className="font-heading text-2xl font-semibold text-foreground">
+          <h2 className="font-heading text-2xl font-semibold text-[#f4f8fc]">
             See your words become filters on the map
           </h2>
           <div className="flex flex-wrap gap-2" aria-label="Filters from the sample prompt">
-            <span className="inline-flex min-h-8 items-center gap-2 rounded-full border border-input bg-card px-3 text-sm text-foreground/90">
+            <span className="inline-flex min-h-8 items-center gap-2 rounded-full border border-[var(--ink-soft)] bg-[var(--ink-soft)] px-3 text-sm text-[#f4f8fc]/90">
               <GraduationCap className="size-4" /> Grades K–5
             </span>
-            <span className="inline-flex min-h-8 items-center gap-2 rounded-full border border-input bg-card px-3 text-sm text-foreground/90">
+            <span className="inline-flex min-h-8 items-center gap-2 rounded-full border border-[var(--ink-soft)] bg-[var(--ink-soft)] px-3 text-sm text-[#f4f8fc]/90">
               <MapPin className="size-4" /> Near Coral Gables
             </span>
-            <span className="inline-flex min-h-8 items-center gap-2 rounded-full border border-input bg-card px-3 text-sm text-foreground/90">
+            <span className="inline-flex min-h-8 items-center gap-2 rounded-full border border-[var(--ink-soft)] bg-[var(--ink-soft)] px-3 text-sm text-[#f4f8fc]/90">
               <Languages className="size-4" /> Dual language
             </span>
           </div>
 
           <div
             inert
-            className="relative max-h-[420px] overflow-hidden rounded-xl border border-border bg-sunken"
+            className="relative max-h-[420px] overflow-hidden rounded-xl border border-[var(--ink-soft)] bg-[var(--ink-soft)]"
           >
             <svg
               viewBox="0 0 600 280"
@@ -96,7 +96,7 @@ export default function Home() {
                   x2="600"
                   y1={40 * (i + 1)}
                   y2={40 * (i + 1)}
-                  className="stroke-[var(--input)]"
+                  className="stroke-white/15"
                   strokeWidth="1"
                   opacity="0.5"
                 />
@@ -108,7 +108,7 @@ export default function Home() {
                   x2={54 * (i + 1)}
                   y1="0"
                   y2="280"
-                  className="stroke-[var(--input)]"
+                  className="stroke-white/15"
                   strokeWidth="1"
                   opacity="0.5"
                 />
@@ -125,19 +125,19 @@ export default function Home() {
                 </g>
               ))}
             </svg>
-            <ul className="flex flex-col divide-y divide-border md:hidden">
+            <ul className="flex flex-col divide-y divide-[var(--ink-soft)] md:hidden">
               {located.slice(0, 6).map((s) => (
                 <li key={s.id} className="flex items-start gap-3 p-3">
                   <span className="mt-1 size-3 shrink-0 rounded-full bg-secondary" />
-                  <span className="text-sm text-foreground/90">
+                  <span className="text-sm text-[#f4f8fc]/90">
                     {s.name} — {s.city}
                   </span>
                 </li>
               ))}
             </ul>
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-sunken to-transparent" />
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-[var(--ink-soft)] to-transparent" />
           </div>
-          <p className="text-xs text-muted-foreground">
+          <p className="text-xs text-[#f4f8fc]/60">
             Sample view: {located.length} schools with real coordinates. Pins
             appear only where a location is known.
           </p>
@@ -147,33 +147,33 @@ export default function Home() {
       {/* ── Choose with confidence ── */}
       <section className="px-6 pb-16 pt-4">
         <div className="mx-auto max-w-6xl">
-          <h2 className="font-heading text-2xl font-semibold text-foreground">
+          <h2 className="font-heading text-2xl font-semibold text-[#f4f8fc]">
             Choose with confidence
           </h2>
           <div className="mt-6 grid gap-6 md:grid-cols-3">
-            <div className="rounded-xl border border-border bg-card p-5">
-              <h3 className="font-heading text-base font-semibold text-foreground">
+            <div className="rounded-xl border border-[var(--ink-soft)] bg-[var(--ink-soft)] p-5">
+              <h3 className="font-heading text-base font-semibold text-[#f4f8fc]">
                 Start with the place your family calls home
               </h3>
-              <p className="mt-2 text-sm text-muted-foreground">
+              <p className="mt-2 text-sm text-[#f4f8fc]/60">
                 Pan the map, or describe what you want, and see schools where
                 they actually are.
               </p>
             </div>
-            <div className="rounded-xl border border-border bg-card p-5">
-              <h3 className="font-heading text-base font-semibold text-foreground">
+            <div className="rounded-xl border border-[var(--ink-soft)] bg-[var(--ink-soft)] p-5">
+              <h3 className="font-heading text-base font-semibold text-[#f4f8fc]">
                 Check each fact against its source
               </h3>
-              <p className="mt-2 text-sm text-muted-foreground">
+              <p className="mt-2 text-sm text-[#f4f8fc]/60">
                 Every school lists the preferences it matches, plus its source
                 and when it was last checked.
               </p>
             </div>
-            <div className="rounded-xl border border-border bg-card p-5">
-              <h3 className="font-heading text-base font-semibold text-foreground">
+            <div className="rounded-xl border border-[var(--ink-soft)] bg-[var(--ink-soft)] p-5">
+              <h3 className="font-heading text-base font-semibold text-[#f4f8fc]">
                 Compare up to four side by side
               </h3>
-              <p className="mt-2 text-sm text-muted-foreground">
+              <p className="mt-2 text-sm text-[#f4f8fc]/60">
                 Keep your priorities and the evidence in view, so you don&apos;t
                 have to remember facts between pages.
               </p>

@@ -37,6 +37,8 @@
 
   --brand-accent: #f4b23c;
   --text-link: #1f5a96;
+  --ink: #14263d;
+  --ink-soft: #1d3a5f;
   --surface-sunken: oklch(0.9450 0.0068 145.52);
   --primary-hover: #1f5a96;
   --chrome: oklch(0.9772 0.0068 247.89);
