@@ -66,15 +66,15 @@ export default function Home() {
             See your words become filters on the map
           </h2>
           <div className="flex flex-wrap gap-2" aria-label="Filters from the sample prompt">
-            <span className="inline-flex min-h-8 items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 text-sm text-[#f4f8fc]/90">
+            <Link href="/schools?level=elementary" className="inline-flex min-h-8 items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 text-sm text-[#f4f8fc]/90 hover:bg-white/20">
               <GraduationCap className="size-4" /> Grades K–5
-            </span>
-            <span className="inline-flex min-h-8 items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 text-sm text-[#f4f8fc]/90">
+            </Link>
+            <Link href="/schools?city=Coral%20Gables" className="inline-flex min-h-8 items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 text-sm text-[#f4f8fc]/90 hover:bg-white/20">
               <MapPin className="size-4" /> Near Coral Gables
-            </span>
-            <span className="inline-flex min-h-8 items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 text-sm text-[#f4f8fc]/90">
+            </Link>
+            <Link href="/schools?program=Dual%20language" className="inline-flex min-h-8 items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 text-sm text-[#f4f8fc]/90 hover:bg-white/20">
               <Languages className="size-4" /> Dual language
-            </span>
+            </Link>
           </div>
 
           <div className="relative max-h-[420px] overflow-hidden rounded-xl border border-[var(--ink-soft)]">
