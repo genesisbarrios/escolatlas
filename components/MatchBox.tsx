@@ -25,6 +25,9 @@ export function MatchBox({ initialQuery = "" }: { initialQuery?: string }) {
 
   return (
     <div className="rounded-lg border border-border bg-card p-4 shadow-sm">
+      <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+        Smart match — describe the school you want
+      </p>
       <form
         onSubmit={(e) => {
           e.preventDefault();

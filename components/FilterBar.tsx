@@ -22,6 +22,7 @@ export function FilterBar({
   cities: string[];
   programs: string[];
   values: {
+    q: string;
     sector: string;
     level: string;
     grade: string;
@@ -47,10 +48,20 @@ export function FilterBar({
     "w-full rounded-md border border-border bg-card px-2.5 py-1.5 text-sm";
 
   return (
-    <form
-      onSubmit={submit}
-      className="grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-7"
-    >
+    <form onSubmit={submit}>
+      <label className="block">
+        <span className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+          Keyword — name, address, or zip
+        </span>
+        <input
+          className={`${inputCls} mt-1`}
+          placeholder="Search by name or address…"
+          value={v.q}
+          onChange={set("q")}
+          name="q"
+        />
+      </label>
+      <div className="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-7">
       <select className={inputCls} value={v.sector} onChange={set("sector")} name="sector" aria-label="School type">
         <option value="">All types</option>
         {(Object.keys(SECTOR_LABELS) as SchoolSector[]).map((s) => (
@@ -121,13 +132,14 @@ export function FilterBar({
         <button
           type="button"
           onClick={() => {
-            setV({ sector: "", level: "", grade: "", city: "", program: "", stateGrade: "" });
+            setV({ q: "", sector: "", level: "", grade: "", city: "", program: "", stateGrade: "" });
             router.push("/schools");
           }}
           className="rounded-md border border-border px-3 py-1.5 text-sm text-muted-foreground hover:bg-muted"
         >
           Clear
         </button>
+      </div>
       </div>
     </form>
   );

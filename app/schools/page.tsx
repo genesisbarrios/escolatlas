@@ -45,6 +45,7 @@ export default async function SchoolsPage({
           cities={listCities()}
           programs={listPrograms()}
           values={{
+            q: first("q"),
             sector: first("sector"),
             level: first("level"),
             grade: first("grade"),
