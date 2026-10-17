@@ -1,43 +1,46 @@
-@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..800;1,9..40,300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 @import "tailwindcss";
 
 @custom-variant dark (&:is(.dark *));
 
 /* ═══ Escolatlas theme — "Light Blue" design system (ported from the
- *     Archie app's src/styles/theme.css, byte-for-byte token values) ═══ */
+ *     Archie app's src/styles/theme.css) tuned to the official brand kit
+ *     (public/escolatlas-brand-assets/README.txt):
+ *     Atlas Blue #3B8BD9 · Deep Atlas #1F5A96 · Marigold #F4B23C
+ *     Ink #14263D · Paper #F4F8FC ═══ */
 :root {
-  --font-body: "Figtree", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-display: "Space Grotesk", ui-serif, Georgia, Cambria, "Times New Roman", serif;
+  --font-body: "DM Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Bricolage Grotesque", ui-serif, Georgia, Cambria, "Times New Roman", serif;
   --font-code: "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
   --radius: 0.5rem;
 
-  --background: oklch(1.0000 0.0000 0);
-  --foreground: oklch(0.3047 0.0360 178.23);
-  --card: oklch(0.9895 0.0041 121.56);
-  --card-foreground: oklch(0.3047 0.0360 178.23);
-  --popover: oklch(0.9895 0.0041 121.56);
-  --popover-foreground: oklch(0.3047 0.0360 178.23);
-  --primary: oklch(0.6244 0.1414 250.69);
+  --background: #f4f8fc;
+  --foreground: #14263d;
+  --card: oklch(1.0000 0.0000 0);
+  --card-foreground: #14263d;
+  --popover: oklch(1.0000 0.0000 0);
+  --popover-foreground: #14263d;
+  --primary: #3b8bd9;
   --primary-foreground: oklch(1.0000 0.0000 0);
-  --secondary: oklch(0.8061 0.1484 77.66);
-  --secondary-foreground: oklch(0.3047 0.0360 178.23);
-  --muted: oklch(0.9450 0.0068 145.52);
+  --secondary: #f4b23c;
+  --secondary-foreground: #14263d;
+  --muted: #e7eef6;
   --muted-foreground: oklch(0.5167 0.0304 175.35);
-  --accent: oklch(0.9450 0.0068 145.52);
-  --accent-foreground: oklch(0.3047 0.0360 178.23);
+  --accent: #e7eef6;
+  --accent-foreground: #14263d;
   --destructive: oklch(0.4984 0.1412 26.23);
   --border: oklch(0.8943 0.0134 159.89);
   --input: oklch(0.8943 0.0134 159.89);
-  --ring: oklch(0.6244 0.1414 250.69);
+  --ring: #3b8bd9;
 
-  --brand-accent: oklch(0.5693 0.0993 220.77);
-  --text-link: oklch(0.5239 0.1420 250.88);
+  --brand-accent: #f4b23c;
+  --text-link: #1f5a96;
   --surface-sunken: oklch(0.9450 0.0068 145.52);
-  --primary-hover: oklch(0.5634 0.1419 250.95);
+  --primary-hover: #1f5a96;
   --chrome: oklch(0.9772 0.0068 247.89);
-  --chrome-foreground: oklch(0.3047 0.0360 178.23);
+  --chrome-foreground: #14263d;
   --chrome-border: rgba(25, 53, 47, 0.08);
 
   --status-success: oklch(0.4753 0.0872 144.51);

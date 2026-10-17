@@ -6,7 +6,13 @@ export const metadata: Metadata = {
   title: "Escolatlas — Miami-Dade School Navigator",
   description:
     "Search, filter, map, and compare every public, charter, and private school in Miami-Dade County.",
-  icons: { icon: "/assets/brand/e9d462ff59.svg" },
+  icons: {
+    icon: [
+      { url: "/escolatlas-brand-assets/favicon/favicon.ico", sizes: "any" },
+      { url: "/escolatlas-brand-assets/favicon/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/escolatlas-brand-assets/app-icon/apple-touch-icon-180.png",
+  },
 };
 
 export default function RootLayout({
@@ -19,16 +25,12 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col">
         <header className="bg-chrome text-chrome-foreground border-b border-chrome-border">
           <div className="mx-auto max-w-7xl px-4 h-14 flex items-center justify-between">
-            <Link
-              href="/"
-              className="flex items-center gap-2 font-heading font-semibold text-lg tracking-tight"
-            >
+            <Link href="/" className="flex items-center">
               <img
-                src="/assets/brand/e9d462ff59.svg"
+                src="/escolatlas-brand-assets/logo/escolatlas-horizontal-color.svg"
                 alt="Escolatlas"
-                className="h-7 w-7 rounded"
+                className="h-8 w-auto"
               />
-              Escolatlas
             </Link>
             <nav className="flex gap-5 text-sm text-muted-foreground">
               <Link href="/schools" className="hover:text-link hover:underline">
