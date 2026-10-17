@@ -47,6 +47,9 @@ export function filtersFromParams(
   const program = get("program")?.trim();
   if (program) f.program = program;
 
+  const sg = get("stateGrade")?.trim().toUpperCase();
+  if (sg && /^[A-F]$/.test(sg)) f.stateGrade = sg;
+
   const minE = num(get("minEnrollment"));
   if (minE !== undefined) f.minEnrollment = minE;
   const maxE = num(get("maxEnrollment"));

@@ -43,6 +43,7 @@ export default async function SchoolsPage({
             grade: first("grade"),
             city: first("city"),
             program: first("program"),
+            stateGrade: first("stateGrade"),
           }}
         />
       </div>

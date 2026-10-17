@@ -78,6 +78,8 @@ export interface SchoolFilters {
   maxEnrollment?: number;
   /** Radius filter — requires a reference point. */
   within?: { lat: number; lng: number; miles: number };
+  /** FL DOE accountability letter grade (A–F) hard filter. */
+  stateGrade?: string;
   /**
    * Ranking hint only (never excludes): boost schools with stronger FL DOE
    * accountability grades. Set by "good/best/top-rated" phrasing.

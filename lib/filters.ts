@@ -16,6 +16,8 @@ export function applyFilters(schools: readonly School[], f: SchoolFilters): Scho
       !s.programs.some((p) => p.toLowerCase() === f.program!.toLowerCase())
     )
       return false;
+    if (f.stateGrade && s.stateGrade !== f.stateGrade.toUpperCase())
+      return false;
     if (f.minEnrollment !== undefined && (s.enrollment ?? 0) < f.minEnrollment)
       return false;
     if (

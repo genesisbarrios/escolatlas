@@ -28,6 +28,7 @@ export function FilterBar({
     grade: string;
     city: string;
     program: string;
+    stateGrade: string;
   };
 }) {
   const router = useRouter();
@@ -49,7 +50,7 @@ export function FilterBar({
   return (
     <form
       onSubmit={submit}
-      className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-6"
+      className="grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-7"
     >
       <input
         className={`${inputCls} col-span-2 sm:col-span-3 lg:col-span-2`}
@@ -104,6 +105,20 @@ export function FilterBar({
           </option>
         ))}
       </select>
+      <select
+        className={inputCls}
+        value={v.stateGrade}
+        onChange={set("stateGrade")}
+        name="stateGrade"
+        aria-label="FL DOE grade"
+      >
+        <option value="">Any FL grade</option>
+        {["A", "B", "C", "D", "F"].map((g) => (
+          <option key={g} value={g}>
+            FL Grade {g}
+          </option>
+        ))}
+      </select>
       <div className="col-span-2 flex gap-2 sm:col-span-3 lg:col-span-1">
         <button
           type="submit"
@@ -114,7 +129,7 @@ export function FilterBar({
         <button
           type="button"
           onClick={() => {
-            setV({ q: "", sector: "", level: "", grade: "", city: "", program: "" });
+            setV({ q: "", sector: "", level: "", grade: "", city: "", program: "", stateGrade: "" });
             router.push("/schools");
           }}
           className="rounded-md border border-border px-3 py-1.5 text-sm text-muted-foreground hover:bg-muted"

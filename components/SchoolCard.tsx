@@ -39,7 +39,7 @@ export function SchoolCard({
         </span>
         {school.stateGrade && (
           <span className="chip chip-warn">
-            FL grade {school.stateGrade}
+            FL Grade {school.stateGrade}
           </span>
         )}
         <span className="chip chip-muted">
