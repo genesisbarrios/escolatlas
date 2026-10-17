@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight, GraduationCap, Languages, MapPin } from "lucide-react";
 import { getAllSchools } from "@/lib/data.ts";
 import { HeroCollage } from "@/components/HeroCollage";
+import MapClient from "@/components/MapClient";
 
 /** Project Miami-Dade lng/lat into a 600×280 schematic map crop. */
 function toXY(lat: number, lng: number): { x: number; y: number } {
@@ -50,7 +51,7 @@ export default function Home() {
             <HeroCollage
               images={[
                 {
-                  src: "/assets/img/62e7742361a0-b3d34035c7.webp",
+                  src: "/assets/img/00418be876be-7435c6f5f5.webp",
                   alt: "School courtyard with live oak trees",
                 },
                 {
@@ -84,63 +85,17 @@ export default function Home() {
             </span>
           </div>
 
-          <div
-            inert
-            className="relative max-h-[420px] overflow-hidden rounded-xl border border-[var(--ink-soft)] bg-[var(--ink-soft)]"
-          >
-            <svg
-              viewBox="0 0 600 280"
-              className="hidden h-auto w-full md:block"
-              role="img"
-              aria-label="Sample map crop of school locations"
+          <div className="relative max-h-[420px] overflow-hidden rounded-xl border border-[var(--ink-soft)]">
+            <MapClient schools={located} height={420} />
+            <Link
+              href="/schools"
+              aria-label="Open the interactive school map"
+              className="absolute inset-0 z-[500] flex items-end justify-center pb-3 bg-gradient-to-t from-[#14263d]/70 via-transparent to-transparent"
             >
-              {Array.from({ length: 7 }, (_, i) => (
-                <line
-                  key={`h${i}`}
-                  x1="0"
-                  x2="600"
-                  y1={40 * (i + 1)}
-                  y2={40 * (i + 1)}
-                  className="stroke-white/15"
-                  strokeWidth="1"
-                  opacity="0.5"
-                />
-              ))}
-              {Array.from({ length: 11 }, (_, i) => (
-                <line
-                  key={`v${i}`}
-                  x1={54 * (i + 1)}
-                  x2={54 * (i + 1)}
-                  y1="0"
-                  y2="280"
-                  className="stroke-white/15"
-                  strokeWidth="1"
-                  opacity="0.5"
-                />
-              ))}
-              {pins.map((p) => (
-                <g key={p.id}>
-                  <circle cx={p.x} cy={p.y} r="9" fill="var(--secondary)" />
-                  <circle
-                    cx={p.x}
-                    cy={p.y}
-                    r="3"
-                    fill="var(--secondary-foreground)"
-                  />
-                </g>
-              ))}
-            </svg>
-            <ul className="flex flex-col divide-y divide-[var(--ink-soft)] md:hidden">
-              {located.slice(0, 6).map((s) => (
-                <li key={s.id} className="flex items-start gap-3 p-3">
-                  <span className="mt-1 size-3 shrink-0 rounded-full bg-[#f4b23c]" />
-                  <span className="text-sm text-[#f4f8fc]/90">
-                    {s.name} — {s.city}
-                  </span>
-                </li>
-              ))}
-            </ul>
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-[var(--ink-soft)] to-transparent" />
+              <span className="rounded-full bg-primary px-4 py-1.5 text-xs font-semibold text-primary-foreground">
+                Open the interactive map →
+              </span>
+            </Link>
           </div>
           <p className="text-xs text-[#f4f8fc]/60">
             Sample view: {located.length} schools with real coordinates. Pins

@@ -157,3 +157,9 @@
 .chip-warn { background: var(--status-warning-bg); color: var(--status-warning-ink); font-weight: 600; }
 
 .leaflet-container { z-index: 0; }
+
+@keyframes hero-zoom {
+  from { transform: scale(1) translate(0, 0); }
+  to { transform: scale(1.09) translate(-1.5%, 1.5%); }
+}
+.hero-img { animation: hero-zoom 4.5s ease-in-out infinite alternate; }

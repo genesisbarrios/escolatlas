@@ -55,6 +55,8 @@ export interface School {
   econDisadvantagedPct: number | null;
   /** Year the school was established (private layer only). */
   yearEstablished: number | null;
+  /** Social links scraped from the school's own website (empty = none found). */
+  socials: { facebook?: string; instagram?: string; twitter?: string; youtube?: string };
   /** Co-educational flag (private layer only). */
   coed: boolean | null;
   source: "mdc-public-schools" | "mdc-charter-schools" | "mdc-private-schools";

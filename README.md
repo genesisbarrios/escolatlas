@@ -145,3 +145,7 @@ dataset integrity (unique ids, coordinate bounds, null-not-undefined).
   `legacy/` — it's a reference, not part of the build.
 - Compare selections live in the browser (localStorage); no accounts, no
   backend state.
+
+### Optional: LLM smart match
+
+Set `GEMINI_API_KEY` (free key from [Google AI Studio](https://aistudio.google.com)) and `/api/match` uses Gemini 2.0 Flash to parse natural-language preferences, with strict schema validation. Without the key it falls back to the built-in deterministic parser — ranking and explanations are identical either way.

@@ -16,13 +16,20 @@ export function SchoolCard({
       className="rounded-lg border border-border bg-card p-4 shadow-sm"
     >
       <div className="flex items-start justify-between gap-3">
-        <div className="min-w-0">
+        <div className="min-w-0 flex-1">
+          <div className="flex items-center gap-2">
           <Link
             href={`/schools/${school.id}`}
             className="font-semibold text-link hover:underline leading-snug"
           >
             {school.name}
           </Link>
+          {school.website && (
+            <a href={school.website} target="_blank" rel="noreferrer"
+               aria-label="School website" title="School website"
+               className="text-link hover:underline text-xs">↗</a>
+          )}
+          </div>
           <p className="mt-0.5 text-sm text-muted-foreground">
             {school.address}
             {school.city ? `, ${school.city}` : ""} {school.zip}

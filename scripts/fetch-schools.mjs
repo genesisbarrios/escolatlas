@@ -231,6 +231,7 @@ function normalizePublic(a) {
     econDisadvantagedPct: null,
     yearEstablished: null,
     coed: null,
+    socials: {},
     source: "mdc-public-schools",
     sourceId: clean(a.ID) ?? String(a.OBJECTID),
   };
@@ -265,6 +266,7 @@ function normalizeCharter(a) {
     econDisadvantagedPct: null,
     yearEstablished: null,
     coed: null,
+    socials: {},
     source: "mdc-charter-schools",
     sourceId: clean(a.ID) ?? String(a.OBJECTID),
   };
@@ -302,6 +304,7 @@ function normalizePrivate(a) {
     econDisadvantagedPct: null,
     yearEstablished: num(a.YEARESTB),
     coed: coedRaw === "Y" ? true : coedRaw === "N" ? false : null,
+    socials: {},
     source: "mdc-private-schools",
     sourceId: clean(a.GlobalID) ?? String(a.OBJECTID),
   };
@@ -434,6 +437,50 @@ for (const s of schools) {
 }
 if (stateFile) console.log(`State grades merged from ${stateFile}: ${graded} schools`);
 
+
+// Social links — scraped from each school's own homepage. Only links actually
+// published on the site are captured; nothing is invented.
+const SOCIAL_HOSTS = {
+  "facebook.com": "facebook",
+  "instagram.com": "instagram",
+  "twitter.com": "twitter",
+  "x.com": "twitter",
+  "youtube.com": "youtube",
+};
+async function scrapeSocials(school) {
+  if (!school.website) return;
+  try {
+    const res = await fetch(school.website, {
+      redirect: "follow",
+      signal: AbortSignal.timeout(8000),
+      headers: { "User-Agent": "Mozilla/5.0 (compatible; Escolatlas/1.0)" },
+    });
+    if (!res.ok) return;
+    const html = await res.text();
+    for (const [host, key] of Object.entries(SOCIAL_HOSTS)) {
+      if (school.socials[key]) continue;
+      const m = html.match(
+        new RegExp(`https?:\\/\\/(?:www\\.)?${host.replace(".", "\\.")}\\/[A-Za-z0-9_.~%\\/?#-]{1,80}`, "i"),
+      );
+      if (m) school.socials[key] = m[0].replace(/[\)\]\'";]+$/, "");
+    }
+  } catch { /* unreachable site → no socials */ }
+}
+
+{
+  const withSite = schools.filter((s) => s.website);
+  const CONCURRENCY = 12;
+  let i = 0;
+  await Promise.all(
+    Array.from({ length: CONCURRENCY }, async () => {
+      while (i < withSite.length) await scrapeSocials(withSite[i++]);
+    }),
+  );
+  const found = schools.filter((s) => Object.keys(s.socials).length).length;
+  console.log(`Social links found for ${found} of ${withSite.length} school websites`);
+  globalThis.__socialsFound = found;
+}
+
 const stats = {
   publicFetched: publicRows.length,
   charterFetched: charterRows.length,
@@ -443,6 +490,7 @@ const stats = {
     publicRows.length + charterRows.length + privateRows.length - schools.length,
   missingLatLng: schools.filter((s) => s.lat === null).length,
   stateGraded: graded,
+  socialsFound: globalThis.__socialsFound ?? 0,
 };
 
 mkdirSync(join(ROOT, "data"), { recursive: true });

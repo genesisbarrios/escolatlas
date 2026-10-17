@@ -26,6 +26,8 @@ export function HeroCollage({
           alt={img.alt}
           aria-hidden={i !== active}
           className={`w-full object-cover transition-opacity duration-1000 max-md:max-h-[55svh] ${
+            i === active ? "hero-img" : ""
+          } ${
             i === 0 ? "" : "absolute inset-0 h-full"
           } ${i === active ? "opacity-100" : "opacity-0"}`}
         />
