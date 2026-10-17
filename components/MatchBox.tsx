@@ -45,7 +45,7 @@ export function MatchBox() {
   }
 
   return (
-    <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
+    <div className="rounded-lg border border-border bg-card p-4 shadow-sm">
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -57,42 +57,42 @@ export function MatchBox() {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder='Describe what you want — e.g. "charter elementary school in Doral"'
-          className="flex-1 rounded-md border border-slate-300 px-3 py-2 text-sm"
+          className="flex-1 rounded-md border border-border px-3 py-2 text-sm"
         />
         <button
           type="submit"
           disabled={loading}
-          className="rounded-md bg-blue-700 px-4 py-2 text-sm font-medium text-white hover:bg-blue-800 disabled:opacity-50"
+          className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-white hover:bg-primary-hover disabled:opacity-50"
         >
           {loading ? "Matching…" : "Match"}
         </button>
       </form>
-      <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-500">
+      <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted-foreground">
         <span>Try:</span>
         {EXAMPLES.map((ex) => (
           <button
             key={ex}
             type="button"
             onClick={() => run(ex)}
-            className="text-blue-700 hover:underline"
+            className="text-link hover:underline"
           >
             {ex}
           </button>
         ))}
       </div>
 
-      {error && <p className="mt-3 text-sm text-red-600">{error}</p>}
+      {error && <p className="mt-3 text-sm text-destructive">{error}</p>}
 
       {res && (
         <div className="mt-4">
-          <p className="text-sm text-slate-600">
+          <p className="text-sm text-muted-foreground">
             {res.recognized.length > 0 ? (
               <>
                 Understood:{" "}
                 {res.recognized.map((r, i) => (
                   <span
                     key={i}
-                    className="mr-1 inline-block rounded bg-blue-50 px-1.5 py-0.5 text-blue-800"
+                    className="mr-1 inline-block rounded bg-primary/10 px-1.5 py-0.5 text-link"
                   >
                     {r}
                   </span>
@@ -104,7 +104,7 @@ export function MatchBox() {
             <strong>{res.total}</strong> match{res.total === 1 ? "" : "es"}
           </p>
           {res.results.length === 0 ? (
-            <p className="mt-3 rounded-md bg-amber-50 p-3 text-sm text-amber-800">
+            <p className="mt-3 rounded-md bg-[var(--status-warning-bg)] p-3 text-sm text-[var(--status-warning-ink)]">
               No schools match that description. Try widening the area or
               dropping a constraint.
             </p>

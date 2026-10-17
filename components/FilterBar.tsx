@@ -44,7 +44,7 @@ export function FilterBar({
   }
 
   const inputCls =
-    "w-full rounded-md border border-slate-300 bg-white px-2.5 py-1.5 text-sm";
+    "w-full rounded-md border border-border bg-card px-2.5 py-1.5 text-sm";
 
   return (
     <form
@@ -107,7 +107,7 @@ export function FilterBar({
       <div className="col-span-2 flex gap-2 sm:col-span-3 lg:col-span-1">
         <button
           type="submit"
-          className="flex-1 rounded-md bg-blue-700 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-800"
+          className="flex-1 rounded-md bg-primary px-3 py-1.5 text-sm font-medium text-white hover:bg-primary-hover"
         >
           Apply
         </button>
@@ -117,7 +117,7 @@ export function FilterBar({
             setV({ q: "", sector: "", level: "", grade: "", city: "", program: "" });
             router.push("/schools");
           }}
-          className="rounded-md border border-slate-300 px-3 py-1.5 text-sm text-slate-600 hover:bg-slate-50"
+          className="rounded-md border border-border px-3 py-1.5 text-sm text-muted-foreground hover:bg-muted"
         >
           Clear
         </button>

@@ -22,10 +22,10 @@ export function ResultsSection({ schools }: { schools: School[] }) {
         ))}
       </ul>
       <div className="lg:order-2">
-        <div className="lg:sticky lg:top-4 overflow-hidden rounded-lg border border-slate-200 shadow-sm">
+        <div className="lg:sticky lg:top-4 overflow-hidden rounded-lg border border-border shadow-sm">
           <MapClient schools={schools} selectedId={hovered} height={560} />
         </div>
-        <p className="mt-1.5 text-xs text-slate-500">
+        <p className="mt-1.5 text-xs text-muted-foreground">
           {schools.filter((s) => s.lat !== null).length} pin
           {schools.length === 1 ? "" : "s"} on the map
         </p>

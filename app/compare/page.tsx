@@ -10,7 +10,7 @@ import { distanceMiles } from "@/lib/geo";
 
 export const metadata = { title: "Compare schools — Escolatlas" };
 
-const NA = <span className="text-slate-400">Not reported</span>;
+const NA = <span className="text-muted-foreground/70">Not reported</span>;
 
 export default async function ComparePage({
   searchParams,
@@ -32,13 +32,13 @@ export default async function ComparePage({
   if (schools.length === 0) {
     return (
       <div className="mx-auto max-w-3xl px-4 py-16 text-center">
-        <h1 className="text-2xl font-bold text-slate-900">Nothing to compare</h1>
-        <p className="mt-2 text-slate-600">
+        <h1 className="text-2xl font-bold text-foreground">Nothing to compare</h1>
+        <p className="mt-2 text-muted-foreground">
           Pick schools with the “+ Compare” button, then come back.
         </p>
         <Link
           href="/schools"
-          className="mt-6 inline-block rounded-md bg-blue-700 px-4 py-2 text-sm font-medium text-white hover:bg-blue-800"
+          className="mt-6 inline-block rounded-md bg-primary px-4 py-2 text-sm font-medium text-white hover:bg-primary-hover"
         >
           Find schools →
         </Link>
@@ -96,14 +96,14 @@ export default async function ComparePage({
         s.programs.length ? (
           s.programs.join(", ")
         ) : (
-          <span className="text-slate-400">None listed</span>
+          <span className="text-muted-foreground/70">None listed</span>
         ),
     },
     {
       label: "Phone",
       render: (s) =>
         s.phone ? (
-          <a href={`tel:${s.phone}`} className="text-blue-700 hover:underline">
+          <a href={`tel:${s.phone}`} className="text-link hover:underline">
             {s.phone}
           </a>
         ) : (
@@ -118,7 +118,7 @@ export default async function ComparePage({
             href={s.website}
             target="_blank"
             rel="noreferrer"
-            className="text-blue-700 hover:underline"
+            className="text-link hover:underline"
           >
             Visit ↗
           </a>
@@ -142,27 +142,27 @@ export default async function ComparePage({
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-6">
-      <Link href="/schools" className="text-sm text-blue-700 hover:underline">
+      <Link href="/schools" className="text-sm text-link hover:underline">
         ← Back to results
       </Link>
-      <h1 className="mt-3 text-2xl font-bold text-slate-900">
+      <h1 className="mt-3 text-2xl font-bold text-foreground">
         Compare {schools.length} school{schools.length === 1 ? "" : "s"}
       </h1>
 
-      <div className="mt-6 overflow-x-auto rounded-lg border border-slate-200 bg-white shadow-sm">
+      <div className="mt-6 overflow-x-auto rounded-lg border border-border bg-card shadow-sm">
         <table className="w-full min-w-[640px] border-collapse text-sm">
           <thead>
-            <tr className="border-b border-slate-200 bg-slate-50">
-              <th className="w-40 p-3 text-left font-medium text-slate-500" />
+            <tr className="border-b border-border bg-muted">
+              <th className="w-40 p-3 text-left font-medium text-muted-foreground" />
               {schools.map((s) => (
                 <th key={s.id} className="p-3 text-left align-top">
                   <Link
                     href={`/schools/${s.id}`}
-                    className="font-semibold text-blue-800 hover:underline"
+                    className="font-semibold text-link hover:underline"
                   >
                     {s.name}
                   </Link>
-                  <div className="mt-0.5 text-xs font-normal text-slate-500">
+                  <div className="mt-0.5 text-xs font-normal text-muted-foreground">
                     {s.city}
                   </div>
                 </th>
@@ -171,12 +171,12 @@ export default async function ComparePage({
           </thead>
           <tbody>
             {rows.map((r) => (
-              <tr key={r.label} className="border-b border-slate-100 last:border-0">
-                <th className="p-3 text-left font-medium text-slate-500">
+              <tr key={r.label} className="border-b border-border last:border-0">
+                <th className="p-3 text-left font-medium text-muted-foreground">
                   {r.label}
                 </th>
                 {schools.map((s, i) => (
-                  <td key={s.id} className="p-3 align-top text-slate-800">
+                  <td key={s.id} className="p-3 align-top text-card-foreground">
                     {r.render(s, i)}
                   </td>
                 ))}

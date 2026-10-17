@@ -1,17 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 @import "tailwindcss";
 
+@custom-variant dark (&:is(.dark *));
+
+/* ═══ Escolatlas theme — "Light Blue" design system (ported from the
+ *     Archie app's src/styles/theme.css, byte-for-byte token values) ═══ */
 :root {
-  --brand: #1e3a8a;
-  --brand-2: #2563eb;
+  --font-body: "Figtree", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Space Grotesk", ui-serif, Georgia, Cambria, "Times New Roman", serif;
+  --font-code: "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  --radius: 0.5rem;
+
+  --background: oklch(1.0000 0.0000 0);
+  --foreground: oklch(0.3047 0.0360 178.23);
+  --card: oklch(0.9895 0.0041 121.56);
+  --card-foreground: oklch(0.3047 0.0360 178.23);
+  --popover: oklch(0.9895 0.0041 121.56);
+  --popover-foreground: oklch(0.3047 0.0360 178.23);
+  --primary: oklch(0.6244 0.1414 250.69);
+  --primary-foreground: oklch(1.0000 0.0000 0);
+  --secondary: oklch(0.8061 0.1484 77.66);
+  --secondary-foreground: oklch(0.3047 0.0360 178.23);
+  --muted: oklch(0.9450 0.0068 145.52);
+  --muted-foreground: oklch(0.5167 0.0304 175.35);
+  --accent: oklch(0.9450 0.0068 145.52);
+  --accent-foreground: oklch(0.3047 0.0360 178.23);
+  --destructive: oklch(0.4984 0.1412 26.23);
+  --border: oklch(0.8943 0.0134 159.89);
+  --input: oklch(0.8943 0.0134 159.89);
+  --ring: oklch(0.6244 0.1414 250.69);
+
+  --brand-accent: oklch(0.5693 0.0993 220.77);
+  --text-link: oklch(0.5239 0.1420 250.88);
+  --surface-sunken: oklch(0.9450 0.0068 145.52);
+  --primary-hover: oklch(0.5634 0.1419 250.95);
+  --chrome: oklch(0.9772 0.0068 247.89);
+  --chrome-foreground: oklch(0.3047 0.0360 178.23);
+  --chrome-border: rgba(25, 53, 47, 0.08);
+
+  --status-success: oklch(0.4753 0.0872 144.51);
+  --status-success-ink: oklch(0.4508 0.0877 144.39);
+  --status-success-bg: oklch(0.9496 0.0299 143.79);
+  --status-warning: oklch(0.4944 0.1029 68.69);
+  --status-warning-ink: oklch(0.4490 0.0994 66.75);
+  --status-warning-bg: oklch(0.9503 0.0363 70.02);
+  --status-info: oklch(0.4621 0.0895 248.10);
+  --status-info-ink: oklch(0.4507 0.0888 247.31);
+  --status-info-bg: oklch(0.9490 0.0269 241.15);
 }
 
-body {
-  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
-    sans-serif;
-  color: #0f172a;
-  background: #f8fafc;
+.dark {
+  --background: oklch(0.2139 0.0181 177.15);
+  --foreground: oklch(0.9477 0.0108 158.84);
+  --card: oklch(0.2566 0.0236 172.80);
+  --card-foreground: oklch(0.9477 0.0108 158.84);
+  --popover: oklch(0.2566 0.0236 172.80);
+  --popover-foreground: oklch(0.9477 0.0108 158.84);
+  --primary: oklch(0.4615 0.1148 252.10);
+  --primary-foreground: oklch(0.2139 0.0181 177.15);
+  --secondary: oklch(0.5114 0.0397 165.54);
+  --secondary-foreground: oklch(0.9477 0.0108 158.84);
+  --muted: oklch(0.2365 0.0228 171.34);
+  --muted-foreground: oklch(0.7299 0.0255 162.88);
+  --accent: oklch(0.2365 0.0228 171.34);
+  --accent-foreground: oklch(0.9477 0.0108 158.84);
+  --destructive: oklch(0.7444 0.1230 25.29);
+  --border: oklch(0.4969 0.0298 164.67);
+  --input: oklch(0.4969 0.0298 164.67);
+  --ring: oklch(0.4615 0.1148 252.10);
+
+  --brand-accent: oklch(0.7456 0.0890 215.40);
+  --text-link: oklch(0.7756 0.0894 243.18);
+  --surface-sunken: oklch(0.2365 0.0228 171.34);
+  --primary-hover: oklch(0.4019 0.1141 251.85);
+  --chrome: oklch(0.2656 0.0495 255.21);
+  --chrome-foreground: oklch(0.9477 0.0108 158.84);
+  --chrome-border: rgba(252, 252, 252, 0.08);
+
+  --status-success: oklch(0.7955 0.1003 134.60);
+  --status-success-ink: oklch(0.7955 0.1003 134.60);
+  --status-success-bg: oklch(0.2485 0.0345 135.04);
+  --status-warning: oklch(0.8291 0.1204 77.94);
+  --status-warning-ink: oklch(0.8291 0.1204 77.94);
+  --status-warning-bg: oklch(0.2509 0.0429 78.16);
+  --status-info: oklch(0.7756 0.0894 243.18);
+  --status-info-ink: oklch(0.7756 0.0894 243.18);
+  --status-info-bg: oklch(0.2492 0.0322 245.72);
 }
 
-.leaflet-container {
-  z-index: 0;
+@theme inline {
+  --font-sans: var(--font-body);
+  --font-heading: var(--font-display);
+  --font-mono: var(--font-code);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-link: var(--text-link);
+  --color-sunken: var(--surface-sunken);
+  --color-chrome: var(--chrome);
+  --color-chrome-foreground: var(--chrome-foreground);
+  --color-chrome-border: var(--chrome-border);
+  --color-primary-hover: var(--primary-hover);
+
+  --radius-sm: calc(var(--radius) - 0.25rem);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 0.25rem);
+  --radius-xl: calc(var(--radius) + 0.5rem);
 }
+
+@layer base {
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-body);
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Small shared chips — token-driven so dark mode follows. */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  padding: 0.125rem 0.5rem;
+  font-size: 0.75rem;
+}
+.chip-primary { background: color-mix(in oklch, var(--primary) 14%, transparent); color: var(--text-link); }
+.chip-muted { background: var(--muted); color: var(--muted-foreground); }
+.chip-success { background: var(--status-success-bg); color: var(--status-success-ink); }
+.chip-warn { background: var(--status-warning-bg); color: var(--status-warning-ink); font-weight: 600; }
+
+.leaflet-container { z-index: 0; }

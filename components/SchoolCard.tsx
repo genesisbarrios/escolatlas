@@ -13,17 +13,17 @@ export function SchoolCard({
   return (
     <li
       data-school-id={school.id}
-      className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm"
+      className="rounded-lg border border-border bg-card p-4 shadow-sm"
     >
       <div className="flex items-start justify-between gap-3">
         <div className="min-w-0">
           <Link
             href={`/schools/${school.id}`}
-            className="font-semibold text-blue-800 hover:underline leading-snug"
+            className="font-semibold text-link hover:underline leading-snug"
           >
             {school.name}
           </Link>
-          <p className="mt-0.5 text-sm text-slate-600">
+          <p className="mt-0.5 text-sm text-muted-foreground">
             {school.address}
             {school.city ? `, ${school.city}` : ""} {school.zip}
           </p>
@@ -31,21 +31,21 @@ export function SchoolCard({
         <CompareButton id={school.id} />
       </div>
       <div className="mt-2 flex flex-wrap gap-1.5 text-xs">
-        <span className="rounded-full bg-blue-50 px-2 py-0.5 text-blue-800">
+        <span className="chip chip-primary">
           {SECTOR_LABELS[school.sector]}
         </span>
-        <span className="rounded-full bg-slate-100 px-2 py-0.5 text-slate-700">
+        <span className="chip chip-muted">
           {LEVEL_LABELS[school.level]}
         </span>
         {school.stateGrade && (
-          <span className="rounded-full bg-amber-50 px-2 py-0.5 font-semibold text-amber-800">
+          <span className="chip chip-warn">
             FL grade {school.stateGrade}
           </span>
         )}
-        <span className="rounded-full bg-slate-100 px-2 py-0.5 text-slate-700">
+        <span className="chip chip-muted">
           Grades {formatGrades(school)}
         </span>
-        <span className="rounded-full bg-slate-100 px-2 py-0.5 text-slate-700">
+        <span className="chip chip-muted">
           {school.enrollment !== null
             ? `${school.enrollment.toLocaleString()} students`
             : "Enrollment n/a"}
@@ -53,14 +53,14 @@ export function SchoolCard({
         {school.programs.map((p) => (
           <span
             key={p}
-            className="rounded-full bg-emerald-50 px-2 py-0.5 text-emerald-800"
+            className="chip chip-success"
           >
             {p}
           </span>
         ))}
       </div>
       {reasons && reasons.length > 0 && (
-        <ul className="mt-2 list-inside list-disc text-xs text-slate-500">
+        <ul className="mt-2 list-inside list-disc text-xs text-muted-foreground">
           {reasons.map((r, i) => (
             <li key={i}>{r}</li>
           ))}

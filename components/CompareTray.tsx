@@ -16,22 +16,22 @@ export function CompareTray() {
   if (ids.length === 0) return null;
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-10 border-t border-slate-200 bg-white/95 shadow-lg backdrop-blur">
+    <div className="fixed inset-x-0 bottom-0 z-10 border-t border-border bg-card/95 shadow-lg backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
-        <span className="text-sm text-slate-700">
+        <span className="text-sm text-muted-foreground">
           {ids.length} school{ids.length === 1 ? "" : "s"} selected
         </span>
         <div className="flex gap-2">
           <button
             type="button"
             onClick={clearCompare}
-            className="rounded-md border border-slate-300 px-3 py-1.5 text-sm text-slate-600 hover:bg-slate-50"
+            className="rounded-md border border-border px-3 py-1.5 text-sm text-muted-foreground hover:bg-muted"
           >
             Clear
           </button>
           <Link
             href={`/compare?ids=${ids.join(",")}`}
-            className="rounded-md bg-blue-700 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-800"
+            className="rounded-md bg-primary px-3 py-1.5 text-sm font-medium text-white hover:bg-primary-hover"
           >
             Compare side-by-side →
           </Link>

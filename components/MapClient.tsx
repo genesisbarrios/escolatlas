@@ -6,7 +6,7 @@ import type { School } from "@/lib/school";
 const SchoolMap = dynamic(() => import("./SchoolMap"), {
   ssr: false,
   loading: () => (
-    <div className="flex h-[420px] w-full items-center justify-center rounded-lg border border-slate-200 bg-slate-50 text-sm text-slate-500">
+    <div className="flex h-[420px] w-full items-center justify-center rounded-lg border border-border bg-muted text-sm text-muted-foreground">
       Loading map…
     </div>
   ),

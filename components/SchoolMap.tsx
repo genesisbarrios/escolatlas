@@ -86,14 +86,14 @@ export default function SchoolMap({
             <div className="text-sm">
               <Link
                 href={`/schools/${s.id}`}
-                className="font-semibold text-blue-700 hover:underline"
+                className="font-semibold text-link hover:underline"
               >
                 {s.name}
               </Link>
-              <div className="text-slate-600">
+              <div className="text-muted-foreground">
                 {s.address}, {s.city} {s.zip}
               </div>
-              <div className="text-slate-600">
+              <div className="text-muted-foreground">
                 {s.sector === "charter" ? "Charter" : "Public"} · Grades{" "}
                 {s.grades.length ? `${s.grades[0]}–${s.grades[s.grades.length - 1]}` : "n/a"}
               </div>

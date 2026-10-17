@@ -26,13 +26,13 @@ export default async function SchoolsPage({
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-6">
-      <h1 className="text-2xl font-bold text-slate-900">School finder</h1>
+      <h1 className="text-2xl font-bold text-foreground">School finder</h1>
 
       <div className="mt-4">
         <MatchBox />
       </div>
 
-      <div className="mt-4 rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
+      <div className="mt-4 rounded-lg border border-border bg-card p-4 shadow-sm">
         <FilterBar
           cities={listCities()}
           programs={listPrograms()}
@@ -47,21 +47,21 @@ export default async function SchoolsPage({
         />
       </div>
 
-      <p className="mt-4 text-sm text-slate-600">
+      <p className="mt-4 text-sm text-muted-foreground">
         <strong>{results.length}</strong> school{results.length === 1 ? "" : "s"}
         {hasFilters ? " matching your filters" : ""}
       </p>
 
       <div className="mt-3">
         {results.length === 0 ? (
-          <div className="rounded-lg border border-dashed border-slate-300 bg-white p-10 text-center">
-            <p className="font-medium text-slate-700">No schools match</p>
-            <p className="mt-1 text-sm text-slate-500">
+          <div className="rounded-lg border border-dashed border-input bg-card p-10 text-center">
+            <p className="font-medium text-muted-foreground">No schools match</p>
+            <p className="mt-1 text-sm text-muted-foreground">
               Try removing a filter or widening your search.
             </p>
             <Link
               href="/schools"
-              className="mt-4 inline-block rounded-md bg-blue-700 px-4 py-2 text-sm font-medium text-white hover:bg-blue-800"
+              className="mt-4 inline-block rounded-md bg-primary px-4 py-2 text-sm font-medium text-white hover:bg-primary-hover"
             >
               Clear all filters
             </Link>
