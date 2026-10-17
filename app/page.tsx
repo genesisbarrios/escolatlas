@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, GraduationCap, Languages, MapPin } from "lucide-react";
 import { getAllSchools } from "@/lib/data.ts";
-import { HeroCollage } from "@/components/HeroCollage";
 import MapClient from "@/components/MapClient";
 
 /** Project Miami-Dade lng/lat into a 600×280 schematic map crop. */
@@ -48,20 +47,13 @@ export default function Home() {
           </div>
 
           <figure className="flex min-w-0 flex-col gap-2">
-            <HeroCollage
-              images={[
-                {
-                  src: "/assets/img/00418be876be-7435c6f5f5.webp",
-                  alt: "School courtyard with live oak trees",
-                },
-                {
-                  src: "/assets/img/9b0fb1612ade-e3af26b959.webp",
-                  alt: "School campus beside sports fields",
-                },
-              ]}
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/9/94/Miami_Senior_High_School_July_2013.jpg"
+              alt="Miami Senior High School"
+              className="w-full rounded-xl object-cover max-md:max-h-[55svh]"
             />
-            <figcaption className="flex flex-wrap items-center gap-2 text-xs font-medium text-[#f4f8fc]/60">
-              <span>Source: Miami-Dade County GIS</span>
+            <figcaption className="text-xs font-medium text-[#f4f8fc]/60">
+              Miami Senior High School · Source: Wikimedia Commons
             </figcaption>
           </figure>
         </div>
