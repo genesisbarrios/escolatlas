@@ -5,9 +5,15 @@ import type { School } from "@/lib/school";
 import MapClient from "./MapClient";
 import { SchoolCard } from "./SchoolCard";
 
+export interface ResultEntry {
+  school: School;
+  reasons?: string[];
+}
+
 /** Map + list driven by the same filtered set; hovering a card highlights its pin. */
-export function ResultsSection({ schools }: { schools: School[] }) {
+export function ResultsSection({ entries }: { entries: ResultEntry[] }) {
   const [hovered, setHovered] = useState<string | null>(null);
+  const schools = entries.map((e) => e.school);
 
   return (
     <div className="grid gap-4 lg:grid-cols-[1fr_minmax(380px,42%)]">
@@ -15,9 +21,9 @@ export function ResultsSection({ schools }: { schools: School[] }) {
         className="max-h-[560px] space-y-3 overflow-y-auto pr-1 lg:order-1"
         onMouseLeave={() => setHovered(null)}
       >
-        {schools.map((s) => (
-          <div key={s.id} onMouseEnter={() => setHovered(s.id)}>
-            <SchoolCard school={s} />
+        {entries.map((e) => (
+          <div key={e.school.id} onMouseEnter={() => setHovered(e.school.id)}>
+            <SchoolCard school={e.school} reasons={e.reasons} />
           </div>
         ))}
       </ul>

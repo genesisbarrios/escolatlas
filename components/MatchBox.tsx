@@ -1,15 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import type { School } from "@/lib/school";
-import { SchoolCard } from "./SchoolCard";
-
-interface MatchResponse {
-  query: string;
-  recognized: string[];
-  total: number;
-  results: { school: School; score: number; reasons: string[] }[];
-}
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 const EXAMPLES = [
   "charter elementary school in Doral",
@@ -19,46 +11,24 @@ const EXAMPLES = [
 ];
 
 export function MatchBox({ initialQuery = "" }: { initialQuery?: string }) {
+  const router = useRouter();
   const [query, setQuery] = useState(initialQuery);
   const [loading, setLoading] = useState(false);
-  const [res, setRes] = useState<MatchResponse | null>(null);
-  const [error, setError] = useState<string | null>(null);
 
-  async function run(q: string) {
-    setQuery(q);
+  function run(q: string) {
+    const trimmed = q.trim();
+    if (!trimmed) return;
+    setQuery(trimmed);
     setLoading(true);
-    setError(null);
-    try {
-      const r = await fetch("/api/match", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ query: q }),
-      });
-      if (!r.ok) throw new Error(`HTTP ${r.status}`);
-      setRes(await r.json());
-    } catch {
-      setError("Matching is unavailable right now — try the filters instead.");
-      setRes(null);
-    } finally {
-      setLoading(false);
-    }
+    router.push(`/schools?mq=${encodeURIComponent(trimmed)}`);
   }
-
-  const ran = useRef(false);
-  useEffect(() => {
-    if (!ran.current && initialQuery.trim()) {
-      ran.current = true;
-      run(initialQuery.trim());
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   return (
     <div className="rounded-lg border border-border bg-card p-4 shadow-sm">
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          if (query.trim()) run(query.trim());
+          run(query);
         }}
         className="flex gap-2"
       >
@@ -89,47 +59,6 @@ export function MatchBox({ initialQuery = "" }: { initialQuery?: string }) {
           </button>
         ))}
       </div>
-
-      {error && <p className="mt-3 text-sm text-destructive">{error}</p>}
-
-      {res && (
-        <div className="mt-4">
-          <p className="text-sm text-muted-foreground">
-            {res.recognized.length > 0 ? (
-              <>
-                Understood:{" "}
-                {res.recognized.map((r, i) => (
-                  <span
-                    key={i}
-                    className="mr-1 inline-block rounded bg-primary/10 px-1.5 py-0.5 text-link"
-                  >
-                    {r}
-                  </span>
-                ))}
-              </>
-            ) : (
-              "No structured preferences recognized — showing all schools."
-            )}{" "}
-            <strong>{res.total}</strong> match{res.total === 1 ? "" : "es"}
-          </p>
-          {res.results.length === 0 ? (
-            <p className="mt-3 rounded-md bg-[var(--status-warning-bg)] p-3 text-sm text-[var(--status-warning-ink)]">
-              No schools match that description. Try widening the area or
-              dropping a constraint.
-            </p>
-          ) : (
-            <ul className="mt-3 space-y-3">
-              {res.results.map((r) => (
-                <SchoolCard
-                  key={r.school.id}
-                  school={r.school}
-                  reasons={r.reasons}
-                />
-              ))}
-            </ul>
-          )}
-        </div>
-      )}
     </div>
   );
 }
