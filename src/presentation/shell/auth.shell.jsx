@@ -36,7 +36,7 @@ export function AuthShell({ vm, children }) {
                 <MapPin data-vid="7c3db738" className="size-5" />
               </span>
             )}
-            <span data-vid="ed2fa170" className="font-display">{name}</span>
+            <span data-vid="ed2fa170" className={logoSrc ? "sr-only" : "font-display"}>{name}</span>
           </a>
         </div>
       </header>

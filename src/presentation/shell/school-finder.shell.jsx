@@ -46,7 +46,7 @@ export function SchoolFinderShell({ vm, children }) {
   const focus =
     "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring";
 
-  const Wordmark = ({ small }) => (
+  const Wordmark = () => (
     <span data-vid="51c18f15" className="flex items-baseline gap-3">
       {brand?.logo ? (
         <img data-vid="0bd8c1c4"
@@ -55,19 +55,7 @@ export function SchoolFinderShell({ vm, children }) {
           className="h-6 w-auto"
         />
       ) : null}
-      <span data-vid="d26bebd6"
-        className={cn(
-          "font-display whitespace-nowrap tracking-[-0.02em]",
-          small ? "type-card-title" : "type-card-title sm:type-card-title"
-        )}
-      >
-        {name}
-      </span>
-      {!small && (
-        <span data-vid="1a8cb751" className="type-caption hidden text-chrome-muted sm:inline whitespace-nowrap">
-          {t('school-finder.bd079fc9')}
-        </span>
-      )}
+      <span data-vid="d26bebd6" className="sr-only">{name}</span>
     </span>
   );
 
