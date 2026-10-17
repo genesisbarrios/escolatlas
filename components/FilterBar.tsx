@@ -22,7 +22,6 @@ export function FilterBar({
   cities: string[];
   programs: string[];
   values: {
-    q: string;
     sector: string;
     level: string;
     grade: string;
@@ -52,13 +51,6 @@ export function FilterBar({
       onSubmit={submit}
       className="grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-7"
     >
-      <input
-        className={`${inputCls} col-span-2 sm:col-span-3 lg:col-span-2`}
-        placeholder="Search name, address…"
-        value={v.q}
-        onChange={set("q")}
-        name="q"
-      />
       <select className={inputCls} value={v.sector} onChange={set("sector")} name="sector" aria-label="School type">
         <option value="">All types</option>
         {(Object.keys(SECTOR_LABELS) as SchoolSector[]).map((s) => (
@@ -119,7 +111,7 @@ export function FilterBar({
           </option>
         ))}
       </select>
-      <div className="col-span-2 flex gap-2 sm:col-span-3 lg:col-span-1">
+      <div className="col-span-2 flex gap-2 sm:col-span-2 lg:col-span-1">
         <button
           type="submit"
           className="flex-1 rounded-md bg-primary px-3 py-1.5 text-sm font-medium text-white hover:bg-primary-hover"
@@ -129,7 +121,7 @@ export function FilterBar({
         <button
           type="button"
           onClick={() => {
-            setV({ q: "", sector: "", level: "", grade: "", city: "", program: "", stateGrade: "" });
+            setV({ sector: "", level: "", grade: "", city: "", program: "", stateGrade: "" });
             router.push("/schools");
           }}
           className="rounded-md border border-border px-3 py-1.5 text-sm text-muted-foreground hover:bg-muted"

@@ -41,10 +41,10 @@ export default async function SchoolsPage({
 
       <div className="mt-4 rounded-lg border border-border bg-card p-4 shadow-sm">
         <FilterBar
+          key={JSON.stringify(params)}
           cities={listCities()}
           programs={listPrograms()}
           values={{
-            q: first("q"),
             sector: first("sector"),
             level: first("level"),
             grade: first("grade"),

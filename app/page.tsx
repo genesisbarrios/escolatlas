@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, GraduationCap, Languages, MapPin } from "lucide-react";
+import { ArrowRight, GraduationCap, Languages, MapPin, Search } from "lucide-react";
 import { getAllSchools } from "@/lib/data.ts";
 import MapClient from "@/components/MapClient";
 
@@ -41,6 +41,14 @@ export default function Home() {
                 aria-label="Describe the school you want"
                 className="min-w-0 flex-1 bg-transparent text-sm text-[#f4f8fc] placeholder:text-[#f4f8fc]/50 focus:outline-none"
               />
+              <button
+                type="submit"
+                aria-label="Search schools"
+                className="inline-flex min-h-9 shrink-0 items-center gap-1.5 rounded-lg bg-primary px-3.5 text-sm font-semibold text-primary-foreground hover:bg-primary-hover"
+              >
+                <Search className="size-4" />
+                Search
+              </button>
             </form>
             <Link
               href="/schools"
