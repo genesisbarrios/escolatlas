@@ -48,3 +48,8 @@ bun.lockb
 
 # tarballs locales de desarrollo
 /vendor/
+
+# Next.js
+.next/
+out/
+next-env.d.ts

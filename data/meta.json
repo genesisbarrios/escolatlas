@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-10-17T20:12:40.986Z",
+  "sources": {
+    "mdc-public-schools": "https://services.arcgis.com/8Pc9XBTAsYuxx9Ny/arcgis/rest/services/SchoolSite_gdb/FeatureServer/0/query",
+    "mdc-charter-schools": "https://services.arcgis.com/8Pc9XBTAsYuxx9Ny/arcgis/rest/services/CharterSchool_gdb/FeatureServer/0/query",
+    "mdc-private-schools": "https://services.arcgis.com/8Pc9XBTAsYuxx9Ny/arcgis/rest/services/PrivateSchool_gdb/FeatureServer/0/query",
+    "fl-doe-school-grades": "local file: /Users/genesisbarrios/Documents/coding/apps/escolatlas/data/external/SchoolGrades26.xlsx"
+  },
+  "stats": {
+    "publicFetched": 451,
+    "charterFetched": 181,
+    "privateFetched": 971,
+    "kept": 1496,
+    "droppedNoGrades": 107,
+    "missingLatLng": 0,
+    "stateGraded": 477
+  }
+}
