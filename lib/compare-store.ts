@@ -1,42 +1,30 @@
-/** Client-side compare list persisted in localStorage. Cap: 4 schools. */
+/** Client-side compare list — in-memory only; resets on page refresh. Cap: 4. */
 
-const KEY = "escolatlas.compare";
 export const COMPARE_LIMIT = 4;
 
+let ids: string[] = [];
 const listeners = new Set<() => void>();
 
-function read(): string[] {
-  if (typeof window === "undefined") return [];
-  try {
-    const raw = window.localStorage.getItem(KEY);
-    const parsed = raw ? JSON.parse(raw) : [];
-    return Array.isArray(parsed) ? parsed.filter((x) => typeof x === "string") : [];
-  } catch {
-    return [];
-  }
-}
-
-function write(ids: string[]) {
-  window.localStorage.setItem(KEY, JSON.stringify(ids));
+function write(next: string[]) {
+  ids = next;
   listeners.forEach((l) => l());
 }
 
 export function getCompareIds(): string[] {
-  return read();
+  return ids;
 }
 
 export function isInCompare(id: string): boolean {
-  return read().includes(id);
+  return ids.includes(id);
 }
 
 export function addToCompare(id: string) {
-  const ids = read();
   if (ids.includes(id) || ids.length >= COMPARE_LIMIT) return;
   write([...ids, id]);
 }
 
 export function removeFromCompare(id: string) {
-  write(read().filter((x) => x !== id));
+  write(ids.filter((x) => x !== id));
 }
 
 export function clearCompare() {
