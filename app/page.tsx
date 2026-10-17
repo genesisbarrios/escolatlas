@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, GraduationCap, Languages, MapPin } from "lucide-react";
-import { getAllSchools } from "@/lib/data";
+import { getAllSchools } from "@/lib/data.ts";
+import { HeroCollage } from "@/components/HeroCollage";
 
 /** Project Miami-Dade lng/lat into a 600×280 schematic map crop. */
 function toXY(lat: number, lng: number): { x: number; y: number } {
@@ -46,16 +47,20 @@ export default function Home() {
           </div>
 
           <figure className="flex min-w-0 flex-col gap-2">
-            <img
-              src="/assets/img/62e7742361a0-b3d34035c7.webp"
-              alt="School courtyard in Coral Gables"
-              className="w-full rounded-xl object-cover max-md:max-h-[55svh]"
+            <HeroCollage
+              images={[
+                {
+                  src: "/assets/img/62e7742361a0-b3d34035c7.webp",
+                  alt: "School courtyard with live oak trees",
+                },
+                {
+                  src: "/assets/img/9b0fb1612ade-e3af26b959.webp",
+                  alt: "School campus beside sports fields",
+                },
+              ]}
             />
             <figcaption className="flex flex-wrap items-center gap-2 text-xs font-medium text-[#f4f8fc]/60">
-              <span>
-                Sample view · Source: Miami-Dade County GIS
-              </span>
-              <span className="chip chip-muted">Sample photo</span>
+              <span>Source: Miami-Dade County GIS</span>
             </figcaption>
           </figure>
         </div>
