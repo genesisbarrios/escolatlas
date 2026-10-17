@@ -15,6 +15,7 @@ const SchoolMap = dynamic(() => import("./SchoolMap"), {
 export default function MapClient(props: {
   schools: School[];
   selectedId?: string | null;
+  onSelect?: (id: string) => void;
   height?: number;
 }) {
   return <SchoolMap {...props} />;

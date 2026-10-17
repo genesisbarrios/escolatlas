@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, GraduationCap, Languages, MapPin, Search } from "lucide-react";
+import { GraduationCap, Languages, MapPin, Search } from "lucide-react";
 import { getAllSchools } from "@/lib/data.ts";
 import MapClient from "@/components/MapClient";
 
@@ -50,12 +50,6 @@ export default function Home() {
                 Search
               </button>
             </form>
-            <Link
-              href="/schools"
-              className="inline-flex min-h-11 items-center gap-2 rounded-lg bg-primary px-5 text-sm font-semibold text-primary-foreground hover:bg-primary-hover"
-            >
-              Start on the map <ArrowRight className="size-4" />
-            </Link>
           </div>
 
           <figure className="flex min-w-0 flex-col gap-2">

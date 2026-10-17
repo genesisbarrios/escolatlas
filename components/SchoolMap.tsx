@@ -12,6 +12,8 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import Link from "next/link";
 import type { School } from "@/lib/school";
+import { LEVEL_LABELS, SECTOR_LABELS, formatGrades } from "@/lib/school";
+import { CompareButton } from "./CompareButton";
 
 const ICON = new L.Icon({
   iconUrl: "/leaflet/marker-icon.png",
@@ -57,10 +59,12 @@ function FitBounds({ schools }: { schools: School[] }) {
 export default function SchoolMap({
   schools,
   selectedId,
+  onSelect,
   height = 420,
 }: {
   schools: School[];
   selectedId?: string | null;
+  onSelect?: (id: string) => void;
   height?: number;
 }) {
   const withCoords = schools.filter((s) => s.lat !== null && s.lng !== null);
@@ -81,21 +85,38 @@ export default function SchoolMap({
           key={s.id}
           position={[s.lat!, s.lng!]}
           icon={s.id === selectedId ? ICON_ACTIVE : ICON}
+          eventHandlers={{ click: () => onSelect?.(s.id) }}
         >
           <Popup>
             <div className="text-sm">
               <Link
                 href={`/schools/${s.id}`}
-                className="font-semibold text-link hover:underline"
+                className="font-semibold text-link hover:underline leading-snug"
               >
                 {s.name}
               </Link>
-              <div className="text-muted-foreground">
-                {s.address}, {s.city} {s.zip}
+              <div className="mt-0.5 text-muted-foreground">
+                {s.address}
+                {s.city ? `, ${s.city}` : ""} {s.zip}
               </div>
-              <div className="text-muted-foreground">
-                {s.sector === "charter" ? "Charter" : "Public"} · Grades{" "}
-                {s.grades.length ? `${s.grades[0]}–${s.grades[s.grades.length - 1]}` : "n/a"}
+              <div className="mt-1.5 flex flex-wrap gap-1">
+                <span className="chip chip-primary">{SECTOR_LABELS[s.sector]}</span>
+                <span className="chip chip-muted">{LEVEL_LABELS[s.level]}</span>
+                {s.stateGrade && (
+                  <span className="chip chip-warn">FL Grade {s.stateGrade}</span>
+                )}
+                <span className="chip chip-muted">Grades {formatGrades(s)}</span>
+                <span className="chip chip-muted">
+                  {s.enrollment !== null
+                    ? `${s.enrollment.toLocaleString()} students`
+                    : "Enrollment n/a"}
+                </span>
+                {s.programs.map((p) => (
+                  <span key={p} className="chip chip-success">{p}</span>
+                ))}
+              </div>
+              <div className="mt-2">
+                <CompareButton id={s.id} />
               </div>
             </div>
           </Popup>
