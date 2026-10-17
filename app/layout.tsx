@@ -27,7 +27,7 @@ export default function RootLayout({
           <div className="mx-auto max-w-7xl px-4 h-14 flex items-center justify-between">
             <Link href="/" className="flex items-center">
               <img
-                src="/escolatlas-brand-assets/logo/escolatlas-horizontal-white.svg"
+                src="/escolatlas-brand-assets/logo/escolatlas-horizontal-on-dark.svg"
                 alt="Escolatlas"
                 className="h-8 w-auto"
               />
