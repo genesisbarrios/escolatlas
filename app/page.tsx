@@ -62,19 +62,19 @@ export default function Home() {
       </section>
 
       {/* ── "See your words become filters on the map" ── */}
-      <section className="px-6 py-12">
+      <section className="bg-[#2c5283] px-6 py-12 text-[#f4f8fc]">
         <div className="mx-auto flex max-w-6xl flex-col gap-6">
           <h2 className="font-heading text-2xl font-semibold text-[#f4f8fc]">
             See your words become filters on the map
           </h2>
           <div className="flex flex-wrap gap-2" aria-label="Filters from the sample prompt">
-            <span className="inline-flex min-h-8 items-center gap-2 rounded-full border border-[var(--ink-soft)] bg-[var(--ink-soft)] px-3 text-sm text-[#f4f8fc]/90">
+            <span className="inline-flex min-h-8 items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 text-sm text-[#f4f8fc]/90">
               <GraduationCap className="size-4" /> Grades K–5
             </span>
-            <span className="inline-flex min-h-8 items-center gap-2 rounded-full border border-[var(--ink-soft)] bg-[var(--ink-soft)] px-3 text-sm text-[#f4f8fc]/90">
+            <span className="inline-flex min-h-8 items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 text-sm text-[#f4f8fc]/90">
               <MapPin className="size-4" /> Near Coral Gables
             </span>
-            <span className="inline-flex min-h-8 items-center gap-2 rounded-full border border-[var(--ink-soft)] bg-[var(--ink-soft)] px-3 text-sm text-[#f4f8fc]/90">
+            <span className="inline-flex min-h-8 items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 text-sm text-[#f4f8fc]/90">
               <Languages className="size-4" /> Dual language
             </span>
           </div>
@@ -128,7 +128,7 @@ export default function Home() {
             <ul className="flex flex-col divide-y divide-[var(--ink-soft)] md:hidden">
               {located.slice(0, 6).map((s) => (
                 <li key={s.id} className="flex items-start gap-3 p-3">
-                  <span className="mt-1 size-3 shrink-0 rounded-full bg-secondary" />
+                  <span className="mt-1 size-3 shrink-0 rounded-full bg-[#f4b23c]" />
                   <span className="text-sm text-[#f4f8fc]/90">
                     {s.name} — {s.city}
                   </span>

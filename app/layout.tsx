@@ -27,7 +27,7 @@ export default function RootLayout({
           <div className="mx-auto max-w-7xl px-4 h-14 flex items-center justify-between">
             <Link href="/" className="flex items-center">
               <img
-                src="/escolatlas-brand-assets/logo/escolatlas-horizontal-on-dark.svg"
+                src="/escolatlas-brand-assets/logo/escolatlas-horizontal-lightblue.svg"
                 alt="Escolatlas"
                 className="h-8 w-auto"
               />
@@ -46,11 +46,36 @@ export default function RootLayout({
           </div>
         </header>
         <main className="flex-1">{children}</main>
-        <footer className="border-t border-border py-6 text-center text-xs text-muted-foreground">
-          Data: Miami-Dade County GIS open data (MDC.SchoolSite ·
-          CharterSchool · PrivateSchool layers) and FL DOE accountability
-          grades when available. Programs are inferred from school names only —
-          always verify with the district or school.
+        <footer className="border-t border-chrome-border bg-chrome">
+          <div className="mx-auto flex max-w-7xl flex-col items-center gap-4 px-4 py-8 text-center sm:flex-row sm:justify-between sm:text-left">
+            <img
+              src="/escolatlas-brand-assets/logo/escolatlas-horizontal-lightblue.svg"
+              alt="Escolatlas"
+              className="h-6 w-auto opacity-90"
+            />
+            <nav className="flex gap-5 text-xs text-muted-foreground">
+              <Link href="/schools" className="hover:text-foreground hover:underline">
+                Find schools
+              </Link>
+              <Link
+                href="/schools?mode=match"
+                className="hover:text-foreground hover:underline"
+              >
+                Smart match
+              </Link>
+              <Link href="/compare" className="hover:text-foreground hover:underline">
+                Compare
+              </Link>
+            </nav>
+          </div>
+          <div className="border-t border-chrome-border">
+            <p className="mx-auto max-w-7xl px-4 py-4 text-xs text-muted-foreground/70">
+              Data: Miami-Dade County GIS open data (MDC.SchoolSite ·
+              CharterSchool · PrivateSchool layers) and FL DOE accountability
+              grades when available. Programs are inferred from school names
+              only — always verify with the district or school.
+            </p>
+          </div>
         </footer>
       </body>
     </html>
