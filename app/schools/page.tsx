@@ -31,6 +31,17 @@ export default async function SchoolsPage({
     : applyFilters(getAllSchools(), filters).map((school) => ({ school }));
   const hasFilters = Object.keys(filters).length > 0;
 
+  // Reflect parsed smart-match filters in the filter bar (params win).
+  const mf = match?.filters;
+  const cities = listCities();
+  const programs = listPrograms();
+  const matchCity = cities.find(
+    (c) => c.toLowerCase() === mf?.city?.toLowerCase(),
+  );
+  const matchProgram = programs.find(
+    (p) => p.toLowerCase() === mf?.program?.toLowerCase(),
+  );
+
   return (
     <div className="mx-auto max-w-7xl px-4 py-6">
       <h1 className="text-2xl font-bold text-foreground">School finder</h1>
@@ -42,16 +53,18 @@ export default async function SchoolsPage({
       <div className="mt-4 rounded-lg border border-border bg-card p-4 shadow-sm">
         <FilterBar
           key={JSON.stringify(params)}
-          cities={listCities()}
-          programs={listPrograms()}
+          cities={cities}
+          programs={programs}
           values={{
-            q: first("q") || match?.filters.city || "",
-            sector: first("sector"),
-            level: first("level"),
-            grade: first("grade"),
-            city: first("city"),
-            program: first("program"),
-            stateGrade: first("stateGrade"),
+            q: first("q") || mf?.q || "",
+            sector: first("sector") || mf?.sectors?.[0] || "",
+            level: first("level") || mf?.levels?.[0] || "",
+            grade:
+              first("grade") ||
+              (mf?.grade !== undefined ? String(mf.grade) : ""),
+            city: first("city") || matchCity || "",
+            program: first("program") || matchProgram || "",
+            stateGrade: first("stateGrade") || mf?.stateGrade || "",
           }}
         />
       </div>

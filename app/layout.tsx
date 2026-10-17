@@ -36,12 +36,6 @@ export default function RootLayout({
               <Link href="/schools" className="hover:text-link hover:underline">
                 Find schools
               </Link>
-              <Link
-                href="/schools?mode=match"
-                className="hover:text-link hover:underline"
-              >
-                Smart match
-              </Link>
             </nav>
           </div>
         </header>
@@ -56,12 +50,6 @@ export default function RootLayout({
             <nav className="flex gap-5 text-xs text-muted-foreground">
               <Link href="/schools" className="hover:text-foreground hover:underline">
                 Find schools
-              </Link>
-              <Link
-                href="/schools?mode=match"
-                className="hover:text-foreground hover:underline"
-              >
-                Smart match
               </Link>
               <Link href="/compare" className="hover:text-foreground hover:underline">
                 Compare

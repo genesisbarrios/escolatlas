@@ -26,8 +26,8 @@ export default function Home() {
             </h1>
             <p className="max-w-prose text-base leading-relaxed text-[#f4f8fc]/85">
               Describe the school you want in your own words. Escolatlas turns
-              it into visible filters on a map and shows where each fact comes
-              from.
+              it into visible filters on a map and lets you compare between
+              schools.
             </p>
             <form
               action="/schools"
