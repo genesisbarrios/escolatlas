@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T20:12:40.986Z",
+  "generatedAt": "2026-10-17T21:15:31.444Z",
   "sources": {
     "mdc-public-schools": "https://services.arcgis.com/8Pc9XBTAsYuxx9Ny/arcgis/rest/services/SchoolSite_gdb/FeatureServer/0/query",
     "mdc-charter-schools": "https://services.arcgis.com/8Pc9XBTAsYuxx9Ny/arcgis/rest/services/CharterSchool_gdb/FeatureServer/0/query",
@@ -13,6 +13,7 @@
     "kept": 1496,
     "droppedNoGrades": 107,
     "missingLatLng": 0,
-    "stateGraded": 477
+    "stateGraded": 477,
+    "socialsFound": 473
   }
 }

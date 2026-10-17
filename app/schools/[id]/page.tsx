@@ -143,9 +143,9 @@ export default async function SchoolDetailPage({
           <Row
             label="Social"
             value={
-              Object.keys(school.socials).length ? (
+              Object.keys(school.socials ?? {}).length ? (
                 <span className="flex justify-end gap-2">
-                  {Object.entries(school.socials).map(([k, url]) => (
+                  {Object.entries(school.socials ?? {}).map(([k, url]) => (
                     <a key={k} href={url} target="_blank" rel="noreferrer"
                        className="text-link hover:underline capitalize">{k}</a>
                   ))}
