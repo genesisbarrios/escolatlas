@@ -48,7 +48,7 @@ export default function Home() {
 
           <figure className="flex min-w-0 flex-col gap-2">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/9/94/Miami_Senior_High_School_July_2013.jpg"
+              src="/assets/img/miami-senior-high.jpg"
               alt="Miami Senior High School"
               className="w-full rounded-xl object-cover max-md:max-h-[55svh]"
             />
