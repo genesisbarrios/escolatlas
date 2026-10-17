@@ -29,7 +29,7 @@ export default async function SchoolsPage({
       <h1 className="text-2xl font-bold text-foreground">School finder</h1>
 
       <div className="mt-4">
-        <MatchBox />
+        <MatchBox initialQuery={first("mq")} />
       </div>
 
       <div className="mt-4 rounded-lg border border-border bg-card p-4 shadow-sm">

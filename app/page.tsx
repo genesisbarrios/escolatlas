@@ -29,15 +29,19 @@ export default function Home() {
               it into visible filters on a map and shows where each fact comes
               from.
             </p>
-            <Link
-              href="/schools?mode=match"
-              className="flex w-full max-w-prose items-center gap-3 rounded-xl border border-[var(--ink-soft)] bg-[var(--ink-soft)] p-4 text-left focus-visible:ring-2 focus-visible:ring-ring"
+            <form
+              action="/schools"
+              className="flex w-full max-w-prose items-center gap-3 rounded-xl border border-[var(--ink-soft)] bg-[var(--ink-soft)] p-4 text-left focus-within:ring-2 focus-within:ring-ring"
             >
-              <MapPin className="size-5 shrink-0 text-muted-foreground" />
-              <span className="min-w-0 text-sm text-[#f4f8fc]/60">
-                Try: K-5 near Coral Gables with dual language
-              </span>
-            </Link>
+              <MapPin className="size-5 shrink-0 text-[#f4f8fc]/60" />
+              <input
+                type="search"
+                name="mq"
+                placeholder="Try: K-5 near Coral Gables with dual language"
+                aria-label="Describe the school you want"
+                className="min-w-0 flex-1 bg-transparent text-sm text-[#f4f8fc] placeholder:text-[#f4f8fc]/50 focus:outline-none"
+              />
+            </form>
             <Link
               href="/schools"
               className="inline-flex min-h-11 items-center gap-2 rounded-lg bg-primary px-5 text-sm font-semibold text-primary-foreground hover:bg-primary-hover"

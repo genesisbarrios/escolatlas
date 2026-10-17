@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { School } from "@/lib/school";
 import { SchoolCard } from "./SchoolCard";
 
@@ -18,8 +18,8 @@ const EXAMPLES = [
   "kindergarten charter in Hialeah",
 ];
 
-export function MatchBox() {
-  const [query, setQuery] = useState("");
+export function MatchBox({ initialQuery = "" }: { initialQuery?: string }) {
+  const [query, setQuery] = useState(initialQuery);
   const [loading, setLoading] = useState(false);
   const [res, setRes] = useState<MatchResponse | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -43,6 +43,15 @@ export function MatchBox() {
       setLoading(false);
     }
   }
+
+  const ran = useRef(false);
+  useEffect(() => {
+    if (!ran.current && initialQuery.trim()) {
+      ran.current = true;
+      run(initialQuery.trim());
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div className="rounded-lg border border-border bg-card p-4 shadow-sm">
