@@ -12,6 +12,7 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import Link from "next/link";
 import type { School } from "@/lib/school";
+import type { PoliceStation } from "@/lib/police";
 import { LEVEL_LABELS, SECTOR_LABELS, formatGrades } from "@/lib/school";
 import { CompareButton } from "./CompareButton";
 
@@ -36,6 +37,14 @@ const ICON_ACTIVE = new L.Icon({
   className: "hue-rotate-[140deg]",
 });
 
+const STATION_ICON = L.divIcon({
+  html: '<span style="font-size:22px;line-height:22px" role="img" aria-label="police station">🚓</span>',
+  className: "",
+  iconSize: [24, 24],
+  iconAnchor: [12, 12],
+  popupAnchor: [0, -10],
+});
+
 function FitBounds({ schools }: { schools: School[] }) {
   const map = useMap();
   const key = useMemo(
@@ -58,11 +67,13 @@ function FitBounds({ schools }: { schools: School[] }) {
 
 export default function SchoolMap({
   schools,
+  stations = [],
   selectedId,
   onSelect,
   height = 420,
 }: {
   schools: School[];
+  stations?: PoliceStation[];
   selectedId?: string | null;
   onSelect?: (id: string) => void;
   height?: number;
@@ -117,6 +128,30 @@ export default function SchoolMap({
               </div>
               <div className="mt-2">
                 <CompareButton id={s.id} />
+              </div>
+            </div>
+          </Popup>
+        </Marker>
+      ))}
+      {stations.map((p) => (
+        <Marker
+          key={p.id}
+          position={[p.lat, p.lng]}
+          icon={STATION_ICON}
+          zIndexOffset={-500}
+        >
+          <Popup>
+            <div className="text-sm">
+              <div className="font-semibold leading-snug">🚓 {p.name}</div>
+              <div className="mt-0.5 text-muted-foreground">
+                {p.address}
+                {p.city ? `, ${p.city}` : ""} {p.zip}
+              </div>
+              <div className="mt-1 text-xs text-muted-foreground">
+                {p.agency === "county"
+                  ? "Miami-Dade Sheriff's Office"
+                  : (p.jurisdiction ?? "Municipal police")}
+                {p.phone ? ` · ${p.phone}` : ""}
               </div>
             </div>
           </Popup>

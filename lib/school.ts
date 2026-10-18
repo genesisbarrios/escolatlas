@@ -59,6 +59,8 @@ export interface School {
   socials: { facebook?: string; instagram?: string; twitter?: string; youtube?: string };
   /** Co-educational flag (private layer only). */
   coed: boolean | null;
+  /** 11-digit census tract GEOID containing the school's location (null when no coords). */
+  tractGeoId: string | null;
   source: "mdc-public-schools" | "mdc-charter-schools" | "mdc-private-schools";
   /** The source dataset's own school number. */
   sourceId: string;

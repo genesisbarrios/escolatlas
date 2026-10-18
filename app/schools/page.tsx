@@ -3,6 +3,7 @@ import { getAllSchools, listCities, listPrograms } from "@/lib/data";
 import { applyFilters } from "@/lib/filters";
 import { filtersFromParams } from "@/lib/query";
 import { runMatch } from "@/lib/match";
+import { getPoliceStations } from "@/lib/police";
 import { FilterBar } from "@/components/FilterBar";
 import { MatchBox } from "@/components/MatchBox";
 import { ResultsSection } from "@/components/ResultsSection";
@@ -112,7 +113,7 @@ export default async function SchoolsPage({
             </Link>
           </div>
         ) : (
-          <ResultsSection entries={entries} />
+          <ResultsSection entries={entries} stations={getPoliceStations()} />
         )}
       </div>
 

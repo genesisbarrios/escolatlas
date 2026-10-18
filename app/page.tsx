@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { GraduationCap, Languages, MapPin, Search } from "lucide-react";
 import { getAllSchools } from "@/lib/data.ts";
+import { getPoliceStations } from "@/lib/police";
 import MapClient from "@/components/MapClient";
 
 /** Project Miami-Dade lng/lat into a 600×280 schematic map crop. */
@@ -84,7 +85,7 @@ export default function Home() {
           </div>
 
           <div className="relative max-h-[420px] overflow-hidden rounded-xl border border-[var(--ink-soft)]">
-            <MapClient schools={located} height={420} />
+            <MapClient schools={located} stations={getPoliceStations()} height={420} />
             <Link
               href="/schools"
               aria-label="Open the interactive school map"

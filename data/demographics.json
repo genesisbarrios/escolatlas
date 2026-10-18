@@ -1,0 +1,3537 @@
+{
+  "12086000109": {
+    "name": "Census Tract 1.09",
+    "population": 3801,
+    "medianHouseholdIncome": 70752,
+    "povertyRate": 0.155,
+    "bachelorsPlusRate": 0.461
+  },
+  "12086000218": {
+    "name": "Census Tract 2.18",
+    "population": 2691,
+    "medianHouseholdIncome": 53958,
+    "povertyRate": 0.206,
+    "bachelorsPlusRate": 0.174
+  },
+  "12086000219": {
+    "name": "Census Tract 2.19",
+    "population": 4808,
+    "medianHouseholdIncome": 51646,
+    "povertyRate": 0.215,
+    "bachelorsPlusRate": 0.215
+  },
+  "12086000227": {
+    "name": "Census Tract 2.27",
+    "population": 2812,
+    "medianHouseholdIncome": 54395,
+    "povertyRate": 0.124,
+    "bachelorsPlusRate": 0.227
+  },
+  "12086000308": {
+    "name": "Census Tract 3.08",
+    "population": 4386,
+    "medianHouseholdIncome": 68802,
+    "povertyRate": 0.097,
+    "bachelorsPlusRate": 0.257
+  },
+  "12086000310": {
+    "name": "Census Tract 3.10",
+    "population": 4154,
+    "medianHouseholdIncome": 54855,
+    "povertyRate": 0.284,
+    "bachelorsPlusRate": 0.133
+  },
+  "12086000402": {
+    "name": "Census Tract 4.02",
+    "population": 4508,
+    "medianHouseholdIncome": 44625,
+    "povertyRate": 0.21,
+    "bachelorsPlusRate": 0.137
+  },
+  "12086000408": {
+    "name": "Census Tract 4.08",
+    "population": 5686,
+    "medianHouseholdIncome": 41200,
+    "povertyRate": 0.244,
+    "bachelorsPlusRate": 0.072
+  },
+  "12086000418": {
+    "name": "Census Tract 4.18",
+    "population": 2337,
+    "medianHouseholdIncome": 38342,
+    "povertyRate": 0.318,
+    "bachelorsPlusRate": 0.101
+  },
+  "12086000506": {
+    "name": "Census Tract 5.06",
+    "population": 2397,
+    "medianHouseholdIncome": 58917,
+    "povertyRate": 0.209,
+    "bachelorsPlusRate": 0.175
+  },
+  "12086000507": {
+    "name": "Census Tract 5.07",
+    "population": 4979,
+    "medianHouseholdIncome": 62762,
+    "povertyRate": 0.121,
+    "bachelorsPlusRate": 0.068
+  },
+  "12086000508": {
+    "name": "Census Tract 5.08",
+    "population": 3922,
+    "medianHouseholdIncome": 29896,
+    "povertyRate": 0.387,
+    "bachelorsPlusRate": 0.033
+  },
+  "12086000603": {
+    "name": "Census Tract 6.03",
+    "population": 5511,
+    "medianHouseholdIncome": 78624,
+    "povertyRate": 0.088,
+    "bachelorsPlusRate": 0.267
+  },
+  "12086000605": {
+    "name": "Census Tract 6.05",
+    "population": 4920,
+    "medianHouseholdIncome": 97593,
+    "povertyRate": 0.144,
+    "bachelorsPlusRate": 0.291
+  },
+  "12086000705": {
+    "name": "Census Tract 7.05",
+    "population": 5029,
+    "medianHouseholdIncome": 52278,
+    "povertyRate": 0.184,
+    "bachelorsPlusRate": 0.106
+  },
+  "12086000904": {
+    "name": "Census Tract 9.04",
+    "population": 2500,
+    "medianHouseholdIncome": 52500,
+    "povertyRate": 0.055,
+    "bachelorsPlusRate": 0.13
+  },
+  "12086001004": {
+    "name": "Census Tract 10.04",
+    "population": 8911,
+    "medianHouseholdIncome": 51502,
+    "povertyRate": 0.187,
+    "bachelorsPlusRate": 0.157
+  },
+  "12086001104": {
+    "name": "Census Tract 11.04",
+    "population": 4890,
+    "medianHouseholdIncome": 170095,
+    "povertyRate": 0.028,
+    "bachelorsPlusRate": 0.687
+  },
+  "12086001606": {
+    "name": "Census Tract 16.06",
+    "population": 4395,
+    "medianHouseholdIncome": 36467,
+    "povertyRate": 0.262,
+    "bachelorsPlusRate": 0.211
+  },
+  "12086001704": {
+    "name": "Census Tract 17.04",
+    "population": 2626,
+    "medianHouseholdIncome": 33039,
+    "povertyRate": 0.359,
+    "bachelorsPlusRate": 0.097
+  },
+  "12086001801": {
+    "name": "Census Tract 18.01",
+    "population": 4324,
+    "medianHouseholdIncome": 42786,
+    "povertyRate": 0.286,
+    "bachelorsPlusRate": 0.091
+  },
+  "12086001901": {
+    "name": "Census Tract 19.01",
+    "population": 4690,
+    "medianHouseholdIncome": 29809,
+    "povertyRate": 0.421,
+    "bachelorsPlusRate": 0.129
+  },
+  "12086001903": {
+    "name": "Census Tract 19.03",
+    "population": 3350,
+    "medianHouseholdIncome": 44975,
+    "povertyRate": 0.216,
+    "bachelorsPlusRate": 0.07
+  },
+  "12086002003": {
+    "name": "Census Tract 20.03",
+    "population": 3593,
+    "medianHouseholdIncome": 35479,
+    "povertyRate": 0.425,
+    "bachelorsPlusRate": 0.095
+  },
+  "12086002202": {
+    "name": "Census Tract 22.02",
+    "population": 5074,
+    "medianHouseholdIncome": 55069,
+    "povertyRate": 0.224,
+    "bachelorsPlusRate": 0.14
+  },
+  "12086002404": {
+    "name": "Census Tract 24.04",
+    "population": 5156,
+    "medianHouseholdIncome": 19394,
+    "povertyRate": 0.291,
+    "bachelorsPlusRate": 0.155
+  },
+  "12086002501": {
+    "name": "Census Tract 25.01",
+    "population": 5785,
+    "medianHouseholdIncome": 32431,
+    "povertyRate": 0.296,
+    "bachelorsPlusRate": 0.054
+  },
+  "12086002600": {
+    "name": "Census Tract 26.00",
+    "population": 6114,
+    "medianHouseholdIncome": 84258,
+    "povertyRate": 0.135,
+    "bachelorsPlusRate": 0.418
+  },
+  "12086002702": {
+    "name": "Census Tract 27.02",
+    "population": 7715,
+    "medianHouseholdIncome": 105035,
+    "povertyRate": 0.128,
+    "bachelorsPlusRate": 0.463
+  },
+  "12086003100": {
+    "name": "Census Tract 31.00",
+    "population": 5275,
+    "medianHouseholdIncome": 44071,
+    "povertyRate": 0.372,
+    "bachelorsPlusRate": 0.138
+  },
+  "12086003913": {
+    "name": "Census Tract 39.13",
+    "population": 4060,
+    "medianHouseholdIncome": 54099,
+    "povertyRate": 0.182,
+    "bachelorsPlusRate": 0.38
+  },
+  "12086003917": {
+    "name": "Census Tract 39.17",
+    "population": 5397,
+    "medianHouseholdIncome": 71440,
+    "povertyRate": 0.101,
+    "bachelorsPlusRate": 0.377
+  },
+  "12086004106": {
+    "name": "Census Tract 41.06",
+    "population": 3089,
+    "medianHouseholdIncome": 170417,
+    "povertyRate": 0.109,
+    "bachelorsPlusRate": 0.797
+  },
+  "12086005002": {
+    "name": "Census Tract 50.02",
+    "population": 5046,
+    "medianHouseholdIncome": 72860,
+    "povertyRate": 0.096,
+    "bachelorsPlusRate": 0.195
+  },
+  "12086005407": {
+    "name": "Census Tract 54.07",
+    "population": 2779,
+    "medianHouseholdIncome": 39317,
+    "povertyRate": 0.245,
+    "bachelorsPlusRate": 0.123
+  },
+  "12086005504": {
+    "name": "Census Tract 55.04",
+    "population": 3354,
+    "medianHouseholdIncome": 67083,
+    "povertyRate": 0.24,
+    "bachelorsPlusRate": 0.261
+  },
+  "12086005901": {
+    "name": "Census Tract 59.01",
+    "population": 4825,
+    "medianHouseholdIncome": 77586,
+    "povertyRate": 0.157,
+    "bachelorsPlusRate": 0.379
+  },
+  "12086006206": {
+    "name": "Census Tract 62.06",
+    "population": 3925,
+    "medianHouseholdIncome": 122679,
+    "povertyRate": 0.085,
+    "bachelorsPlusRate": 0.712
+  },
+  "12086006402": {
+    "name": "Census Tract 64.02",
+    "population": 4394,
+    "medianHouseholdIncome": 76500,
+    "povertyRate": 0.179,
+    "bachelorsPlusRate": 0.383
+  },
+  "12086006504": {
+    "name": "Census Tract 65.04",
+    "population": 1862,
+    "medianHouseholdIncome": 100096,
+    "povertyRate": 0.112,
+    "bachelorsPlusRate": 0.403
+  },
+  "12086007200": {
+    "name": "Census Tract 72.00",
+    "population": 2898,
+    "medianHouseholdIncome": 65047,
+    "povertyRate": 0.251,
+    "bachelorsPlusRate": 0.436
+  },
+  "12086007503": {
+    "name": "Census Tract 75.03",
+    "population": 844,
+    "medianHouseholdIncome": 129375,
+    "povertyRate": 0.156,
+    "bachelorsPlusRate": 0.872
+  },
+  "12086007601": {
+    "name": "Census Tract 76.01",
+    "population": 2559,
+    "medianHouseholdIncome": 120605,
+    "povertyRate": 0.074,
+    "bachelorsPlusRate": 0.595
+  },
+  "12086007605": {
+    "name": "Census Tract 76.05",
+    "population": 3177,
+    "medianHouseholdIncome": 75844,
+    "povertyRate": 0.098,
+    "bachelorsPlusRate": 0.533
+  },
+  "12086007709": {
+    "name": "Census Tract 77.09",
+    "population": 2560,
+    "medianHouseholdIncome": 85699,
+    "povertyRate": 0.048,
+    "bachelorsPlusRate": 0.368
+  },
+  "12086008205": {
+    "name": "Census Tract 82.05",
+    "population": 3973,
+    "medianHouseholdIncome": 174712,
+    "povertyRate": 0.017,
+    "bachelorsPlusRate": 0.707
+  },
+  "12086008207": {
+    "name": "Census Tract 82.07",
+    "population": 4823,
+    "medianHouseholdIncome": 211964,
+    "povertyRate": 0.03,
+    "bachelorsPlusRate": 0.69
+  },
+  "12086008309": {
+    "name": "Census Tract 83.09",
+    "population": 5066,
+    "medianHouseholdIncome": 44779,
+    "povertyRate": 0.217,
+    "bachelorsPlusRate": 0.174
+  },
+  "12086008313": {
+    "name": "Census Tract 83.13",
+    "population": 5411,
+    "medianHouseholdIncome": 63989,
+    "povertyRate": 0.118,
+    "bachelorsPlusRate": 0.219
+  },
+  "12086008416": {
+    "name": "Census Tract 84.16",
+    "population": 3455,
+    "medianHouseholdIncome": 84803,
+    "povertyRate": 0.084,
+    "bachelorsPlusRate": 0.447
+  },
+  "12086008418": {
+    "name": "Census Tract 84.18",
+    "population": 2698,
+    "medianHouseholdIncome": 79596,
+    "povertyRate": 0.174,
+    "bachelorsPlusRate": 0.446
+  },
+  "12086008504": {
+    "name": "Census Tract 85.04",
+    "population": 2828,
+    "medianHouseholdIncome": 127614,
+    "povertyRate": 0.047,
+    "bachelorsPlusRate": 0.439
+  },
+  "12086008806": {
+    "name": "Census Tract 88.06",
+    "population": 4526,
+    "medianHouseholdIncome": 84615,
+    "povertyRate": 0.107,
+    "bachelorsPlusRate": 0.195
+  },
+  "12086008808": {
+    "name": "Census Tract 88.08",
+    "population": 2730,
+    "medianHouseholdIncome": 73234,
+    "povertyRate": 0.115,
+    "bachelorsPlusRate": 0.281
+  },
+  "12086008904": {
+    "name": "Census Tract 89.04",
+    "population": 3746,
+    "medianHouseholdIncome": 0,
+    "povertyRate": 1,
+    "bachelorsPlusRate": 0.409
+  },
+  "12086009044": {
+    "name": "Census Tract 90.44",
+    "population": 3187,
+    "medianHouseholdIncome": 88750,
+    "povertyRate": 0.023,
+    "bachelorsPlusRate": 0.584
+  },
+  "12086009050": {
+    "name": "Census Tract 90.50",
+    "population": 5543,
+    "medianHouseholdIncome": 81061,
+    "povertyRate": 0.071,
+    "bachelorsPlusRate": 0.57
+  },
+  "12086009051": {
+    "name": "Census Tract 90.51",
+    "population": 2010,
+    "medianHouseholdIncome": 90281,
+    "povertyRate": 0.114,
+    "bachelorsPlusRate": 0.39
+  },
+  "12086009056": {
+    "name": "Census Tract 90.56",
+    "population": 3037,
+    "medianHouseholdIncome": 78347,
+    "povertyRate": 0.129,
+    "bachelorsPlusRate": 0.542
+  },
+  "12086009316": {
+    "name": "Census Tract 93.16",
+    "population": 2391,
+    "medianHouseholdIncome": 86250,
+    "povertyRate": 0.116,
+    "bachelorsPlusRate": 0.249
+  },
+  "12086009504": {
+    "name": "Census Tract 95.04",
+    "population": 4521,
+    "medianHouseholdIncome": 72939,
+    "povertyRate": 0.069,
+    "bachelorsPlusRate": 0.181
+  },
+  "12086009703": {
+    "name": "Census Tract 97.03",
+    "population": 3455,
+    "medianHouseholdIncome": 128409,
+    "povertyRate": 0.056,
+    "bachelorsPlusRate": 0.554
+  },
+  "12086009704": {
+    "name": "Census Tract 97.04",
+    "population": 5729,
+    "medianHouseholdIncome": 81969,
+    "povertyRate": 0.126,
+    "bachelorsPlusRate": 0.472
+  },
+  "12086009809": {
+    "name": "Census Tract 98.09",
+    "population": 4181,
+    "medianHouseholdIncome": 72727,
+    "povertyRate": 0.129,
+    "bachelorsPlusRate": 0.366
+  },
+  "12086009905": {
+    "name": "Census Tract 99.05",
+    "population": 6296,
+    "medianHouseholdIncome": 87027,
+    "povertyRate": 0.058,
+    "bachelorsPlusRate": 0.211
+  },
+  "12086010010": {
+    "name": "Census Tract 100.10",
+    "population": 3513,
+    "medianHouseholdIncome": 54913,
+    "povertyRate": 0.126,
+    "bachelorsPlusRate": 0.209
+  },
+  "12086010013": {
+    "name": "Census Tract 100.13",
+    "population": 3833,
+    "medianHouseholdIncome": 74107,
+    "povertyRate": 0.028,
+    "bachelorsPlusRate": 0.265
+  },
+  "12086010016": {
+    "name": "Census Tract 100.16",
+    "population": 4378,
+    "medianHouseholdIncome": 68580,
+    "povertyRate": 0.15,
+    "bachelorsPlusRate": 0.269
+  },
+  "12086010017": {
+    "name": "Census Tract 100.17",
+    "population": 3434,
+    "medianHouseholdIncome": 73317,
+    "povertyRate": 0.084,
+    "bachelorsPlusRate": 0.107
+  },
+  "12086010019": {
+    "name": "Census Tract 100.19",
+    "population": 3515,
+    "medianHouseholdIncome": 60347,
+    "povertyRate": 0.108,
+    "bachelorsPlusRate": 0.198
+  },
+  "12086010022": {
+    "name": "Census Tract 100.22",
+    "population": 4096,
+    "medianHouseholdIncome": 81591,
+    "povertyRate": 0.195,
+    "bachelorsPlusRate": 0.132
+  },
+  "12086010301": {
+    "name": "Census Tract 103.01",
+    "population": 3629,
+    "medianHouseholdIncome": 126705,
+    "povertyRate": 0.183,
+    "bachelorsPlusRate": 0.184
+  },
+  "12086010501": {
+    "name": "Census Tract 105.01",
+    "population": 6982,
+    "medianHouseholdIncome": 47482,
+    "povertyRate": 0.204,
+    "bachelorsPlusRate": 0.145
+  },
+  "12086010502": {
+    "name": "Census Tract 105.02",
+    "population": 13172,
+    "medianHouseholdIncome": 98630,
+    "povertyRate": 0.14,
+    "bachelorsPlusRate": 0.275
+  },
+  "12086010604": {
+    "name": "Census Tract 106.04",
+    "population": 4652,
+    "medianHouseholdIncome": 114906,
+    "povertyRate": 0.046,
+    "bachelorsPlusRate": 0.425
+  },
+  "12086010623": {
+    "name": "Census Tract 106.23",
+    "population": 3161,
+    "medianHouseholdIncome": 74652,
+    "povertyRate": 0.198,
+    "bachelorsPlusRate": 0.239
+  },
+  "12086011003": {
+    "name": "Census Tract 110.03",
+    "population": 5065,
+    "medianHouseholdIncome": 83720,
+    "povertyRate": 0.066,
+    "bachelorsPlusRate": 0.085
+  },
+  "12086011105": {
+    "name": "Census Tract 111.05",
+    "population": 4346,
+    "medianHouseholdIncome": 104083,
+    "povertyRate": 0.071,
+    "bachelorsPlusRate": 0.31
+  },
+  "12086011106": {
+    "name": "Census Tract 111.06",
+    "population": 4312,
+    "medianHouseholdIncome": 74609,
+    "povertyRate": 0.27,
+    "bachelorsPlusRate": 0.217
+  },
+  "12086011203": {
+    "name": "Census Tract 112.03",
+    "population": 6638,
+    "medianHouseholdIncome": 31231,
+    "povertyRate": 0.59,
+    "bachelorsPlusRate": 0.04
+  },
+  "12086011302": {
+    "name": "Census Tract 113.02",
+    "population": 5784,
+    "medianHouseholdIncome": 29016,
+    "povertyRate": 0.425,
+    "bachelorsPlusRate": 0.088
+  },
+  "12086011411": {
+    "name": "Census Tract 114.11",
+    "population": 2380,
+    "medianHouseholdIncome": 85068,
+    "povertyRate": 0.059,
+    "bachelorsPlusRate": 0.323
+  },
+  "12086013202": {
+    "name": "Census Tract 132.02",
+    "population": 3251,
+    "medianHouseholdIncome": 92356,
+    "povertyRate": 0.053,
+    "bachelorsPlusRate": 0.308
+  },
+  "12086013302": {
+    "name": "Census Tract 133.02",
+    "population": 3776,
+    "medianHouseholdIncome": 70833,
+    "povertyRate": 0.153,
+    "bachelorsPlusRate": 0.245
+  },
+  "12086013802": {
+    "name": "Census Tract 138.02",
+    "population": 4506,
+    "medianHouseholdIncome": 30177,
+    "povertyRate": 0.28,
+    "bachelorsPlusRate": 0.2
+  },
+  "12086014800": {
+    "name": "Census Tract 148.00",
+    "population": 5029,
+    "medianHouseholdIncome": 51466,
+    "povertyRate": 0.199,
+    "bachelorsPlusRate": 0.321
+  },
+  "12086015101": {
+    "name": "Census Tract 151.01",
+    "population": 4263,
+    "medianHouseholdIncome": 105363,
+    "povertyRate": 0.059,
+    "bachelorsPlusRate": 0.457
+  },
+  "12086015300": {
+    "name": "Census Tract 153.00",
+    "population": 6211,
+    "medianHouseholdIncome": 114514,
+    "povertyRate": 0.04,
+    "bachelorsPlusRate": 0.407
+  },
+  "12086015800": {
+    "name": "Census Tract 158.00",
+    "population": 4451,
+    "medianHouseholdIncome": 64963,
+    "povertyRate": 0.049,
+    "bachelorsPlusRate": 0.326
+  },
+  "12086016000": {
+    "name": "Census Tract 160.00",
+    "population": 4360,
+    "medianHouseholdIncome": 68156,
+    "povertyRate": 0.094,
+    "bachelorsPlusRate": 0.357
+  },
+  "12086016300": {
+    "name": "Census Tract 163.00",
+    "population": 4423,
+    "medianHouseholdIncome": 93819,
+    "povertyRate": 0.099,
+    "bachelorsPlusRate": 0.378
+  },
+  "12086016501": {
+    "name": "Census Tract 165.01",
+    "population": 3586,
+    "medianHouseholdIncome": 116077,
+    "povertyRate": 0.226,
+    "bachelorsPlusRate": 0.35
+  },
+  "12086017102": {
+    "name": "Census Tract 171.02",
+    "population": 2804,
+    "medianHouseholdIncome": 109125,
+    "povertyRate": 0.049,
+    "bachelorsPlusRate": 0.306
+  },
+  "12086017402": {
+    "name": "Census Tract 174.02",
+    "population": 4823,
+    "medianHouseholdIncome": 52689,
+    "povertyRate": 0.183,
+    "bachelorsPlusRate": 0.262
+  },
+  "12086017800": {
+    "name": "Census Tract 178.00",
+    "population": 6025,
+    "medianHouseholdIncome": 56011,
+    "povertyRate": 0.169,
+    "bachelorsPlusRate": 0.293
+  },
+  "12086019000": {
+    "name": "Census Tract 190.00",
+    "population": 5902,
+    "medianHouseholdIncome": 101979,
+    "povertyRate": 0.068,
+    "bachelorsPlusRate": 0.404
+  },
+  "12086019501": {
+    "name": "Census Tract 195.01",
+    "population": 4134,
+    "medianHouseholdIncome": 110625,
+    "povertyRate": 0.136,
+    "bachelorsPlusRate": 0.463
+  },
+  "12086019600": {
+    "name": "Census Tract 196.00",
+    "population": 6425,
+    "medianHouseholdIncome": 142159,
+    "povertyRate": 0.044,
+    "bachelorsPlusRate": 0.376
+  },
+  "12086019801": {
+    "name": "Census Tract 198.01",
+    "population": 4884,
+    "medianHouseholdIncome": 110588,
+    "povertyRate": 0.079,
+    "bachelorsPlusRate": 0.48
+  },
+  "12086980700": {
+    "name": "Census Tract 9807.00",
+    "population": 1125,
+    "medianHouseholdIncome": 7969,
+    "povertyRate": 0.877,
+    "bachelorsPlusRate": 0.119
+  },
+  "12086000123": {
+    "name": "Census Tract 1.23",
+    "population": 4471,
+    "medianHouseholdIncome": 63542,
+    "povertyRate": 0.144,
+    "bachelorsPlusRate": 0.57
+  },
+  "12086000206": {
+    "name": "Census Tract 2.06",
+    "population": 7277,
+    "medianHouseholdIncome": 54440,
+    "povertyRate": 0.166,
+    "bachelorsPlusRate": 0.158
+  },
+  "12086000215": {
+    "name": "Census Tract 2.15",
+    "population": 5291,
+    "medianHouseholdIncome": 75804,
+    "povertyRate": 0.103,
+    "bachelorsPlusRate": 0.132
+  },
+  "12086000220": {
+    "name": "Census Tract 2.20",
+    "population": 5651,
+    "medianHouseholdIncome": 44949,
+    "povertyRate": 0.259,
+    "bachelorsPlusRate": 0.134
+  },
+  "12086000222": {
+    "name": "Census Tract 2.22",
+    "population": 3729,
+    "medianHouseholdIncome": 65817,
+    "povertyRate": 0.126,
+    "bachelorsPlusRate": 0.173
+  },
+  "12086000226": {
+    "name": "Census Tract 2.26",
+    "population": 2398,
+    "medianHouseholdIncome": 76250,
+    "povertyRate": 0.126,
+    "bachelorsPlusRate": 0.425
+  },
+  "12086000411": {
+    "name": "Census Tract 4.11",
+    "population": 6708,
+    "medianHouseholdIncome": 63812,
+    "povertyRate": 0.175,
+    "bachelorsPlusRate": 0.108
+  },
+  "12086000415": {
+    "name": "Census Tract 4.15",
+    "population": 2032,
+    "medianHouseholdIncome": 69519,
+    "povertyRate": 0.194,
+    "bachelorsPlusRate": 0.112
+  },
+  "12086000416": {
+    "name": "Census Tract 4.16",
+    "population": 4730,
+    "medianHouseholdIncome": 36484,
+    "povertyRate": 0.248,
+    "bachelorsPlusRate": 0.229
+  },
+  "12086000420": {
+    "name": "Census Tract 4.20",
+    "population": 4048,
+    "medianHouseholdIncome": 58839,
+    "povertyRate": 0.247,
+    "bachelorsPlusRate": 0.149
+  },
+  "12086000601": {
+    "name": "Census Tract 6.01",
+    "population": 4293,
+    "medianHouseholdIncome": 68333,
+    "povertyRate": 0.15,
+    "bachelorsPlusRate": 0.161
+  },
+  "12086000710": {
+    "name": "Census Tract 7.10",
+    "population": 4901,
+    "medianHouseholdIncome": 44513,
+    "povertyRate": 0.235,
+    "bachelorsPlusRate": 0.136
+  },
+  "12086000716": {
+    "name": "Census Tract 7.16",
+    "population": 2531,
+    "medianHouseholdIncome": 46212,
+    "povertyRate": 0.182,
+    "bachelorsPlusRate": 0.134
+  },
+  "12086000717": {
+    "name": "Census Tract 7.17",
+    "population": 2522,
+    "medianHouseholdIncome": 77803,
+    "povertyRate": 0.119,
+    "bachelorsPlusRate": 0.226
+  },
+  "12086001006": {
+    "name": "Census Tract 10.06",
+    "population": 4327,
+    "medianHouseholdIncome": 38527,
+    "povertyRate": 0.325,
+    "bachelorsPlusRate": 0.185
+  },
+  "12086001008": {
+    "name": "Census Tract 10.08",
+    "population": 3747,
+    "medianHouseholdIncome": 51861,
+    "povertyRate": 0.247,
+    "bachelorsPlusRate": 0.141
+  },
+  "12086001101": {
+    "name": "Census Tract 11.01",
+    "population": 5050,
+    "medianHouseholdIncome": 93799,
+    "povertyRate": 0.062,
+    "bachelorsPlusRate": 0.321
+  },
+  "12086001301": {
+    "name": "Census Tract 13.01",
+    "population": 5463,
+    "medianHouseholdIncome": 63465,
+    "povertyRate": 0.124,
+    "bachelorsPlusRate": 0.331
+  },
+  "12086001401": {
+    "name": "Census Tract 14.01",
+    "population": 5761,
+    "medianHouseholdIncome": 32385,
+    "povertyRate": 0.378,
+    "bachelorsPlusRate": 0.104
+  },
+  "12086001502": {
+    "name": "Census Tract 15.02",
+    "population": 4523,
+    "medianHouseholdIncome": 38380,
+    "povertyRate": 0.276,
+    "bachelorsPlusRate": 0.138
+  },
+  "12086002004": {
+    "name": "Census Tract 20.04",
+    "population": 3212,
+    "medianHouseholdIncome": 35742,
+    "povertyRate": 0.256,
+    "bachelorsPlusRate": 0.077
+  },
+  "12086003400": {
+    "name": "Census Tract 34.00",
+    "population": 3997,
+    "medianHouseholdIncome": 43716,
+    "povertyRate": 0.331,
+    "bachelorsPlusRate": 0.414
+  },
+  "12086003606": {
+    "name": "Census Tract 36.06",
+    "population": 2584,
+    "medianHouseholdIncome": 29107,
+    "povertyRate": 0.385,
+    "bachelorsPlusRate": 0.296
+  },
+  "12086003706": {
+    "name": "Census Tract 37.06",
+    "population": 2498,
+    "medianHouseholdIncome": 65238,
+    "povertyRate": 0.106,
+    "bachelorsPlusRate": 0.365
+  },
+  "12086004000": {
+    "name": "Census Tract 40.00",
+    "population": 5449,
+    "medianHouseholdIncome": 159342,
+    "povertyRate": 0.047,
+    "bachelorsPlusRate": 0.684
+  },
+  "12086004405": {
+    "name": "Census Tract 44.05",
+    "population": 2863,
+    "medianHouseholdIncome": 49759,
+    "povertyRate": 0.18,
+    "bachelorsPlusRate": 0.352
+  },
+  "12086004602": {
+    "name": "Census Tract 46.02",
+    "population": 4513,
+    "medianHouseholdIncome": 250001,
+    "povertyRate": 0.042,
+    "bachelorsPlusRate": 0.782
+  },
+  "12086004701": {
+    "name": "Census Tract 47.01",
+    "population": 5117,
+    "medianHouseholdIncome": 93667,
+    "povertyRate": 0.112,
+    "bachelorsPlusRate": 0.424
+  },
+  "12086004703": {
+    "name": "Census Tract 47.03",
+    "population": 5033,
+    "medianHouseholdIncome": 86314,
+    "povertyRate": 0.113,
+    "bachelorsPlusRate": 0.37
+  },
+  "12086004903": {
+    "name": "Census Tract 49.03",
+    "population": 3125,
+    "medianHouseholdIncome": 50246,
+    "povertyRate": 0.141,
+    "bachelorsPlusRate": 0.438
+  },
+  "12086005305": {
+    "name": "Census Tract 53.05",
+    "population": 4047,
+    "medianHouseholdIncome": 29955,
+    "povertyRate": 0.398,
+    "bachelorsPlusRate": 0.165
+  },
+  "12086005708": {
+    "name": "Census Tract 57.08",
+    "population": 6441,
+    "medianHouseholdIncome": 46894,
+    "povertyRate": 0.139,
+    "bachelorsPlusRate": 0.256
+  },
+  "12086005803": {
+    "name": "Census Tract 58.03",
+    "population": 6461,
+    "medianHouseholdIncome": 60519,
+    "povertyRate": 0.153,
+    "bachelorsPlusRate": 0.253
+  },
+  "12086005902": {
+    "name": "Census Tract 59.02",
+    "population": 3378,
+    "medianHouseholdIncome": 70101,
+    "povertyRate": 0.162,
+    "bachelorsPlusRate": 0.222
+  },
+  "12086005903": {
+    "name": "Census Tract 59.03",
+    "population": 5729,
+    "medianHouseholdIncome": 61027,
+    "povertyRate": 0.161,
+    "bachelorsPlusRate": 0.176
+  },
+  "12086006205": {
+    "name": "Census Tract 62.05",
+    "population": 3481,
+    "medianHouseholdIncome": 67564,
+    "povertyRate": 0.175,
+    "bachelorsPlusRate": 0.593
+  },
+  "12086006503": {
+    "name": "Census Tract 65.03",
+    "population": 2296,
+    "medianHouseholdIncome": 83542,
+    "povertyRate": 0.162,
+    "bachelorsPlusRate": 0.371
+  },
+  "12086006717": {
+    "name": "Census Tract 67.17",
+    "population": 2350,
+    "medianHouseholdIncome": 148359,
+    "povertyRate": 0.226,
+    "bachelorsPlusRate": 0.611
+  },
+  "12086006901": {
+    "name": "Census Tract 69.01",
+    "population": 2738,
+    "medianHouseholdIncome": 91616,
+    "povertyRate": 0.059,
+    "bachelorsPlusRate": 0.605
+  },
+  "12086007103": {
+    "name": "Census Tract 71.03",
+    "population": 2121,
+    "medianHouseholdIncome": 125458,
+    "povertyRate": 0.202,
+    "bachelorsPlusRate": 0.72
+  },
+  "12086007610": {
+    "name": "Census Tract 76.10",
+    "population": 4727,
+    "medianHouseholdIncome": 105787,
+    "povertyRate": 0.124,
+    "bachelorsPlusRate": 0.601
+  },
+  "12086007708": {
+    "name": "Census Tract 77.08",
+    "population": 2502,
+    "medianHouseholdIncome": 68393,
+    "povertyRate": 0.106,
+    "bachelorsPlusRate": 0.245
+  },
+  "12086007806": {
+    "name": "Census Tract 78.06",
+    "population": 3923,
+    "medianHouseholdIncome": 250001,
+    "povertyRate": 0.122,
+    "bachelorsPlusRate": 0.814
+  },
+  "12086007901": {
+    "name": "Census Tract 79.01",
+    "population": 4001,
+    "medianHouseholdIncome": 115428,
+    "povertyRate": 0.105,
+    "bachelorsPlusRate": 0.66
+  },
+  "12086008102": {
+    "name": "Census Tract 81.02",
+    "population": 4266,
+    "medianHouseholdIncome": 195625,
+    "povertyRate": 0.008,
+    "bachelorsPlusRate": 0.683
+  },
+  "12086008206": {
+    "name": "Census Tract 82.06",
+    "population": 3770,
+    "medianHouseholdIncome": 122679,
+    "povertyRate": 0.031,
+    "bachelorsPlusRate": 0.665
+  },
+  "12086008315": {
+    "name": "Census Tract 83.15",
+    "population": 4822,
+    "medianHouseholdIncome": 98120,
+    "povertyRate": 0.173,
+    "bachelorsPlusRate": 0.304
+  },
+  "12086008415": {
+    "name": "Census Tract 84.15",
+    "population": 4391,
+    "medianHouseholdIncome": 188056,
+    "povertyRate": 0.01,
+    "bachelorsPlusRate": 0.567
+  },
+  "12086008425": {
+    "name": "Census Tract 84.25",
+    "population": 2234,
+    "medianHouseholdIncome": 84750,
+    "povertyRate": 0.122,
+    "bachelorsPlusRate": 0.43
+  },
+  "12086008426": {
+    "name": "Census Tract 84.26",
+    "population": 4148,
+    "medianHouseholdIncome": 134010,
+    "povertyRate": 0.013,
+    "bachelorsPlusRate": 0.641
+  },
+  "12086008429": {
+    "name": "Census Tract 84.29",
+    "population": 4354,
+    "medianHouseholdIncome": 165146,
+    "povertyRate": 0.19,
+    "bachelorsPlusRate": 0.494
+  },
+  "12086008431": {
+    "name": "Census Tract 84.31",
+    "population": 2717,
+    "medianHouseholdIncome": 0,
+    "povertyRate": 0.392,
+    "bachelorsPlusRate": 0.331
+  },
+  "12086008502": {
+    "name": "Census Tract 85.02",
+    "population": 4243,
+    "medianHouseholdIncome": 112024,
+    "povertyRate": 0.068,
+    "bachelorsPlusRate": 0.462
+  },
+  "12086008702": {
+    "name": "Census Tract 87.02",
+    "population": 5486,
+    "medianHouseholdIncome": 88468,
+    "povertyRate": 0.07,
+    "bachelorsPlusRate": 0.302
+  },
+  "12086008703": {
+    "name": "Census Tract 87.03",
+    "population": 2279,
+    "medianHouseholdIncome": 70337,
+    "povertyRate": 0.142,
+    "bachelorsPlusRate": 0.175
+  },
+  "12086009010": {
+    "name": "Census Tract 90.10",
+    "population": 7361,
+    "medianHouseholdIncome": 103785,
+    "povertyRate": 0.049,
+    "bachelorsPlusRate": 0.56
+  },
+  "12086009014": {
+    "name": "Census Tract 90.14",
+    "population": 4374,
+    "medianHouseholdIncome": 81907,
+    "povertyRate": 0.05,
+    "bachelorsPlusRate": 0.348
+  },
+  "12086009029": {
+    "name": "Census Tract 90.29",
+    "population": 3868,
+    "medianHouseholdIncome": 75309,
+    "povertyRate": 0.101,
+    "bachelorsPlusRate": 0.449
+  },
+  "12086009049": {
+    "name": "Census Tract 90.49",
+    "population": 4681,
+    "medianHouseholdIncome": 100306,
+    "povertyRate": 0.117,
+    "bachelorsPlusRate": 0.607
+  },
+  "12086009200": {
+    "name": "Census Tract 92.00",
+    "population": 3387,
+    "medianHouseholdIncome": 72399,
+    "povertyRate": 0.19,
+    "bachelorsPlusRate": 0.152
+  },
+  "12086009305": {
+    "name": "Census Tract 93.05",
+    "population": 4852,
+    "medianHouseholdIncome": 106129,
+    "povertyRate": 0.095,
+    "bachelorsPlusRate": 0.459
+  },
+  "12086009312": {
+    "name": "Census Tract 93.12",
+    "population": 6376,
+    "medianHouseholdIncome": 89313,
+    "povertyRate": 0.061,
+    "bachelorsPlusRate": 0.422
+  },
+  "12086009324": {
+    "name": "Census Tract 93.24",
+    "population": 3997,
+    "medianHouseholdIncome": 49327,
+    "povertyRate": 0.199,
+    "bachelorsPlusRate": 0.225
+  },
+  "12086009327": {
+    "name": "Census Tract 93.27",
+    "population": 3528,
+    "medianHouseholdIncome": 85327,
+    "povertyRate": 0.142,
+    "bachelorsPlusRate": 0.234
+  },
+  "12086009401": {
+    "name": "Census Tract 94.01",
+    "population": 2582,
+    "medianHouseholdIncome": 77688,
+    "povertyRate": 0.196,
+    "bachelorsPlusRate": 0.192
+  },
+  "12086009503": {
+    "name": "Census Tract 95.03",
+    "population": 5357,
+    "medianHouseholdIncome": 80363,
+    "povertyRate": 0.109,
+    "bachelorsPlusRate": 0.264
+  },
+  "12086009803": {
+    "name": "Census Tract 98.03",
+    "population": 8539,
+    "medianHouseholdIncome": 80568,
+    "povertyRate": 0.057,
+    "bachelorsPlusRate": 0.405
+  },
+  "12086009904": {
+    "name": "Census Tract 99.04",
+    "population": 4505,
+    "medianHouseholdIncome": 54926,
+    "povertyRate": 0.301,
+    "bachelorsPlusRate": 0.16
+  },
+  "12086010020": {
+    "name": "Census Tract 100.20",
+    "population": 3610,
+    "medianHouseholdIncome": 58672,
+    "povertyRate": 0.169,
+    "bachelorsPlusRate": 0.051
+  },
+  "12086010024": {
+    "name": "Census Tract 100.24",
+    "population": 3983,
+    "medianHouseholdIncome": 0,
+    "povertyRate": 0.153,
+    "bachelorsPlusRate": 0.095
+  },
+  "12086010025": {
+    "name": "Census Tract 100.25",
+    "population": 3736,
+    "medianHouseholdIncome": 73233,
+    "povertyRate": 0.121,
+    "bachelorsPlusRate": 0.134
+  },
+  "12086010211": {
+    "name": "Census Tract 102.11",
+    "population": 4274,
+    "medianHouseholdIncome": 66419,
+    "povertyRate": 0.167,
+    "bachelorsPlusRate": 0.111
+  },
+  "12086010213": {
+    "name": "Census Tract 102.13",
+    "population": 5189,
+    "medianHouseholdIncome": 50337,
+    "povertyRate": 0.271,
+    "bachelorsPlusRate": 0.221
+  },
+  "12086010608": {
+    "name": "Census Tract 106.08",
+    "population": 5771,
+    "medianHouseholdIncome": 82358,
+    "povertyRate": 0.097,
+    "bachelorsPlusRate": 0.282
+  },
+  "12086010613": {
+    "name": "Census Tract 106.13",
+    "population": 6087,
+    "medianHouseholdIncome": 61913,
+    "povertyRate": 0.143,
+    "bachelorsPlusRate": 0.247
+  },
+  "12086010621": {
+    "name": "Census Tract 106.21",
+    "population": 5182,
+    "medianHouseholdIncome": 83816,
+    "povertyRate": 0.124,
+    "bachelorsPlusRate": 0.301
+  },
+  "12086010624": {
+    "name": "Census Tract 106.24",
+    "population": 3276,
+    "medianHouseholdIncome": 80093,
+    "povertyRate": 0.108,
+    "bachelorsPlusRate": 0.241
+  },
+  "12086010804": {
+    "name": "Census Tract 108.04",
+    "population": 8140,
+    "medianHouseholdIncome": 45510,
+    "povertyRate": 0.331,
+    "bachelorsPlusRate": 0.189
+  },
+  "12086011104": {
+    "name": "Census Tract 111.04",
+    "population": 5559,
+    "medianHouseholdIncome": 36635,
+    "povertyRate": 0.272,
+    "bachelorsPlusRate": 0.128
+  },
+  "12086011205": {
+    "name": "Census Tract 112.05",
+    "population": 4103,
+    "medianHouseholdIncome": 62050,
+    "povertyRate": 0.168,
+    "bachelorsPlusRate": 0.114
+  },
+  "12086011301": {
+    "name": "Census Tract 113.01",
+    "population": 4562,
+    "medianHouseholdIncome": 0,
+    "povertyRate": 0.408,
+    "bachelorsPlusRate": 0.09
+  },
+  "12086011405": {
+    "name": "Census Tract 114.05",
+    "population": 3593,
+    "medianHouseholdIncome": 0,
+    "povertyRate": 0.383,
+    "bachelorsPlusRate": 0.043
+  },
+  "12086011702": {
+    "name": "Census Tract 117.02",
+    "population": 4603,
+    "medianHouseholdIncome": 60433,
+    "povertyRate": 0.12,
+    "bachelorsPlusRate": 0.278
+  },
+  "12086012001": {
+    "name": "Census Tract 120.01",
+    "population": 3413,
+    "medianHouseholdIncome": 55530,
+    "povertyRate": 0.267,
+    "bachelorsPlusRate": 0.36
+  },
+  "12086012502": {
+    "name": "Census Tract 125.02",
+    "population": 4215,
+    "medianHouseholdIncome": 82333,
+    "povertyRate": 0.143,
+    "bachelorsPlusRate": 0.138
+  },
+  "12086014500": {
+    "name": "Census Tract 145.00",
+    "population": 4142,
+    "medianHouseholdIncome": 123140,
+    "povertyRate": 0.046,
+    "bachelorsPlusRate": 0.45
+  },
+  "12086014900": {
+    "name": "Census Tract 149.00",
+    "population": 5301,
+    "medianHouseholdIncome": 96855,
+    "povertyRate": 0.08,
+    "bachelorsPlusRate": 0.314
+  },
+  "12086016402": {
+    "name": "Census Tract 164.02",
+    "population": 2121,
+    "medianHouseholdIncome": 111332,
+    "povertyRate": 0.071,
+    "bachelorsPlusRate": 0.329
+  },
+  "12086016700": {
+    "name": "Census Tract 167.00",
+    "population": 4848,
+    "medianHouseholdIncome": 104375,
+    "povertyRate": 0.105,
+    "bachelorsPlusRate": 0.262
+  },
+  "12086017000": {
+    "name": "Census Tract 170.00",
+    "population": 4707,
+    "medianHouseholdIncome": 61049,
+    "povertyRate": 0.187,
+    "bachelorsPlusRate": 0.244
+  },
+  "12086017300": {
+    "name": "Census Tract 173.00",
+    "population": 4026,
+    "medianHouseholdIncome": 55529,
+    "povertyRate": 0.124,
+    "bachelorsPlusRate": 0.374
+  },
+  "12086018003": {
+    "name": "Census Tract 180.03",
+    "population": 7617,
+    "medianHouseholdIncome": 70661,
+    "povertyRate": 0.255,
+    "bachelorsPlusRate": 0.398
+  },
+  "12086018100": {
+    "name": "Census Tract 181.00",
+    "population": 5280,
+    "medianHouseholdIncome": 80036,
+    "povertyRate": 0.074,
+    "bachelorsPlusRate": 0.384
+  },
+  "12086018200": {
+    "name": "Census Tract 182.00",
+    "population": 2696,
+    "medianHouseholdIncome": 76042,
+    "povertyRate": 0.052,
+    "bachelorsPlusRate": 0.424
+  },
+  "12086018300": {
+    "name": "Census Tract 183.00",
+    "population": 4394,
+    "medianHouseholdIncome": 88000,
+    "povertyRate": 0.032,
+    "bachelorsPlusRate": 0.395
+  },
+  "12086018601": {
+    "name": "Census Tract 186.01",
+    "population": 4309,
+    "medianHouseholdIncome": 90409,
+    "povertyRate": 0.19,
+    "bachelorsPlusRate": 0.244
+  },
+  "12086018902": {
+    "name": "Census Tract 189.02",
+    "population": 3521,
+    "medianHouseholdIncome": 136970,
+    "povertyRate": 0.065,
+    "bachelorsPlusRate": 0.554
+  },
+  "12086019200": {
+    "name": "Census Tract 192.00",
+    "population": 5323,
+    "medianHouseholdIncome": 110417,
+    "povertyRate": 0.052,
+    "bachelorsPlusRate": 0.384
+  },
+  "12086020200": {
+    "name": "Census Tract 202.00",
+    "population": 6281,
+    "medianHouseholdIncome": 83810,
+    "povertyRate": 0.143,
+    "bachelorsPlusRate": 0.17
+  },
+  "12086020300": {
+    "name": "Census Tract 203.00",
+    "population": 3180,
+    "medianHouseholdIncome": 82300,
+    "povertyRate": 0.11,
+    "bachelorsPlusRate": 0.272
+  },
+  "12086000145": {
+    "name": "Census Tract 1.45",
+    "population": 2973,
+    "medianHouseholdIncome": 168438,
+    "povertyRate": 0.09,
+    "bachelorsPlusRate": 0.489
+  },
+  "12086000213": {
+    "name": "Census Tract 2.13",
+    "population": 5918,
+    "medianHouseholdIncome": 88929,
+    "povertyRate": 0.051,
+    "bachelorsPlusRate": 0.351
+  },
+  "12086000224": {
+    "name": "Census Tract 2.24",
+    "population": 4672,
+    "medianHouseholdIncome": 54833,
+    "povertyRate": 0.189,
+    "bachelorsPlusRate": 0.308
+  },
+  "12086000302": {
+    "name": "Census Tract 3.02",
+    "population": 2111,
+    "medianHouseholdIncome": 88589,
+    "povertyRate": 0.091,
+    "bachelorsPlusRate": 0.336
+  },
+  "12086000405": {
+    "name": "Census Tract 4.05",
+    "population": 4357,
+    "medianHouseholdIncome": 57839,
+    "povertyRate": 0.29,
+    "bachelorsPlusRate": 0.151
+  },
+  "12086000417": {
+    "name": "Census Tract 4.17",
+    "population": 4450,
+    "medianHouseholdIncome": 46170,
+    "povertyRate": 0.234,
+    "bachelorsPlusRate": 0.121
+  },
+  "12086000509": {
+    "name": "Census Tract 5.09",
+    "population": 3549,
+    "medianHouseholdIncome": 46313,
+    "povertyRate": 0.276,
+    "bachelorsPlusRate": 0.105
+  },
+  "12086000602": {
+    "name": "Census Tract 6.02",
+    "population": 5239,
+    "medianHouseholdIncome": 65133,
+    "povertyRate": 0.108,
+    "bachelorsPlusRate": 0.225
+  },
+  "12086000612": {
+    "name": "Census Tract 6.12",
+    "population": 3231,
+    "medianHouseholdIncome": 82707,
+    "povertyRate": 0.171,
+    "bachelorsPlusRate": 0.113
+  },
+  "12086000711": {
+    "name": "Census Tract 7.11",
+    "population": 5923,
+    "medianHouseholdIncome": 44769,
+    "povertyRate": 0.162,
+    "bachelorsPlusRate": 0.144
+  },
+  "12086000712": {
+    "name": "Census Tract 7.12",
+    "population": 2327,
+    "medianHouseholdIncome": 45176,
+    "povertyRate": 0.229,
+    "bachelorsPlusRate": 0.263
+  },
+  "12086000903": {
+    "name": "Census Tract 9.03",
+    "population": 3671,
+    "medianHouseholdIncome": 34943,
+    "povertyRate": 0.456,
+    "bachelorsPlusRate": 0.109
+  },
+  "12086001003": {
+    "name": "Census Tract 10.03",
+    "population": 6705,
+    "medianHouseholdIncome": 78964,
+    "povertyRate": 0.081,
+    "bachelorsPlusRate": 0.206
+  },
+  "12086001005": {
+    "name": "Census Tract 10.05",
+    "population": 1690,
+    "medianHouseholdIncome": 31250,
+    "povertyRate": 0.268,
+    "bachelorsPlusRate": 0.193
+  },
+  "12086001102": {
+    "name": "Census Tract 11.02",
+    "population": 5935,
+    "medianHouseholdIncome": 102898,
+    "povertyRate": 0.169,
+    "bachelorsPlusRate": 0.364
+  },
+  "12086001302": {
+    "name": "Census Tract 13.02",
+    "population": 5568,
+    "medianHouseholdIncome": 99946,
+    "povertyRate": 0.057,
+    "bachelorsPlusRate": 0.641
+  },
+  "12086001702": {
+    "name": "Census Tract 17.02",
+    "population": 3689,
+    "medianHouseholdIncome": 45814,
+    "povertyRate": 0.178,
+    "bachelorsPlusRate": 0.289
+  },
+  "12086001802": {
+    "name": "Census Tract 18.02",
+    "population": 4697,
+    "medianHouseholdIncome": 43883,
+    "povertyRate": 0.239,
+    "bachelorsPlusRate": 0.125
+  },
+  "12086001803": {
+    "name": "Census Tract 18.03",
+    "population": 3161,
+    "medianHouseholdIncome": 20103,
+    "povertyRate": 0.412,
+    "bachelorsPlusRate": 0.131
+  },
+  "12086002001": {
+    "name": "Census Tract 20.01",
+    "population": 3758,
+    "medianHouseholdIncome": 22740,
+    "povertyRate": 0.472,
+    "bachelorsPlusRate": 0.118
+  },
+  "12086002201": {
+    "name": "Census Tract 22.01",
+    "population": 3186,
+    "medianHouseholdIncome": 65893,
+    "povertyRate": 0.182,
+    "bachelorsPlusRate": 0.203
+  },
+  "12086002300": {
+    "name": "Census Tract 23.00",
+    "population": 5687,
+    "medianHouseholdIncome": 52561,
+    "povertyRate": 0.257,
+    "bachelorsPlusRate": 0.148
+  },
+  "12086002402": {
+    "name": "Census Tract 24.02",
+    "population": 6611,
+    "medianHouseholdIncome": 50977,
+    "povertyRate": 0.195,
+    "bachelorsPlusRate": 0.17
+  },
+  "12086002502": {
+    "name": "Census Tract 25.02",
+    "population": 3480,
+    "medianHouseholdIncome": 46250,
+    "povertyRate": 0.339,
+    "bachelorsPlusRate": 0.065
+  },
+  "12086003004": {
+    "name": "Census Tract 30.04",
+    "population": 5295,
+    "medianHouseholdIncome": 38929,
+    "povertyRate": 0.341,
+    "bachelorsPlusRate": 0.267
+  },
+  "12086003604": {
+    "name": "Census Tract 36.04",
+    "population": 3147,
+    "medianHouseholdIncome": 54665,
+    "povertyRate": 0.162,
+    "bachelorsPlusRate": 0.279
+  },
+  "12086003710": {
+    "name": "Census Tract 37.10",
+    "population": 8380,
+    "medianHouseholdIncome": 101946,
+    "povertyRate": 0.164,
+    "bachelorsPlusRate": 0.591
+  },
+  "12086003801": {
+    "name": "Census Tract 38.01",
+    "population": 5886,
+    "medianHouseholdIncome": 89327,
+    "povertyRate": 0.054,
+    "bachelorsPlusRate": 0.564
+  },
+  "12086004303": {
+    "name": "Census Tract 43.03",
+    "population": 2743,
+    "medianHouseholdIncome": 51450,
+    "povertyRate": 0.207,
+    "bachelorsPlusRate": 0.399
+  },
+  "12086005202": {
+    "name": "Census Tract 52.02",
+    "population": 6115,
+    "medianHouseholdIncome": 42669,
+    "povertyRate": 0.204,
+    "bachelorsPlusRate": 0.124
+  },
+  "12086005405": {
+    "name": "Census Tract 54.05",
+    "population": 3883,
+    "medianHouseholdIncome": 59831,
+    "povertyRate": 0.147,
+    "bachelorsPlusRate": 0.255
+  },
+  "12086006401": {
+    "name": "Census Tract 64.01",
+    "population": 3543,
+    "medianHouseholdIncome": 52681,
+    "povertyRate": 0.181,
+    "bachelorsPlusRate": 0.231
+  },
+  "12086007005": {
+    "name": "Census Tract 70.05",
+    "population": 1860,
+    "medianHouseholdIncome": 65234,
+    "povertyRate": 0.128,
+    "bachelorsPlusRate": 0.454
+  },
+  "12086007403": {
+    "name": "Census Tract 74.03",
+    "population": 3381,
+    "medianHouseholdIncome": 121925,
+    "povertyRate": 0.176,
+    "bachelorsPlusRate": 0.799
+  },
+  "12086007603": {
+    "name": "Census Tract 76.03",
+    "population": 3864,
+    "medianHouseholdIncome": 46566,
+    "povertyRate": 0.212,
+    "bachelorsPlusRate": 0.408
+  },
+  "12086007805": {
+    "name": "Census Tract 78.05",
+    "population": 4624,
+    "medianHouseholdIncome": 168313,
+    "povertyRate": 0.06,
+    "bachelorsPlusRate": 0.642
+  },
+  "12086007902": {
+    "name": "Census Tract 79.02",
+    "population": 3139,
+    "medianHouseholdIncome": 191597,
+    "povertyRate": 0.089,
+    "bachelorsPlusRate": 0.735
+  },
+  "12086008209": {
+    "name": "Census Tract 82.09",
+    "population": 4236,
+    "medianHouseholdIncome": 166447,
+    "povertyRate": 0.081,
+    "bachelorsPlusRate": 0.596
+  },
+  "12086008312": {
+    "name": "Census Tract 83.12",
+    "population": 3442,
+    "medianHouseholdIncome": 69139,
+    "povertyRate": 0.208,
+    "bachelorsPlusRate": 0.163
+  },
+  "12086008409": {
+    "name": "Census Tract 84.09",
+    "population": 5039,
+    "medianHouseholdIncome": 103571,
+    "povertyRate": 0.072,
+    "bachelorsPlusRate": 0.518
+  },
+  "12086008420": {
+    "name": "Census Tract 84.20",
+    "population": 1655,
+    "medianHouseholdIncome": 109444,
+    "povertyRate": 0.091,
+    "bachelorsPlusRate": 0.497
+  },
+  "12086008423": {
+    "name": "Census Tract 84.23",
+    "population": 4991,
+    "medianHouseholdIncome": 86875,
+    "povertyRate": 0.168,
+    "bachelorsPlusRate": 0.472
+  },
+  "12086008424": {
+    "name": "Census Tract 84.24",
+    "population": 3451,
+    "medianHouseholdIncome": 40741,
+    "povertyRate": 0.234,
+    "bachelorsPlusRate": 0.289
+  },
+  "12086008428": {
+    "name": "Census Tract 84.28",
+    "population": 2422,
+    "medianHouseholdIncome": 165352,
+    "povertyRate": 0.009,
+    "bachelorsPlusRate": 0.542
+  },
+  "12086008601": {
+    "name": "Census Tract 86.01",
+    "population": 4047,
+    "medianHouseholdIncome": 101286,
+    "povertyRate": 0.108,
+    "bachelorsPlusRate": 0.342
+  },
+  "12086008603": {
+    "name": "Census Tract 86.03",
+    "population": 4019,
+    "medianHouseholdIncome": 124256,
+    "povertyRate": 0.07,
+    "bachelorsPlusRate": 0.37
+  },
+  "12086008704": {
+    "name": "Census Tract 87.04",
+    "population": 2788,
+    "medianHouseholdIncome": 87383,
+    "povertyRate": 0.061,
+    "bachelorsPlusRate": 0.251
+  },
+  "12086008908": {
+    "name": "Census Tract 89.08",
+    "population": 3368,
+    "medianHouseholdIncome": 67660,
+    "povertyRate": 0.125,
+    "bachelorsPlusRate": 0.383
+  },
+  "12086008910": {
+    "name": "Census Tract 89.10",
+    "population": 3171,
+    "medianHouseholdIncome": 59632,
+    "povertyRate": 0.133,
+    "bachelorsPlusRate": 0.209
+  },
+  "12086009027": {
+    "name": "Census Tract 90.27",
+    "population": 3773,
+    "medianHouseholdIncome": 59583,
+    "povertyRate": 0.087,
+    "bachelorsPlusRate": 0.295
+  },
+  "12086009040": {
+    "name": "Census Tract 90.40",
+    "population": 8436,
+    "medianHouseholdIncome": 100611,
+    "povertyRate": 0.061,
+    "bachelorsPlusRate": 0.622
+  },
+  "12086009054": {
+    "name": "Census Tract 90.54",
+    "population": 2017,
+    "medianHouseholdIncome": 81324,
+    "povertyRate": 0.032,
+    "bachelorsPlusRate": 0.25
+  },
+  "12086009057": {
+    "name": "Census Tract 90.57",
+    "population": 6686,
+    "medianHouseholdIncome": 107587,
+    "povertyRate": 0.112,
+    "bachelorsPlusRate": 0.677
+  },
+  "12086009059": {
+    "name": "Census Tract 90.59",
+    "population": 3209,
+    "medianHouseholdIncome": 81020,
+    "povertyRate": 0.164,
+    "bachelorsPlusRate": 0.536
+  },
+  "12086009321": {
+    "name": "Census Tract 93.21",
+    "population": 2920,
+    "medianHouseholdIncome": 70769,
+    "povertyRate": 0.105,
+    "bachelorsPlusRate": 0.311
+  },
+  "12086009322": {
+    "name": "Census Tract 93.22",
+    "population": 4032,
+    "medianHouseholdIncome": 39097,
+    "povertyRate": 0.21,
+    "bachelorsPlusRate": 0.259
+  },
+  "12086009602": {
+    "name": "Census Tract 96.02",
+    "population": 3698,
+    "medianHouseholdIncome": 54073,
+    "povertyRate": 0.101,
+    "bachelorsPlusRate": 0.174
+  },
+  "12086009806": {
+    "name": "Census Tract 98.06",
+    "population": 3676,
+    "medianHouseholdIncome": 56153,
+    "povertyRate": 0.191,
+    "bachelorsPlusRate": 0.229
+  },
+  "12086009903": {
+    "name": "Census Tract 99.03",
+    "population": 5491,
+    "medianHouseholdIncome": 92177,
+    "povertyRate": 0.064,
+    "bachelorsPlusRate": 0.196
+  },
+  "12086010023": {
+    "name": "Census Tract 100.23",
+    "population": 2042,
+    "medianHouseholdIncome": 45724,
+    "povertyRate": 0.357,
+    "bachelorsPlusRate": 0.144
+  },
+  "12086010207": {
+    "name": "Census Tract 102.07",
+    "population": 4551,
+    "medianHouseholdIncome": 38229,
+    "povertyRate": 0.286,
+    "bachelorsPlusRate": 0.186
+  },
+  "12086010622": {
+    "name": "Census Tract 106.22",
+    "population": 4611,
+    "medianHouseholdIncome": 70000,
+    "povertyRate": 0.147,
+    "bachelorsPlusRate": 0.174
+  },
+  "12086010705": {
+    "name": "Census Tract 107.05",
+    "population": 5745,
+    "medianHouseholdIncome": 64077,
+    "povertyRate": 0.168,
+    "bachelorsPlusRate": 0.255
+  },
+  "12086010707": {
+    "name": "Census Tract 107.07",
+    "population": 4381,
+    "medianHouseholdIncome": 67708,
+    "povertyRate": 0.2,
+    "bachelorsPlusRate": 0.27
+  },
+  "12086010900": {
+    "name": "Census Tract 109.00",
+    "population": 6730,
+    "medianHouseholdIncome": 33629,
+    "povertyRate": 0.339,
+    "bachelorsPlusRate": 0.035
+  },
+  "12086011009": {
+    "name": "Census Tract 110.09",
+    "population": 7849,
+    "medianHouseholdIncome": 79750,
+    "povertyRate": 0.072,
+    "bachelorsPlusRate": 0.299
+  },
+  "12086011013": {
+    "name": "Census Tract 110.13",
+    "population": 3562,
+    "medianHouseholdIncome": 63281,
+    "povertyRate": 0.246,
+    "bachelorsPlusRate": 0.134
+  },
+  "12086011014": {
+    "name": "Census Tract 110.14",
+    "population": 5114,
+    "medianHouseholdIncome": 101484,
+    "povertyRate": 0.098,
+    "bachelorsPlusRate": 0.322
+  },
+  "12086011204": {
+    "name": "Census Tract 112.04",
+    "population": 2104,
+    "medianHouseholdIncome": 120503,
+    "povertyRate": 0.07,
+    "bachelorsPlusRate": 0.239
+  },
+  "12086011206": {
+    "name": "Census Tract 112.06",
+    "population": 3407,
+    "medianHouseholdIncome": 96065,
+    "povertyRate": 0.183,
+    "bachelorsPlusRate": 0.239
+  },
+  "12086011406": {
+    "name": "Census Tract 114.06",
+    "population": 3365,
+    "medianHouseholdIncome": 44821,
+    "povertyRate": 0.258,
+    "bachelorsPlusRate": 0.127
+  },
+  "12086011409": {
+    "name": "Census Tract 114.09",
+    "population": 6915,
+    "medianHouseholdIncome": 81024,
+    "povertyRate": 0.225,
+    "bachelorsPlusRate": 0.217
+  },
+  "12086011410": {
+    "name": "Census Tract 114.10",
+    "population": 5308,
+    "medianHouseholdIncome": 82708,
+    "povertyRate": 0.149,
+    "bachelorsPlusRate": 0.309
+  },
+  "12086011602": {
+    "name": "Census Tract 116.02",
+    "population": 4410,
+    "medianHouseholdIncome": 95234,
+    "povertyRate": 0.039,
+    "bachelorsPlusRate": 0.5
+  },
+  "12086012101": {
+    "name": "Census Tract 121.01",
+    "population": 2809,
+    "medianHouseholdIncome": 74863,
+    "povertyRate": 0.108,
+    "bachelorsPlusRate": 0.278
+  },
+  "12086012200": {
+    "name": "Census Tract 122.00",
+    "population": 5410,
+    "medianHouseholdIncome": 99438,
+    "povertyRate": 0.104,
+    "bachelorsPlusRate": 0.223
+  },
+  "12086012302": {
+    "name": "Census Tract 123.02",
+    "population": 4471,
+    "medianHouseholdIncome": 86219,
+    "povertyRate": 0.14,
+    "bachelorsPlusRate": 0.267
+  },
+  "12086012401": {
+    "name": "Census Tract 124.01",
+    "population": 5177,
+    "medianHouseholdIncome": 84855,
+    "povertyRate": 0.094,
+    "bachelorsPlusRate": 0.3
+  },
+  "12086012402": {
+    "name": "Census Tract 124.02",
+    "population": 3199,
+    "medianHouseholdIncome": 143056,
+    "povertyRate": 0.018,
+    "bachelorsPlusRate": 0.345
+  },
+  "12086012501": {
+    "name": "Census Tract 125.01",
+    "population": 1698,
+    "medianHouseholdIncome": 61518,
+    "povertyRate": 0.105,
+    "bachelorsPlusRate": 0.25
+  },
+  "12086012601": {
+    "name": "Census Tract 126.01",
+    "population": 3326,
+    "medianHouseholdIncome": 56848,
+    "povertyRate": 0.14,
+    "bachelorsPlusRate": 0.233
+  },
+  "12086012701": {
+    "name": "Census Tract 127.01",
+    "population": 14427,
+    "medianHouseholdIncome": 120566,
+    "povertyRate": 0.07,
+    "bachelorsPlusRate": 0.456
+  },
+  "12086012702": {
+    "name": "Census Tract 127.02",
+    "population": 4419,
+    "medianHouseholdIncome": 139464,
+    "povertyRate": 0.036,
+    "bachelorsPlusRate": 0.454
+  },
+  "12086012801": {
+    "name": "Census Tract 128.01",
+    "population": 4324,
+    "medianHouseholdIncome": 105137,
+    "povertyRate": 0.069,
+    "bachelorsPlusRate": 0.27
+  },
+  "12086012900": {
+    "name": "Census Tract 129.00",
+    "population": 4149,
+    "medianHouseholdIncome": 63500,
+    "povertyRate": 0.165,
+    "bachelorsPlusRate": 0.257
+  },
+  "12086013600": {
+    "name": "Census Tract 136.00",
+    "population": 6027,
+    "medianHouseholdIncome": 49247,
+    "povertyRate": 0.141,
+    "bachelorsPlusRate": 0.301
+  },
+  "12086013700": {
+    "name": "Census Tract 137.00",
+    "population": 6284,
+    "medianHouseholdIncome": 50581,
+    "povertyRate": 0.145,
+    "bachelorsPlusRate": 0.176
+  },
+  "12086014702": {
+    "name": "Census Tract 147.02",
+    "population": 4207,
+    "medianHouseholdIncome": 85446,
+    "povertyRate": 0.093,
+    "bachelorsPlusRate": 0.301
+  },
+  "12086015102": {
+    "name": "Census Tract 151.02",
+    "population": 2790,
+    "medianHouseholdIncome": 129519,
+    "povertyRate": 0.061,
+    "bachelorsPlusRate": 0.388
+  },
+  "12086015202": {
+    "name": "Census Tract 152.02",
+    "population": 3943,
+    "medianHouseholdIncome": 84155,
+    "povertyRate": 0.1,
+    "bachelorsPlusRate": 0.368
+  },
+  "12086015400": {
+    "name": "Census Tract 154.00",
+    "population": 5358,
+    "medianHouseholdIncome": 89638,
+    "povertyRate": 0.133,
+    "bachelorsPlusRate": 0.386
+  },
+  "12086015502": {
+    "name": "Census Tract 155.02",
+    "population": 2498,
+    "medianHouseholdIncome": 70217,
+    "povertyRate": 0.046,
+    "bachelorsPlusRate": 0.315
+  },
+  "12086015700": {
+    "name": "Census Tract 157.00",
+    "population": 2371,
+    "medianHouseholdIncome": 174583,
+    "povertyRate": 0.021,
+    "bachelorsPlusRate": 0.425
+  },
+  "12086016100": {
+    "name": "Census Tract 161.00",
+    "population": 4689,
+    "medianHouseholdIncome": 114138,
+    "povertyRate": 0.015,
+    "bachelorsPlusRate": 0.289
+  },
+  "12086017600": {
+    "name": "Census Tract 176.00",
+    "population": 7016,
+    "medianHouseholdIncome": 72819,
+    "povertyRate": 0.104,
+    "bachelorsPlusRate": 0.338
+  },
+  "12086018002": {
+    "name": "Census Tract 180.02",
+    "population": 2378,
+    "medianHouseholdIncome": 86500,
+    "povertyRate": 0.077,
+    "bachelorsPlusRate": 0.387
+  },
+  "12086019902": {
+    "name": "Census Tract 199.02",
+    "population": 7173,
+    "medianHouseholdIncome": 89665,
+    "povertyRate": 0.026,
+    "bachelorsPlusRate": 0.265
+  },
+  "12086980300": {
+    "name": "Census Tract 9803.00",
+    "population": 5765,
+    "medianHouseholdIncome": 0,
+    "povertyRate": 0.385,
+    "bachelorsPlusRate": 0.352
+  },
+  "12086980400": {
+    "name": "Census Tract 9804.00",
+    "population": 0,
+    "medianHouseholdIncome": 0,
+    "povertyRate": null,
+    "bachelorsPlusRate": null
+  },
+  "12086981000": {
+    "name": "Census Tract 9810.00",
+    "population": 0,
+    "medianHouseholdIncome": 0,
+    "povertyRate": null,
+    "bachelorsPlusRate": null
+  },
+  "12086000120": {
+    "name": "Census Tract 1.20",
+    "population": 3934,
+    "medianHouseholdIncome": 74891,
+    "povertyRate": 0.097,
+    "bachelorsPlusRate": 0.585
+  },
+  "12086000124": {
+    "name": "Census Tract 1.24",
+    "population": 3064,
+    "medianHouseholdIncome": 44516,
+    "povertyRate": 0.149,
+    "bachelorsPlusRate": 0.239
+  },
+  "12086000141": {
+    "name": "Census Tract 1.41",
+    "population": 2474,
+    "medianHouseholdIncome": 108688,
+    "povertyRate": 0.163,
+    "bachelorsPlusRate": 0.627
+  },
+  "12086000204": {
+    "name": "Census Tract 2.04",
+    "population": 3667,
+    "medianHouseholdIncome": 63449,
+    "povertyRate": 0.202,
+    "bachelorsPlusRate": 0.219
+  },
+  "12086000212": {
+    "name": "Census Tract 2.12",
+    "population": 4760,
+    "medianHouseholdIncome": 49024,
+    "povertyRate": 0.195,
+    "bachelorsPlusRate": 0.186
+  },
+  "12086000216": {
+    "name": "Census Tract 2.16",
+    "population": 4510,
+    "medianHouseholdIncome": 75541,
+    "povertyRate": 0.093,
+    "bachelorsPlusRate": 0.263
+  },
+  "12086000221": {
+    "name": "Census Tract 2.21",
+    "population": 2491,
+    "medianHouseholdIncome": 82439,
+    "povertyRate": 0.146,
+    "bachelorsPlusRate": 0.257
+  },
+  "12086000225": {
+    "name": "Census Tract 2.25",
+    "population": 3933,
+    "medianHouseholdIncome": 62000,
+    "povertyRate": 0.169,
+    "bachelorsPlusRate": 0.336
+  },
+  "12086000306": {
+    "name": "Census Tract 3.06",
+    "population": 4844,
+    "medianHouseholdIncome": 46987,
+    "povertyRate": 0.291,
+    "bachelorsPlusRate": 0.194
+  },
+  "12086000307": {
+    "name": "Census Tract 3.07",
+    "population": 4456,
+    "medianHouseholdIncome": 57366,
+    "povertyRate": 0.095,
+    "bachelorsPlusRate": 0.165
+  },
+  "12086000312": {
+    "name": "Census Tract 3.12",
+    "population": 2870,
+    "medianHouseholdIncome": 33563,
+    "povertyRate": 0.262,
+    "bachelorsPlusRate": 0.305
+  },
+  "12086000410": {
+    "name": "Census Tract 4.10",
+    "population": 4858,
+    "medianHouseholdIncome": 78455,
+    "povertyRate": 0.196,
+    "bachelorsPlusRate": 0.1
+  },
+  "12086000413": {
+    "name": "Census Tract 4.13",
+    "population": 5831,
+    "medianHouseholdIncome": 44975,
+    "povertyRate": 0.253,
+    "bachelorsPlusRate": 0.274
+  },
+  "12086000419": {
+    "name": "Census Tract 4.19",
+    "population": 3924,
+    "medianHouseholdIncome": 72857,
+    "povertyRate": 0.144,
+    "bachelorsPlusRate": 0.096
+  },
+  "12086000504": {
+    "name": "Census Tract 5.04",
+    "population": 4360,
+    "medianHouseholdIncome": 58105,
+    "povertyRate": 0.163,
+    "bachelorsPlusRate": 0.069
+  },
+  "12086000609": {
+    "name": "Census Tract 6.09",
+    "population": 3355,
+    "medianHouseholdIncome": 44028,
+    "povertyRate": 0.194,
+    "bachelorsPlusRate": 0.11
+  },
+  "12086000713": {
+    "name": "Census Tract 7.13",
+    "population": 3032,
+    "medianHouseholdIncome": 17176,
+    "povertyRate": 0.379,
+    "bachelorsPlusRate": 0.179
+  },
+  "12086000718": {
+    "name": "Census Tract 7.18",
+    "population": 4013,
+    "medianHouseholdIncome": 58094,
+    "povertyRate": 0.099,
+    "bachelorsPlusRate": 0.15
+  },
+  "12086000804": {
+    "name": "Census Tract 8.04",
+    "population": 4322,
+    "medianHouseholdIncome": 55355,
+    "povertyRate": 0.212,
+    "bachelorsPlusRate": 0.226
+  },
+  "12086000806": {
+    "name": "Census Tract 8.06",
+    "population": 4132,
+    "medianHouseholdIncome": 44868,
+    "povertyRate": 0.233,
+    "bachelorsPlusRate": 0.186
+  },
+  "12086000807": {
+    "name": "Census Tract 8.07",
+    "population": 3776,
+    "medianHouseholdIncome": 37236,
+    "povertyRate": 0.248,
+    "bachelorsPlusRate": 0.183
+  },
+  "12086000808": {
+    "name": "Census Tract 8.08",
+    "population": 3763,
+    "medianHouseholdIncome": 45380,
+    "povertyRate": 0.2,
+    "bachelorsPlusRate": 0.166
+  },
+  "12086001205": {
+    "name": "Census Tract 12.05",
+    "population": 2413,
+    "medianHouseholdIncome": 143603,
+    "povertyRate": 0.064,
+    "bachelorsPlusRate": 0.578
+  },
+  "12086001208": {
+    "name": "Census Tract 12.08",
+    "population": 3146,
+    "medianHouseholdIncome": 60929,
+    "povertyRate": 0.134,
+    "bachelorsPlusRate": 0.45
+  },
+  "12086001402": {
+    "name": "Census Tract 14.02",
+    "population": 5479,
+    "medianHouseholdIncome": 37433,
+    "povertyRate": 0.128,
+    "bachelorsPlusRate": 0.262
+  },
+  "12086001501": {
+    "name": "Census Tract 15.01",
+    "population": 3906,
+    "medianHouseholdIncome": 27098,
+    "povertyRate": 0.497,
+    "bachelorsPlusRate": 0.062
+  },
+  "12086001605": {
+    "name": "Census Tract 16.05",
+    "population": 3712,
+    "medianHouseholdIncome": 31972,
+    "povertyRate": 0.283,
+    "bachelorsPlusRate": 0.249
+  },
+  "12086001607": {
+    "name": "Census Tract 16.07",
+    "population": 3101,
+    "medianHouseholdIncome": 81828,
+    "povertyRate": 0.133,
+    "bachelorsPlusRate": 0.162
+  },
+  "12086001608": {
+    "name": "Census Tract 16.08",
+    "population": 2829,
+    "medianHouseholdIncome": 69151,
+    "povertyRate": 0.128,
+    "bachelorsPlusRate": 0.243
+  },
+  "12086001904": {
+    "name": "Census Tract 19.04",
+    "population": 4088,
+    "medianHouseholdIncome": 38261,
+    "povertyRate": 0.294,
+    "bachelorsPlusRate": 0.113
+  },
+  "12086002100": {
+    "name": "Census Tract 21.00",
+    "population": 3181,
+    "medianHouseholdIncome": 91091,
+    "povertyRate": 0.082,
+    "bachelorsPlusRate": 0.58
+  },
+  "12086002403": {
+    "name": "Census Tract 24.03",
+    "population": 3629,
+    "medianHouseholdIncome": 46698,
+    "povertyRate": 0.274,
+    "bachelorsPlusRate": 0.119
+  },
+  "12086002800": {
+    "name": "Census Tract 28.00",
+    "population": 1353,
+    "medianHouseholdIncome": 45324,
+    "povertyRate": 0.391,
+    "bachelorsPlusRate": 0.308
+  },
+  "12086003603": {
+    "name": "Census Tract 36.03",
+    "population": 2154,
+    "medianHouseholdIncome": 57931,
+    "povertyRate": 0.117,
+    "bachelorsPlusRate": 0.337
+  },
+  "12086003605": {
+    "name": "Census Tract 36.05",
+    "population": 2993,
+    "medianHouseholdIncome": 33920,
+    "povertyRate": 0.358,
+    "bachelorsPlusRate": 0.32
+  },
+  "12086003909": {
+    "name": "Census Tract 39.09",
+    "population": 1492,
+    "medianHouseholdIncome": 53203,
+    "povertyRate": 0.184,
+    "bachelorsPlusRate": 0.35
+  },
+  "12086003911": {
+    "name": "Census Tract 39.11",
+    "population": 4363,
+    "medianHouseholdIncome": 62103,
+    "povertyRate": 0.227,
+    "bachelorsPlusRate": 0.396
+  },
+  "12086003916": {
+    "name": "Census Tract 39.16",
+    "population": 4199,
+    "medianHouseholdIncome": 76161,
+    "povertyRate": 0.171,
+    "bachelorsPlusRate": 0.406
+  },
+  "12086004204": {
+    "name": "Census Tract 42.04",
+    "population": 2087,
+    "medianHouseholdIncome": 49063,
+    "povertyRate": 0.197,
+    "bachelorsPlusRate": 0.542
+  },
+  "12086004705": {
+    "name": "Census Tract 47.05",
+    "population": 3576,
+    "medianHouseholdIncome": 81316,
+    "povertyRate": 0.067,
+    "bachelorsPlusRate": 0.437
+  },
+  "12086005103": {
+    "name": "Census Tract 51.03",
+    "population": 2633,
+    "medianHouseholdIncome": 39936,
+    "povertyRate": 0.222,
+    "bachelorsPlusRate": 0.187
+  },
+  "12086005201": {
+    "name": "Census Tract 52.01",
+    "population": 5074,
+    "medianHouseholdIncome": 40061,
+    "povertyRate": 0.225,
+    "bachelorsPlusRate": 0.269
+  },
+  "12086005303": {
+    "name": "Census Tract 53.03",
+    "population": 3504,
+    "medianHouseholdIncome": 39960,
+    "povertyRate": 0.222,
+    "bachelorsPlusRate": 0.118
+  },
+  "12086005403": {
+    "name": "Census Tract 54.03",
+    "population": 1950,
+    "medianHouseholdIncome": 46793,
+    "povertyRate": 0.283,
+    "bachelorsPlusRate": 0.218
+  },
+  "12086005600": {
+    "name": "Census Tract 56.00",
+    "population": 4914,
+    "medianHouseholdIncome": 60284,
+    "povertyRate": 0.093,
+    "bachelorsPlusRate": 0.354
+  },
+  "12086005806": {
+    "name": "Census Tract 58.06",
+    "population": 3845,
+    "medianHouseholdIncome": 68041,
+    "povertyRate": 0.038,
+    "bachelorsPlusRate": 0.195
+  },
+  "12086005904": {
+    "name": "Census Tract 59.04",
+    "population": 5672,
+    "medianHouseholdIncome": 63182,
+    "povertyRate": 0.111,
+    "bachelorsPlusRate": 0.339
+  },
+  "12086006104": {
+    "name": "Census Tract 61.04",
+    "population": 4160,
+    "medianHouseholdIncome": 195588,
+    "povertyRate": 0.063,
+    "bachelorsPlusRate": 0.791
+  },
+  "12086006203": {
+    "name": "Census Tract 62.03",
+    "population": 2711,
+    "medianHouseholdIncome": 114258,
+    "povertyRate": 0.128,
+    "bachelorsPlusRate": 0.744
+  },
+  "12086006607": {
+    "name": "Census Tract 66.07",
+    "population": 3231,
+    "medianHouseholdIncome": 75380,
+    "povertyRate": 0.244,
+    "bachelorsPlusRate": 0.22
+  },
+  "12086006715": {
+    "name": "Census Tract 67.15",
+    "population": 4202,
+    "medianHouseholdIncome": 111563,
+    "povertyRate": 0.062,
+    "bachelorsPlusRate": 0.705
+  },
+  "12086006719": {
+    "name": "Census Tract 67.19",
+    "population": 2264,
+    "medianHouseholdIncome": 109018,
+    "povertyRate": 0.028,
+    "bachelorsPlusRate": 0.81
+  },
+  "12086006720": {
+    "name": "Census Tract 67.20",
+    "population": 2397,
+    "medianHouseholdIncome": 173088,
+    "povertyRate": 0.038,
+    "bachelorsPlusRate": 0.886
+  },
+  "12086006902": {
+    "name": "Census Tract 69.02",
+    "population": 3076,
+    "medianHouseholdIncome": 77179,
+    "povertyRate": 0.113,
+    "bachelorsPlusRate": 0.44
+  },
+  "12086007007": {
+    "name": "Census Tract 70.07",
+    "population": 3698,
+    "medianHouseholdIncome": 98342,
+    "povertyRate": 0.217,
+    "bachelorsPlusRate": 0.618
+  },
+  "12086007300": {
+    "name": "Census Tract 73.00",
+    "population": 4324,
+    "medianHouseholdIncome": 186786,
+    "povertyRate": 0.052,
+    "bachelorsPlusRate": 0.878
+  },
+  "12086007402": {
+    "name": "Census Tract 74.02",
+    "population": 2561,
+    "medianHouseholdIncome": 145765,
+    "povertyRate": 0.046,
+    "bachelorsPlusRate": 0.809
+  },
+  "12086007609": {
+    "name": "Census Tract 76.09",
+    "population": 1845,
+    "medianHouseholdIncome": 74107,
+    "povertyRate": 0.092,
+    "bachelorsPlusRate": 0.563
+  },
+  "12086007704": {
+    "name": "Census Tract 77.04",
+    "population": 6375,
+    "medianHouseholdIncome": 65403,
+    "povertyRate": 0.073,
+    "bachelorsPlusRate": 0.626
+  },
+  "12086007705": {
+    "name": "Census Tract 77.05",
+    "population": 5405,
+    "medianHouseholdIncome": 71056,
+    "povertyRate": 0.17,
+    "bachelorsPlusRate": 0.614
+  },
+  "12086007706": {
+    "name": "Census Tract 77.06",
+    "population": 3509,
+    "medianHouseholdIncome": 112063,
+    "povertyRate": 0.081,
+    "bachelorsPlusRate": 0.616
+  },
+  "12086007707": {
+    "name": "Census Tract 77.07",
+    "population": 3028,
+    "medianHouseholdIncome": 158164,
+    "povertyRate": 0.184,
+    "bachelorsPlusRate": 0.47
+  },
+  "12086007801": {
+    "name": "Census Tract 78.01",
+    "population": 572,
+    "medianHouseholdIncome": 250001,
+    "povertyRate": 0.028,
+    "bachelorsPlusRate": 0.898
+  },
+  "12086007808": {
+    "name": "Census Tract 78.08",
+    "population": 4440,
+    "medianHouseholdIncome": 67002,
+    "povertyRate": 0.117,
+    "bachelorsPlusRate": 0.537
+  },
+  "12086008000": {
+    "name": "Census Tract 80.00",
+    "population": 4695,
+    "medianHouseholdIncome": 177781,
+    "povertyRate": 0.107,
+    "bachelorsPlusRate": 0.816
+  },
+  "12086008208": {
+    "name": "Census Tract 82.08",
+    "population": 5210,
+    "medianHouseholdIncome": 81995,
+    "povertyRate": 0.102,
+    "bachelorsPlusRate": 0.44
+  },
+  "12086008305": {
+    "name": "Census Tract 83.05",
+    "population": 5652,
+    "medianHouseholdIncome": 105925,
+    "povertyRate": 0.112,
+    "bachelorsPlusRate": 0.607
+  },
+  "12086008308": {
+    "name": "Census Tract 83.08",
+    "population": 6096,
+    "medianHouseholdIncome": 77077,
+    "povertyRate": 0.152,
+    "bachelorsPlusRate": 0.235
+  },
+  "12086008430": {
+    "name": "Census Tract 84.30",
+    "population": 5637,
+    "medianHouseholdIncome": 58131,
+    "povertyRate": 0.171,
+    "bachelorsPlusRate": 0.288
+  },
+  "12086008807": {
+    "name": "Census Tract 88.07",
+    "population": 3895,
+    "medianHouseholdIncome": 110004,
+    "povertyRate": 0.05,
+    "bachelorsPlusRate": 0.271
+  },
+  "12086008810": {
+    "name": "Census Tract 88.10",
+    "population": 4037,
+    "medianHouseholdIncome": 58333,
+    "povertyRate": 0.084,
+    "bachelorsPlusRate": 0.377
+  },
+  "12086008909": {
+    "name": "Census Tract 89.09",
+    "population": 3449,
+    "medianHouseholdIncome": 67039,
+    "povertyRate": 0.103,
+    "bachelorsPlusRate": 0.265
+  },
+  "12086009065": {
+    "name": "Census Tract 90.65",
+    "population": 5013,
+    "medianHouseholdIncome": 105362,
+    "povertyRate": 0.176,
+    "bachelorsPlusRate": 0.577
+  },
+  "12086009066": {
+    "name": "Census Tract 90.66",
+    "population": 7210,
+    "medianHouseholdIncome": 82845,
+    "povertyRate": 0.147,
+    "bachelorsPlusRate": 0.58
+  },
+  "12086009317": {
+    "name": "Census Tract 93.17",
+    "population": 4888,
+    "medianHouseholdIncome": 78387,
+    "povertyRate": 0.167,
+    "bachelorsPlusRate": 0.166
+  },
+  "12086009506": {
+    "name": "Census Tract 95.06",
+    "population": 4497,
+    "medianHouseholdIncome": 49494,
+    "povertyRate": 0.14,
+    "bachelorsPlusRate": 0.151
+  },
+  "12086009706": {
+    "name": "Census Tract 97.06",
+    "population": 4130,
+    "medianHouseholdIncome": 55500,
+    "povertyRate": 0.188,
+    "bachelorsPlusRate": 0.431
+  },
+  "12086009906": {
+    "name": "Census Tract 99.06",
+    "population": 5280,
+    "medianHouseholdIncome": 72563,
+    "povertyRate": 0.105,
+    "bachelorsPlusRate": 0.182
+  },
+  "12086010015": {
+    "name": "Census Tract 100.15",
+    "population": 3549,
+    "medianHouseholdIncome": 60250,
+    "povertyRate": 0.174,
+    "bachelorsPlusRate": 0.118
+  },
+  "12086010208": {
+    "name": "Census Tract 102.08",
+    "population": 4844,
+    "medianHouseholdIncome": 53871,
+    "povertyRate": 0.201,
+    "bachelorsPlusRate": 0.168
+  },
+  "12086010212": {
+    "name": "Census Tract 102.12",
+    "population": 3382,
+    "medianHouseholdIncome": 133365,
+    "povertyRate": 0.065,
+    "bachelorsPlusRate": 0.285
+  },
+  "12086010710": {
+    "name": "Census Tract 107.10",
+    "population": 6482,
+    "medianHouseholdIncome": 72022,
+    "povertyRate": 0.011,
+    "bachelorsPlusRate": 0.294
+  },
+  "12086011010": {
+    "name": "Census Tract 110.10",
+    "population": 4772,
+    "medianHouseholdIncome": 45256,
+    "povertyRate": 0.192,
+    "bachelorsPlusRate": 0.152
+  },
+  "12086011103": {
+    "name": "Census Tract 111.03",
+    "population": 3449,
+    "medianHouseholdIncome": 42260,
+    "povertyRate": 0.153,
+    "bachelorsPlusRate": 0.253
+  },
+  "12086012802": {
+    "name": "Census Tract 128.02",
+    "population": 3461,
+    "medianHouseholdIncome": 107929,
+    "povertyRate": 0.026,
+    "bachelorsPlusRate": 0.557
+  },
+  "12086013000": {
+    "name": "Census Tract 130.00",
+    "population": 4388,
+    "medianHouseholdIncome": 70347,
+    "povertyRate": 0.17,
+    "bachelorsPlusRate": 0.225
+  },
+  "12086013100": {
+    "name": "Census Tract 131.00",
+    "population": 4975,
+    "medianHouseholdIncome": 58258,
+    "povertyRate": 0.185,
+    "bachelorsPlusRate": 0.248
+  },
+  "12086013500": {
+    "name": "Census Tract 135.00",
+    "population": 5444,
+    "medianHouseholdIncome": 50760,
+    "povertyRate": 0.21,
+    "bachelorsPlusRate": 0.29
+  },
+  "12086013900": {
+    "name": "Census Tract 139.00",
+    "population": 4115,
+    "medianHouseholdIncome": 76379,
+    "povertyRate": 0.108,
+    "bachelorsPlusRate": 0.21
+  },
+  "12086014602": {
+    "name": "Census Tract 146.02",
+    "population": 3454,
+    "medianHouseholdIncome": 52228,
+    "povertyRate": 0.094,
+    "bachelorsPlusRate": 0.38
+  },
+  "12086015001": {
+    "name": "Census Tract 150.01",
+    "population": 4339,
+    "medianHouseholdIncome": 70208,
+    "povertyRate": 0.073,
+    "bachelorsPlusRate": 0.293
+  },
+  "12086015002": {
+    "name": "Census Tract 150.02",
+    "population": 4883,
+    "medianHouseholdIncome": 124342,
+    "povertyRate": 0.135,
+    "bachelorsPlusRate": 0.296
+  },
+  "12086015501": {
+    "name": "Census Tract 155.01",
+    "population": 2507,
+    "medianHouseholdIncome": 70500,
+    "povertyRate": 0.147,
+    "bachelorsPlusRate": 0.406
+  },
+  "12086015600": {
+    "name": "Census Tract 156.00",
+    "population": 4509,
+    "medianHouseholdIncome": 94180,
+    "povertyRate": 0.047,
+    "bachelorsPlusRate": 0.464
+  },
+  "12086016800": {
+    "name": "Census Tract 168.00",
+    "population": 3619,
+    "medianHouseholdIncome": 70500,
+    "povertyRate": 0.111,
+    "bachelorsPlusRate": 0.349
+  },
+  "12086017902": {
+    "name": "Census Tract 179.02",
+    "population": 4617,
+    "medianHouseholdIncome": 122188,
+    "povertyRate": 0.047,
+    "bachelorsPlusRate": 0.265
+  },
+  "12086018700": {
+    "name": "Census Tract 187.00",
+    "population": 4085,
+    "medianHouseholdIncome": 99432,
+    "povertyRate": 0.088,
+    "bachelorsPlusRate": 0.334
+  },
+  "12086018803": {
+    "name": "Census Tract 188.03",
+    "population": 3332,
+    "medianHouseholdIncome": 92182,
+    "povertyRate": 0.167,
+    "bachelorsPlusRate": 0.299
+  },
+  "12086019402": {
+    "name": "Census Tract 194.02",
+    "population": 6005,
+    "medianHouseholdIncome": 104831,
+    "povertyRate": 0.089,
+    "bachelorsPlusRate": 0.378
+  },
+  "12086019901": {
+    "name": "Census Tract 199.01",
+    "population": 4236,
+    "medianHouseholdIncome": 105134,
+    "povertyRate": 0.29,
+    "bachelorsPlusRate": 0.275
+  },
+  "12086000128": {
+    "name": "Census Tract 1.28",
+    "population": 4050,
+    "medianHouseholdIncome": 76625,
+    "povertyRate": 0.12,
+    "bachelorsPlusRate": 0.567
+  },
+  "12086000134": {
+    "name": "Census Tract 1.34",
+    "population": 3347,
+    "medianHouseholdIncome": 49429,
+    "povertyRate": 0.143,
+    "bachelorsPlusRate": 0.389
+  },
+  "12086000211": {
+    "name": "Census Tract 2.11",
+    "population": 2487,
+    "medianHouseholdIncome": 62634,
+    "povertyRate": 0.152,
+    "bachelorsPlusRate": 0.35
+  },
+  "12086000311": {
+    "name": "Census Tract 3.11",
+    "population": 4173,
+    "medianHouseholdIncome": 39716,
+    "povertyRate": 0.272,
+    "bachelorsPlusRate": 0.164
+  },
+  "12086000414": {
+    "name": "Census Tract 4.14",
+    "population": 5406,
+    "medianHouseholdIncome": 52895,
+    "povertyRate": 0.406,
+    "bachelorsPlusRate": 0.177
+  },
+  "12086000505": {
+    "name": "Census Tract 5.05",
+    "population": 5595,
+    "medianHouseholdIncome": 59360,
+    "povertyRate": 0.163,
+    "bachelorsPlusRate": 0.226
+  },
+  "12086000610": {
+    "name": "Census Tract 6.10",
+    "population": 2907,
+    "medianHouseholdIncome": 63617,
+    "povertyRate": 0.18,
+    "bachelorsPlusRate": 0.156
+  },
+  "12086000714": {
+    "name": "Census Tract 7.14",
+    "population": 4831,
+    "medianHouseholdIncome": 46922,
+    "povertyRate": 0.159,
+    "bachelorsPlusRate": 0.18
+  },
+  "12086000715": {
+    "name": "Census Tract 7.15",
+    "population": 3383,
+    "medianHouseholdIncome": 70069,
+    "povertyRate": 0.101,
+    "bachelorsPlusRate": 0.245
+  },
+  "12086000719": {
+    "name": "Census Tract 7.19",
+    "population": 1288,
+    "medianHouseholdIncome": 38690,
+    "povertyRate": 0.298,
+    "bachelorsPlusRate": 0.164
+  },
+  "12086000720": {
+    "name": "Census Tract 7.20",
+    "population": 3671,
+    "medianHouseholdIncome": 43233,
+    "povertyRate": 0.206,
+    "bachelorsPlusRate": 0.193
+  },
+  "12086000805": {
+    "name": "Census Tract 8.05",
+    "population": 5149,
+    "medianHouseholdIncome": 59479,
+    "povertyRate": 0.139,
+    "bachelorsPlusRate": 0.205
+  },
+  "12086001007": {
+    "name": "Census Tract 10.07",
+    "population": 4081,
+    "medianHouseholdIncome": 67591,
+    "povertyRate": 0.247,
+    "bachelorsPlusRate": 0.266
+  },
+  "12086001204": {
+    "name": "Census Tract 12.04",
+    "population": 5924,
+    "medianHouseholdIncome": 64735,
+    "povertyRate": 0.238,
+    "bachelorsPlusRate": 0.393
+  },
+  "12086001206": {
+    "name": "Census Tract 12.06",
+    "population": 4322,
+    "medianHouseholdIncome": 117125,
+    "povertyRate": 0.052,
+    "bachelorsPlusRate": 0.566
+  },
+  "12086001209": {
+    "name": "Census Tract 12.09",
+    "population": 3842,
+    "medianHouseholdIncome": 60423,
+    "povertyRate": 0.25,
+    "bachelorsPlusRate": 0.304
+  },
+  "12086001603": {
+    "name": "Census Tract 16.03",
+    "population": 3397,
+    "medianHouseholdIncome": 61473,
+    "povertyRate": 0.113,
+    "bachelorsPlusRate": 0.291
+  },
+  "12086001705": {
+    "name": "Census Tract 17.05",
+    "population": 2226,
+    "medianHouseholdIncome": 55265,
+    "povertyRate": 0.141,
+    "bachelorsPlusRate": 0.287
+  },
+  "12086002708": {
+    "name": "Census Tract 27.08",
+    "population": 2943,
+    "medianHouseholdIncome": 89191,
+    "povertyRate": 0.116,
+    "bachelorsPlusRate": 0.528
+  },
+  "12086002710": {
+    "name": "Census Tract 27.10",
+    "population": 1834,
+    "medianHouseholdIncome": 120692,
+    "povertyRate": 0.182,
+    "bachelorsPlusRate": 0.499
+  },
+  "12086003001": {
+    "name": "Census Tract 30.01",
+    "population": 3367,
+    "medianHouseholdIncome": 42167,
+    "povertyRate": 0.414,
+    "bachelorsPlusRate": 0.302
+  },
+  "12086003804": {
+    "name": "Census Tract 38.04",
+    "population": 5631,
+    "medianHouseholdIncome": 100208,
+    "povertyRate": 0.099,
+    "bachelorsPlusRate": 0.577
+  },
+  "12086003915": {
+    "name": "Census Tract 39.15",
+    "population": 5097,
+    "medianHouseholdIncome": 60885,
+    "povertyRate": 0.076,
+    "bachelorsPlusRate": 0.448
+  },
+  "12086004105": {
+    "name": "Census Tract 41.05",
+    "population": 2195,
+    "medianHouseholdIncome": 0,
+    "povertyRate": 0.158,
+    "bachelorsPlusRate": 0.521
+  },
+  "12086004301": {
+    "name": "Census Tract 43.01",
+    "population": 2686,
+    "medianHouseholdIncome": 74528,
+    "povertyRate": 0.105,
+    "bachelorsPlusRate": 0.656
+  },
+  "12086004500": {
+    "name": "Census Tract 45.00",
+    "population": 4389,
+    "medianHouseholdIncome": 96688,
+    "povertyRate": 0.16,
+    "bachelorsPlusRate": 0.652
+  },
+  "12086004704": {
+    "name": "Census Tract 47.04",
+    "population": 2423,
+    "medianHouseholdIncome": 70469,
+    "povertyRate": 0.064,
+    "bachelorsPlusRate": 0.324
+  },
+  "12086004901": {
+    "name": "Census Tract 49.01",
+    "population": 3662,
+    "medianHouseholdIncome": 65721,
+    "povertyRate": 0.2,
+    "bachelorsPlusRate": 0.223
+  },
+  "12086005304": {
+    "name": "Census Tract 53.04",
+    "population": 4197,
+    "medianHouseholdIncome": 38545,
+    "povertyRate": 0.252,
+    "bachelorsPlusRate": 0.087
+  },
+  "12086005409": {
+    "name": "Census Tract 54.09",
+    "population": 3580,
+    "medianHouseholdIncome": 23277,
+    "povertyRate": 0.41,
+    "bachelorsPlusRate": 0.133
+  },
+  "12086005503": {
+    "name": "Census Tract 55.03",
+    "population": 3834,
+    "medianHouseholdIncome": 46719,
+    "povertyRate": 0.224,
+    "bachelorsPlusRate": 0.307
+  },
+  "12086005506": {
+    "name": "Census Tract 55.06",
+    "population": 3660,
+    "medianHouseholdIncome": 56688,
+    "povertyRate": 0.221,
+    "bachelorsPlusRate": 0.149
+  },
+  "12086005701": {
+    "name": "Census Tract 57.01",
+    "population": 5533,
+    "medianHouseholdIncome": 61131,
+    "povertyRate": 0.195,
+    "bachelorsPlusRate": 0.354
+  },
+  "12086006002": {
+    "name": "Census Tract 60.02",
+    "population": 6689,
+    "medianHouseholdIncome": 82656,
+    "povertyRate": 0.085,
+    "bachelorsPlusRate": 0.316
+  },
+  "12086006003": {
+    "name": "Census Tract 60.03",
+    "population": 3359,
+    "medianHouseholdIncome": 106875,
+    "povertyRate": 0.022,
+    "bachelorsPlusRate": 0.337
+  },
+  "12086006201": {
+    "name": "Census Tract 62.01",
+    "population": 3064,
+    "medianHouseholdIncome": 68333,
+    "povertyRate": 0.092,
+    "bachelorsPlusRate": 0.452
+  },
+  "12086006302": {
+    "name": "Census Tract 63.02",
+    "population": 5815,
+    "medianHouseholdIncome": 80773,
+    "povertyRate": 0.183,
+    "bachelorsPlusRate": 0.472
+  },
+  "12086006303": {
+    "name": "Census Tract 63.03",
+    "population": 3835,
+    "medianHouseholdIncome": 46232,
+    "povertyRate": 0.214,
+    "bachelorsPlusRate": 0.332
+  },
+  "12086006501": {
+    "name": "Census Tract 65.01",
+    "population": 3402,
+    "medianHouseholdIncome": 72992,
+    "povertyRate": 0.091,
+    "bachelorsPlusRate": 0.385
+  },
+  "12086006608": {
+    "name": "Census Tract 66.08",
+    "population": 3423,
+    "medianHouseholdIncome": 121875,
+    "povertyRate": 0.049,
+    "bachelorsPlusRate": 0.594
+  },
+  "12086006709": {
+    "name": "Census Tract 67.09",
+    "population": 1925,
+    "medianHouseholdIncome": 217625,
+    "povertyRate": 0.012,
+    "bachelorsPlusRate": 0.712
+  },
+  "12086006713": {
+    "name": "Census Tract 67.13",
+    "population": 1782,
+    "medianHouseholdIncome": 122434,
+    "povertyRate": 0.1,
+    "bachelorsPlusRate": 0.92
+  },
+  "12086006718": {
+    "name": "Census Tract 67.18",
+    "population": 3038,
+    "medianHouseholdIncome": 186250,
+    "povertyRate": 0.067,
+    "bachelorsPlusRate": 0.85
+  },
+  "12086006802": {
+    "name": "Census Tract 68.02",
+    "population": 3726,
+    "medianHouseholdIncome": 200655,
+    "povertyRate": 0.077,
+    "bachelorsPlusRate": 0.732
+  },
+  "12086007003": {
+    "name": "Census Tract 70.03",
+    "population": 4733,
+    "medianHouseholdIncome": 68707,
+    "povertyRate": 0.063,
+    "bachelorsPlusRate": 0.458
+  },
+  "12086007006": {
+    "name": "Census Tract 70.06",
+    "population": 3240,
+    "medianHouseholdIncome": 61757,
+    "povertyRate": 0.115,
+    "bachelorsPlusRate": 0.438
+  },
+  "12086007101": {
+    "name": "Census Tract 71.01",
+    "population": 3002,
+    "medianHouseholdIncome": 82361,
+    "povertyRate": 0.133,
+    "bachelorsPlusRate": 0.623
+  },
+  "12086007104": {
+    "name": "Census Tract 71.04",
+    "population": 3280,
+    "medianHouseholdIncome": 163250,
+    "povertyRate": 0.042,
+    "bachelorsPlusRate": 0.804
+  },
+  "12086007607": {
+    "name": "Census Tract 76.07",
+    "population": 2287,
+    "medianHouseholdIncome": 99254,
+    "povertyRate": 0.078,
+    "bachelorsPlusRate": 0.526
+  },
+  "12086007807": {
+    "name": "Census Tract 78.07",
+    "population": 5068,
+    "medianHouseholdIncome": 163958,
+    "povertyRate": 0.04,
+    "bachelorsPlusRate": 0.71
+  },
+  "12086007809": {
+    "name": "Census Tract 78.09",
+    "population": 4202,
+    "medianHouseholdIncome": 77336,
+    "povertyRate": 0.102,
+    "bachelorsPlusRate": 0.554
+  },
+  "12086008311": {
+    "name": "Census Tract 83.11",
+    "population": 4417,
+    "medianHouseholdIncome": 93281,
+    "povertyRate": 0.14,
+    "bachelorsPlusRate": 0.169
+  },
+  "12086008419": {
+    "name": "Census Tract 84.19",
+    "population": 5272,
+    "medianHouseholdIncome": 58359,
+    "povertyRate": 0.095,
+    "bachelorsPlusRate": 0.459
+  },
+  "12086008421": {
+    "name": "Census Tract 84.21",
+    "population": 4195,
+    "medianHouseholdIncome": 156295,
+    "povertyRate": 0.05,
+    "bachelorsPlusRate": 0.352
+  },
+  "12086008422": {
+    "name": "Census Tract 84.22",
+    "population": 2250,
+    "medianHouseholdIncome": 53611,
+    "povertyRate": 0.191,
+    "bachelorsPlusRate": 0.392
+  },
+  "12086008427": {
+    "name": "Census Tract 84.27",
+    "population": 1975,
+    "medianHouseholdIncome": 76761,
+    "povertyRate": 0.064,
+    "bachelorsPlusRate": 0.484
+  },
+  "12086008503": {
+    "name": "Census Tract 85.03",
+    "population": 2905,
+    "medianHouseholdIncome": 62689,
+    "povertyRate": 0.136,
+    "bachelorsPlusRate": 0.228
+  },
+  "12086008805": {
+    "name": "Census Tract 88.05",
+    "population": 3722,
+    "medianHouseholdIncome": 61182,
+    "povertyRate": 0.192,
+    "bachelorsPlusRate": 0.221
+  },
+  "12086008809": {
+    "name": "Census Tract 88.09",
+    "population": 1949,
+    "medianHouseholdIncome": 92554,
+    "povertyRate": 0.055,
+    "bachelorsPlusRate": 0.363
+  },
+  "12086008907": {
+    "name": "Census Tract 89.07",
+    "population": 4433,
+    "medianHouseholdIncome": 46864,
+    "povertyRate": 0.136,
+    "bachelorsPlusRate": 0.293
+  },
+  "12086008911": {
+    "name": "Census Tract 89.11",
+    "population": 3172,
+    "medianHouseholdIncome": 88512,
+    "povertyRate": 0.047,
+    "bachelorsPlusRate": 0.312
+  },
+  "12086009015": {
+    "name": "Census Tract 90.15",
+    "population": 5500,
+    "medianHouseholdIncome": 55885,
+    "povertyRate": 0.165,
+    "bachelorsPlusRate": 0.38
+  },
+  "12086009055": {
+    "name": "Census Tract 90.55",
+    "population": 1823,
+    "medianHouseholdIncome": 42454,
+    "povertyRate": 0.198,
+    "bachelorsPlusRate": 0.288
+  },
+  "12086009061": {
+    "name": "Census Tract 90.61",
+    "population": 3166,
+    "medianHouseholdIncome": 40324,
+    "povertyRate": 0.322,
+    "bachelorsPlusRate": 0.194
+  },
+  "12086009062": {
+    "name": "Census Tract 90.62",
+    "population": 2972,
+    "medianHouseholdIncome": 79137,
+    "povertyRate": 0.132,
+    "bachelorsPlusRate": 0.263
+  },
+  "12086009102": {
+    "name": "Census Tract 91.02",
+    "population": 3213,
+    "medianHouseholdIncome": 44455,
+    "povertyRate": 0.157,
+    "bachelorsPlusRate": 0.15
+  },
+  "12086009314": {
+    "name": "Census Tract 93.14",
+    "population": 3819,
+    "medianHouseholdIncome": 42906,
+    "povertyRate": 0.195,
+    "bachelorsPlusRate": 0.28
+  },
+  "12086009320": {
+    "name": "Census Tract 93.20",
+    "population": 4701,
+    "medianHouseholdIncome": 45778,
+    "povertyRate": 0.322,
+    "bachelorsPlusRate": 0.131
+  },
+  "12086009323": {
+    "name": "Census Tract 93.23",
+    "population": 2412,
+    "medianHouseholdIncome": 69090,
+    "povertyRate": 0.121,
+    "bachelorsPlusRate": 0.243
+  },
+  "12086009326": {
+    "name": "Census Tract 93.26",
+    "population": 3046,
+    "medianHouseholdIncome": 34087,
+    "povertyRate": 0.186,
+    "bachelorsPlusRate": 0.203
+  },
+  "12086009402": {
+    "name": "Census Tract 94.02",
+    "population": 3849,
+    "medianHouseholdIncome": 73194,
+    "povertyRate": 0.035,
+    "bachelorsPlusRate": 0.105
+  },
+  "12086009505": {
+    "name": "Census Tract 95.05",
+    "population": 1643,
+    "medianHouseholdIncome": 51622,
+    "povertyRate": 0.283,
+    "bachelorsPlusRate": 0.288
+  },
+  "12086009810": {
+    "name": "Census Tract 98.10",
+    "population": 4538,
+    "medianHouseholdIncome": 84028,
+    "povertyRate": 0.124,
+    "bachelorsPlusRate": 0.218
+  },
+  "12086010012": {
+    "name": "Census Tract 100.12",
+    "population": 6605,
+    "medianHouseholdIncome": 88432,
+    "povertyRate": 0.082,
+    "bachelorsPlusRate": 0.226
+  },
+  "12086010400": {
+    "name": "Census Tract 104.00",
+    "population": 6477,
+    "medianHouseholdIncome": 66786,
+    "povertyRate": 0.078,
+    "bachelorsPlusRate": 0.26
+  },
+  "12086010609": {
+    "name": "Census Tract 106.09",
+    "population": 6304,
+    "medianHouseholdIncome": 47569,
+    "povertyRate": 0.253,
+    "bachelorsPlusRate": 0.197
+  },
+  "12086010610": {
+    "name": "Census Tract 106.10",
+    "population": 4327,
+    "medianHouseholdIncome": 110491,
+    "povertyRate": 0.046,
+    "bachelorsPlusRate": 0.418
+  },
+  "12086010618": {
+    "name": "Census Tract 106.18",
+    "population": 4543,
+    "medianHouseholdIncome": 109625,
+    "povertyRate": 0.062,
+    "bachelorsPlusRate": 0.408
+  },
+  "12086010706": {
+    "name": "Census Tract 107.06",
+    "population": 3963,
+    "medianHouseholdIncome": 92519,
+    "povertyRate": 0.068,
+    "bachelorsPlusRate": 0.237
+  },
+  "12086010708": {
+    "name": "Census Tract 107.08",
+    "population": 5726,
+    "medianHouseholdIncome": 59849,
+    "povertyRate": 0.154,
+    "bachelorsPlusRate": 0.138
+  },
+  "12086010803": {
+    "name": "Census Tract 108.03",
+    "population": 4850,
+    "medianHouseholdIncome": 65170,
+    "povertyRate": 0.258,
+    "bachelorsPlusRate": 0.21
+  },
+  "12086011011": {
+    "name": "Census Tract 110.11",
+    "population": 3956,
+    "medianHouseholdIncome": 50772,
+    "povertyRate": 0.226,
+    "bachelorsPlusRate": 0.202
+  },
+  "12086011500": {
+    "name": "Census Tract 115.00",
+    "population": 5483,
+    "medianHouseholdIncome": 109619,
+    "povertyRate": 0.061,
+    "bachelorsPlusRate": 0.259
+  },
+  "12086011900": {
+    "name": "Census Tract 119.00",
+    "population": 6212,
+    "medianHouseholdIncome": 81964,
+    "povertyRate": 0.13,
+    "bachelorsPlusRate": 0.41
+  },
+  "12086012403": {
+    "name": "Census Tract 124.03",
+    "population": 1792,
+    "medianHouseholdIncome": 133194,
+    "povertyRate": 0.023,
+    "bachelorsPlusRate": 0.405
+  },
+  "12086013301": {
+    "name": "Census Tract 133.01",
+    "population": 2852,
+    "medianHouseholdIncome": 69617,
+    "povertyRate": 0.134,
+    "bachelorsPlusRate": 0.331
+  },
+  "12086014400": {
+    "name": "Census Tract 144.00",
+    "population": 4407,
+    "medianHouseholdIncome": 80127,
+    "povertyRate": 0.168,
+    "bachelorsPlusRate": 0.384
+  },
+  "12086014601": {
+    "name": "Census Tract 146.01",
+    "population": 2728,
+    "medianHouseholdIncome": 47159,
+    "povertyRate": 0.17,
+    "bachelorsPlusRate": 0.189
+  },
+  "12086016900": {
+    "name": "Census Tract 169.00",
+    "population": 4806,
+    "medianHouseholdIncome": 69081,
+    "povertyRate": 0.142,
+    "bachelorsPlusRate": 0.294
+  },
+  "12086017200": {
+    "name": "Census Tract 172.00",
+    "population": 3816,
+    "medianHouseholdIncome": 79688,
+    "povertyRate": 0.124,
+    "bachelorsPlusRate": 0.381
+  },
+  "12086017901": {
+    "name": "Census Tract 179.01",
+    "population": 4081,
+    "medianHouseholdIncome": 117964,
+    "povertyRate": 0.046,
+    "bachelorsPlusRate": 0.382
+  },
+  "12086018500": {
+    "name": "Census Tract 185.00",
+    "population": 5147,
+    "medianHouseholdIncome": 89037,
+    "povertyRate": 0.154,
+    "bachelorsPlusRate": 0.398
+  },
+  "12086018602": {
+    "name": "Census Tract 186.02",
+    "population": 3877,
+    "medianHouseholdIncome": 73901,
+    "povertyRate": 0.124,
+    "bachelorsPlusRate": 0.277
+  },
+  "12086018801": {
+    "name": "Census Tract 188.01",
+    "population": 2739,
+    "medianHouseholdIncome": 115963,
+    "povertyRate": 0.055,
+    "bachelorsPlusRate": 0.33
+  },
+  "12086018802": {
+    "name": "Census Tract 188.02",
+    "population": 2355,
+    "medianHouseholdIncome": 55592,
+    "povertyRate": 0.116,
+    "bachelorsPlusRate": 0.393
+  },
+  "12086019100": {
+    "name": "Census Tract 191.00",
+    "population": 5336,
+    "medianHouseholdIncome": 56023,
+    "povertyRate": 0.123,
+    "bachelorsPlusRate": 0.416
+  },
+  "12086019302": {
+    "name": "Census Tract 193.02",
+    "population": 5060,
+    "medianHouseholdIncome": 88659,
+    "povertyRate": 0.101,
+    "bachelorsPlusRate": 0.382
+  },
+  "12086019502": {
+    "name": "Census Tract 195.02",
+    "population": 4608,
+    "medianHouseholdIncome": 116797,
+    "povertyRate": 0.012,
+    "bachelorsPlusRate": 0.29
+  },
+  "12086019700": {
+    "name": "Census Tract 197.00",
+    "population": 3580,
+    "medianHouseholdIncome": 122000,
+    "povertyRate": 0.12,
+    "bachelorsPlusRate": 0.448
+  },
+  "12086980500": {
+    "name": "Census Tract 9805.00",
+    "population": 575,
+    "medianHouseholdIncome": 78452,
+    "povertyRate": 0.158,
+    "bachelorsPlusRate": 0.474
+  },
+  "12086000611": {
+    "name": "Census Tract 6.11",
+    "population": 2448,
+    "medianHouseholdIncome": 56229,
+    "povertyRate": 0.21,
+    "bachelorsPlusRate": 0.228
+  },
+  "12086000905": {
+    "name": "Census Tract 9.05",
+    "population": 3605,
+    "medianHouseholdIncome": 64677,
+    "povertyRate": 0.107,
+    "bachelorsPlusRate": 0.138
+  },
+  "12086001103": {
+    "name": "Census Tract 11.03",
+    "population": 4554,
+    "medianHouseholdIncome": 68059,
+    "povertyRate": 0.292,
+    "bachelorsPlusRate": 0.296
+  },
+  "12086003914": {
+    "name": "Census Tract 39.14",
+    "population": 3343,
+    "medianHouseholdIncome": 55932,
+    "povertyRate": 0.13,
+    "bachelorsPlusRate": 0.433
+  },
+  "12086011412": {
+    "name": "Census Tract 114.12",
+    "population": 6499,
+    "medianHouseholdIncome": 62182,
+    "povertyRate": 0.122,
+    "bachelorsPlusRate": 0.321
+  }
+}

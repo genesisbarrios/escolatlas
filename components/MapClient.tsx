@@ -2,6 +2,7 @@
 
 import dynamic from "next/dynamic";
 import type { School } from "@/lib/school";
+import type { PoliceStation } from "@/lib/police";
 
 const SchoolMap = dynamic(() => import("./SchoolMap"), {
   ssr: false,
@@ -14,6 +15,7 @@ const SchoolMap = dynamic(() => import("./SchoolMap"), {
 
 export default function MapClient(props: {
   schools: School[];
+  stations?: PoliceStation[];
   selectedId?: string | null;
   onSelect?: (id: string) => void;
   height?: number;

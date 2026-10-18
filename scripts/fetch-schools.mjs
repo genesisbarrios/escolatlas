@@ -21,6 +21,10 @@ const BASE =
 const PUBLIC_URL = `${BASE}/SchoolSite_gdb/FeatureServer/0/query`;
 const CHARTER_URL = `${BASE}/CharterSchool_gdb/FeatureServer/0/query`;
 const PRIVATE_URL = `${BASE}/PrivateSchool_gdb/FeatureServer/0/query`;
+const TRACT_URL = `${BASE}/Tract_gdb/FeatureServer/0/query`;
+const POLICE_COUNTY_URL = `${BASE}/PoliceStation_gdb/FeatureServer/0/query`;
+const POLICE_MUNI_URL = `${BASE}/MunicipalPoliceStation_gdb/FeatureServer/0/query`;
+const CENSUS_REPORTER = "https://api.censusreporter.org/1.0/data/show/latest";
 
 const PK = -1;
 const K = 0;
@@ -186,19 +190,20 @@ function validLng(v) {
   return n !== null && n >= -81.2 && n <= -79.8 ? n : null;
 }
 
-async function fetchAll(url, outFields) {
+async function fetchAll(url, outFields, { geometry = false } = {}) {
   const params = new URLSearchParams({
     where: "1=1",
     outFields: outFields.join(","),
-    returnGeometry: "false",
+    returnGeometry: String(geometry),
     resultRecordCount: "2000",
     f: "json",
   });
+  if (geometry) params.set("outSR", "4326");
   const res = await fetch(`${url}?${params}`);
   if (!res.ok) throw new Error(`fetch failed ${res.status} for ${url}`);
   const data = await res.json();
   if (data.error) throw new Error(JSON.stringify(data.error));
-  return data.features.map((f) => f.attributes);
+  return data.features;
 }
 
 function normalizePublic(a) {
@@ -398,26 +403,162 @@ async function loadStateGrades() {
   return { grades, year, file };
 }
 
-const publicRows = await fetchAll(PUBLIC_URL, [
+const publicRows = (await fetchAll(PUBLIC_URL, [
   "OBJECTID", "ID", "NAME", "ADDRESS", "UNIT", "CITY", "ZIPCODE",
   "PHONE", "EMAIL", "TYPE", "GRADES", "CAPACITY", "ENROLLMNT",
   "REGION", "LAT", "LON",
-]);
-const charterRows = await fetchAll(CHARTER_URL, [
+])).map((f) => f.attributes);
+const charterRows = (await fetchAll(CHARTER_URL, [
   "OBJECTID", "ID", "NAME", "ADDRESS", "UNIT", "CITY", "ZIPCODE",
   "PHONE", "EMAIL", "GRADE", "CAPACITY", "ENROLLMNT", "WEBSITE",
   "LAT", "LON",
-]);
-const privateRows = await fetchAll(PRIVATE_URL, [
+])).map((f) => f.attributes);
+const privateRows = (await fetchAll(PRIVATE_URL, [
   "OBJECTID", "GlobalID", "NAME", "ADDRESS", "UNIT", "CITY", "ZIPCODE",
   "PHONE", "EMAIL", "TYPE", "GRDLEVEL", "COED", "ENROLLMENT", "STATUS",
   "WEBSITE", "YEARESTB", "LAT", "LON",
-]);
+])).map((f) => f.attributes);
 
 const schools = [
   ...publicRows.map(normalizePublic),
   ...charterRows.map(normalizeCharter),
   ...privateRows.map(normalizePrivate),
+].filter(Boolean);
+
+// Census tract join — point-in-polygon each school's coordinates against the
+// county's 2020 tract layer. Drives the neighborhood demographics section.
+const tractFeatures = await fetchAll(TRACT_URL, ["GEOID"], {
+  geometry: true,
+});
+const tracts = tractFeatures
+  .map((f) => {
+    const rings = f.geometry?.rings ?? [];
+    let box = null;
+    for (const ring of rings)
+      for (const [x, y] of ring)
+        box = box
+          ? [Math.min(box[0], x), Math.min(box[1], y), Math.max(box[2], x), Math.max(box[3], y)]
+          : [x, y, x, y];
+    return {
+      geoid: String(f.attributes.GEOID ?? "").replace(/^1400000US/, ""),
+      rings,
+      box,
+    };
+    })
+  .filter((t) => t.geoid && t.rings.length && t.box);
+
+function pointInRing(lng, lat, ring) {
+  let inside = false;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+    const [xi, yi] = ring[i];
+    const [xj, yj] = ring[j];
+    if (yi > lat !== yj > lat && lng < ((xj - xi) * (lat - yi)) / (yj - yi) + xi)
+      inside = !inside;
+  }
+  return inside;
+}
+
+function tractAt(lat, lng) {
+  for (const t of tracts) {
+    const [x0, y0, x1, y1] = t.box;
+    if (lng < x0 || lng > x1 || lat < y0 || lat > y1) continue;
+    let hits = 0;
+    for (const ring of t.rings) if (pointInRing(lng, lat, ring)) hits++;
+    if (hits % 2 === 1) return t;
+  }
+  return null;
+}
+
+/** "12086000109" → "Census Tract 1.09" (last 6 digits, implied decimal). */
+function tractLabel(geoid) {
+  const code = geoid.slice(-6);
+  return `Census Tract ${parseInt(code.slice(0, 4), 10)}.${code.slice(4)}`;
+}
+
+let tracted = 0;
+for (const s of schools) {
+  const t =
+    s.lat !== null && s.lng !== null ? tractAt(s.lat, s.lng) : null;
+  s.tractGeoId = t ? t.geoid : null;
+  if (t) tracted++;
+}
+
+// Tract demographics — Census Reporter API (ACS 5-year, no key required).
+// Pulled once per tract actually containing a school.
+async function fetchDemographics(geoids) {
+  const out = {};
+  for (let i = 0; i < geoids.length; i += 100) {
+    const ids = geoids
+      .slice(i, i + 100)
+      .map((g) => `14000US${g}`)
+      .join(",");
+    const res = await fetch(
+      `${CENSUS_REPORTER}?table_ids=B01003,B17001,B15003,B19013&geo_ids=${ids}`,
+    );
+    if (!res.ok) throw new Error(`census reporter failed ${res.status}`);
+    const { data } = await res.json();
+    for (const [geoId, tables] of Object.entries(data ?? {})) {
+      const g = geoId.replace(/^14000US/, "");
+      const est = (t, c) => {
+        const n = Number(tables[t]?.estimate?.[c]);
+        return Number.isFinite(n) && n >= 0 ? n : null;
+      };
+      const pop = est("B01003", "B01003001");
+      const income = est("B19013", "B19013001");
+      const povBelow = est("B17001", "B17001002");
+      const povTotal = est("B17001", "B17001001");
+      const eduTotal = est("B15003", "B15003001");
+      const eduBachPlus = ["B15003022", "B15003023", "B15003024", "B15003025"].reduce(
+        (a, c) => a + (est("B15003", c) ?? 0),
+        0,
+      );
+      out[g] = {
+        name: tractLabel(g),
+        population: pop,
+        medianHouseholdIncome: income,
+        povertyRate:
+          povBelow !== null && povTotal ? +(povBelow / povTotal).toFixed(3) : null,
+        bachelorsPlusRate:
+          eduTotal ? +(eduBachPlus / eduTotal).toFixed(3) : null,
+      };
+    }
+  }
+  return out;
+}
+
+const demographics = await fetchDemographics(
+  [...new Set(schools.map((s) => s.tractGeoId).filter(Boolean))],
+);
+console.log(
+  `Tract join: ${tracted} schools → ${Object.keys(demographics).length} tracts with ACS data`,
+);
+
+// Police stations — county (MDSO) + municipal layers.
+function normalizeStation(a, agency) {
+  const lat = validLat(a.LAT);
+  const lng = validLng(a.LON);
+  if (lat === null || lng === null) return null;
+  return {
+    id: `${agency === "county" ? "cop" : "mop"}-${a.OBJECTID}`,
+    name: clean(a.NAME) ?? "Police station",
+    address: clean(a.ADDRESS) ?? "",
+    city: cleanCity(a.CITY),
+    zip: a.ZIPCODE ? String(a.ZIPCODE) : "",
+    phone: clean(a.PHONE),
+    lat,
+    lng,
+    agency,
+    jurisdiction: clean(a.JURISDTN),
+  };
+}
+const policeStations = [
+  ...(await fetchAll(POLICE_COUNTY_URL, [
+    "OBJECTID", "NAME", "ADDRESS", "CITY", "ZIPCODE", "PHONE", "LAT", "LON",
+  ])).map((f) => normalizeStation(f.attributes, "county")),
+  ...(await fetchAll(POLICE_MUNI_URL, [
+    "OBJECTID", "NAME", "ADDRESS", "CITY", "ZIPCODE", "PHONE", "JURISDTN",
+    "TYPE", "LAT", "LON",
+  ])).map((f) => normalizeStation(f.attributes, "municipal")),
 ].filter(Boolean);
 
 // FL DOE accountability grades — optional drop-in workbook, joined on the
@@ -491,12 +632,23 @@ const stats = {
   missingLatLng: schools.filter((s) => s.lat === null).length,
   stateGraded: graded,
   socialsFound: globalThis.__socialsFound ?? 0,
+  tractsJoined: tracted,
+  tractsWithDemographics: Object.keys(demographics).length,
+  policeStations: policeStations.length,
 };
 
 mkdirSync(join(ROOT, "data"), { recursive: true });
 writeFileSync(
   join(ROOT, "data", "schools.json"),
   JSON.stringify(schools, null, 2) + "\n",
+);
+writeFileSync(
+  join(ROOT, "data", "demographics.json"),
+  JSON.stringify(demographics, null, 2) + "\n",
+);
+writeFileSync(
+  join(ROOT, "data", "police-stations.json"),
+  JSON.stringify(policeStations, null, 2) + "\n",
 );
 writeFileSync(
   join(ROOT, "data", "meta.json"),
@@ -507,6 +659,9 @@ writeFileSync(
         "mdc-public-schools": PUBLIC_URL,
         "mdc-charter-schools": CHARTER_URL,
         "mdc-private-schools": PRIVATE_URL,
+        "mdc-census-tracts": TRACT_URL,
+        "mdc-police-stations": `${POLICE_COUNTY_URL} + ${POLICE_MUNI_URL}`,
+        "acs-demographics": `${CENSUS_REPORTER} (ACS 5-year, tables B01003/B17001/B15003/B19013)`,
         "fl-doe-school-grades": stateFile
           ? `local file: ${stateFile}`
           : "not provided (drop SchoolGradesNN.xlsx in data/external/)",

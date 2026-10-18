@@ -7,6 +7,7 @@ import {
 } from "@/lib/school";
 import { COMPARE_LIMIT } from "@/lib/compare-store";
 import { distanceMiles } from "@/lib/geo";
+import { policeStationsNear, POLICE_NEARBY_MILES } from "@/lib/police";
 
 export const metadata = { title: "Compare schools — Escolatlas" };
 
@@ -125,6 +126,13 @@ export default async function ComparePage({
         ) : (
           NA
         ),
+    },
+    {
+      label: `Police stations ≤${POLICE_NEARBY_MILES} mi`,
+      render: (s) =>
+        s.lat !== null && s.lng !== null
+          ? policeStationsNear(s.lat, s.lng).length
+          : NA,
     },
     {
       label: "Distance between",

@@ -43,6 +43,33 @@ export function cityCentroid(city: string): { lat: number; lng: number } | null 
   return { lat, lng };
 }
 
+/** ACS 5-year tract-level demographics, keyed by 11-digit GEOID. */
+export interface TractDemographics {
+  name: string | null;
+  population: number | null;
+  medianHouseholdIncome: number | null;
+  /** Share below the poverty line (0–1). */
+  povertyRate: number | null;
+  /** Share of 25+ adults with a bachelor's degree or higher (0–1). */
+  bachelorsPlusRate: number | null;
+}
+
+let demoCache: Record<string, TractDemographics> | null = null;
+
+export function getTractDemographics(
+  geoid: string | null | undefined,
+): TractDemographics | null {
+  if (!geoid) return null;
+  if (demoCache === null) {
+    const raw = readFileSync(
+      join(process.cwd(), "data", "demographics.json"),
+      "utf8",
+    );
+    demoCache = JSON.parse(raw) as Record<string, TractDemographics>;
+  }
+  return demoCache[geoid] ?? null;
+}
+
 /** Centroid of a zip's schools — used for "within N miles of <zip>". */
 export function zipCentroid(zip: string): { lat: number; lng: number } | null {
   const matches = getAllSchools().filter(

@@ -1,9 +1,12 @@
 {
-  "generatedAt": "2026-10-17T21:15:31.444Z",
+  "generatedAt": "2026-10-17T23:03:33.739Z",
   "sources": {
     "mdc-public-schools": "https://services.arcgis.com/8Pc9XBTAsYuxx9Ny/arcgis/rest/services/SchoolSite_gdb/FeatureServer/0/query",
     "mdc-charter-schools": "https://services.arcgis.com/8Pc9XBTAsYuxx9Ny/arcgis/rest/services/CharterSchool_gdb/FeatureServer/0/query",
     "mdc-private-schools": "https://services.arcgis.com/8Pc9XBTAsYuxx9Ny/arcgis/rest/services/PrivateSchool_gdb/FeatureServer/0/query",
+    "mdc-census-tracts": "https://services.arcgis.com/8Pc9XBTAsYuxx9Ny/arcgis/rest/services/Tract_gdb/FeatureServer/0/query",
+    "mdc-police-stations": "https://services.arcgis.com/8Pc9XBTAsYuxx9Ny/arcgis/rest/services/PoliceStation_gdb/FeatureServer/0/query + https://services.arcgis.com/8Pc9XBTAsYuxx9Ny/arcgis/rest/services/MunicipalPoliceStation_gdb/FeatureServer/0/query",
+    "acs-demographics": "https://api.censusreporter.org/1.0/data/show/latest (ACS 5-year, tables B01003/B17001/B15003/B19013)",
     "fl-doe-school-grades": "local file: /Users/genesisbarrios/Documents/coding/apps/escolatlas/data/external/SchoolGrades26.xlsx"
   },
   "stats": {
@@ -14,6 +17,9 @@
     "droppedNoGrades": 107,
     "missingLatLng": 0,
     "stateGraded": 477,
-    "socialsFound": 473
+    "socialsFound": 468,
+    "tractsJoined": 1496,
+    "tractsWithDemographics": 505,
+    "policeStations": 72
   }
 }

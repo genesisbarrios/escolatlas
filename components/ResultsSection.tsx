@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import type { School } from "@/lib/school";
+import type { PoliceStation } from "@/lib/police";
 import MapClient from "./MapClient";
 import { SchoolCard } from "./SchoolCard";
 
@@ -12,7 +13,13 @@ export interface ResultEntry {
 
 /** Map + list driven by the same filtered set; hovering a card highlights its
  *  pin, and clicking a pin scrolls to + highlights its card. */
-export function ResultsSection({ entries }: { entries: ResultEntry[] }) {
+export function ResultsSection({
+  entries,
+  stations = [],
+}: {
+  entries: ResultEntry[];
+  stations?: PoliceStation[];
+}) {
   const [hovered, setHovered] = useState<string | null>(null);
   const [selected, setSelected] = useState<string | null>(null);
   const schools = entries.map((e) => e.school);
@@ -46,6 +53,7 @@ export function ResultsSection({ entries }: { entries: ResultEntry[] }) {
         <div className="lg:sticky lg:top-4 overflow-hidden rounded-lg border border-border shadow-sm">
           <MapClient
             schools={schools}
+            stations={stations}
             selectedId={hovered ?? selected}
             onSelect={setSelected}
             height={560}
